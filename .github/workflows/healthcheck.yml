@@ -1,6 +1,8 @@
 name: GGEmpire health check
 
 on:
+  push:
+    branches: ["main"]
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
@@ -21,7 +23,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check JavaScript syntax
-        run: node --check src/app.js
+        run: |
+          node --check src/app.js
+          node --check src/tracker.js
+          python -m py_compile scripts/fetch_reborn.py
 
       - name: Check required portal features are present
         run: |
@@ -29,6 +34,9 @@ jobs:
           grep -q 'intel-form' index.html
           grep -Fq '5 * 60 * 1000' src/app.js
           grep -q 'EmpirefourkingdomsExGG2_3' src/app.js
+          grep -q 'src/tracker.js' index.html
+          grep -q 'src/tracker.css' index.html
+          grep -q 'id="reborn-tracker"' index.html
 
       - name: Probe E4K alliance API
         shell: bash
