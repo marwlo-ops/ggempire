@@ -1,5 +1,11 @@
-// GGEmpire portal for E4K mobile PL1. No compatible live data source has been verified.
+// GGEmpire portal for E4K PL1. Live alliance lookup uses the public empire-api endpoint.
 const $ = (selector) => document.querySelector(selector);
+const E4K_API_BASE = "https://empire-api.fly.dev";
+const E4K_SERVER = "EmpirefourkingdomsExGG_2";
+const ALLIANCES = [
+  { key: "reborn", name: "ReBoRN", aid: 115 },
+  { key: "maddevil", name: "MADDEVILS", aid: 41343 }
+];
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
 }
@@ -11,23 +17,92 @@ function renderMessage(target, message) {
   box.textContent = message;
   target.append(box);
 }
-function setUnavailableStatus() {
-  const node = $("#api-status");
-  if (node) node.textContent = "Brak potwierdzonego źródła danych E4K PL1";
+function firstValue(object, keys) {
+  for (const key of keys) {
+    const value = object?.[key];
+    if (value !== undefined && value !== null && value !== "") return value;
+  }
+  return null;
+}
+function formatNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number.toLocaleString("pl-PL") : null;
+}
+async function fetchAlliance(aid) {
+  const url = `${E4K_API_BASE}/${E4K_SERVER}/ain/%22AID%22:${encodeURIComponent(aid)}`;
+  const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
+  if (!response.ok) throw new Error("API HTTP " + response.status);
+  const data = await response.json();
+  if (String(data.return_code) !== "0" || !data.content?.A) throw new Error(data.error || "API nie zwróciło danych sojuszu");
+  return data.content.A;
+}
+function setAlliancePending(key, message) {
+  const status = document.getElementById(key + "-status");
+  if (status) status.innerHTML = '<i></i> ' + escapeHtml(message);
+}
+function renderAlliance(key, alliance, fallbackName) {
+  const card = document.getElementById(key + "-data");
+  const status = document.getElementById(key + "-status");
+  const name = firstValue(alliance, ["N", "name", "NAME"]) || fallbackName;
+  const members = Array.isArray(alliance.M) ? alliance.M : Array.isArray(alliance.members) ? alliance.members : [];
+  const power = firstValue(alliance, ["P", "PO", "PW", "power", "Power", "STR", "S"]);
+  const count = firstValue(alliance, ["MC", "MEM", "memberCount", "membersCount"]) ?? (members.length || null);
+  if (card) {
+    const rows = [
+      ["Nazwa z API", String(name)],
+      ["Siła / potęga", formatNumber(power) || "Brak pola w odpowiedzi API"],
+      ["Liczba graczy", formatNumber(count) || "Brak pola w odpowiedzi API"]
+    ];
+    card.innerHTML = rows.map(([label, value]) => '<div class="data-line"><span>' + escapeHtml(label) + '</span><b>' + escapeHtml(value) + '</b></div>').join("");
+  }
+  if (status) status.innerHTML = '<i></i> Dane pobrane z API · ' + new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+  return { name, members };
+}
+async function connectAllianceData() {
+  const status = $("#api-status");
+  if (status) status.textContent = "Łączenie z publicznym API E4K…";
   const short = $("#api-stat-short");
-  if (short) short.textContent = "Źródło E4K";
+  if (short) short.textContent = "E4K API";
   const updated = $("#api-updated");
-  if (updated) updated.textContent = "Niepodłączone";
-  ["reborn", "maddevil"].forEach((key) => {
-    const status = document.getElementById(key + "-status");
-    if (status) status.innerHTML = '<i></i> Źródło E4K niepodłączone';
+  if (updated) updated.textContent = "Sprawdzanie…";
+  const results = await Promise.allSettled(ALLIANCES.map(async (item) => ({ item, alliance: await fetchAlliance(item.aid) })));
+  let connected = 0;
+  results.forEach((result, index) => {
+    const item = ALLIANCES[index];
+    if (result.status === "fulfilled") {
+      renderAlliance(item.key, result.value.alliance, item.name);
+      connected++;
+    } else {
+      setAlliancePending(item.key, "API niedostępne lub AID niepotwierdzone");
+      const card = document.getElementById(item.key + "-data");
+      if (card) {
+        const first = card.querySelector(".data-line b");
+        if (first) first.textContent = "Brak odpowiedzi API";
+      }
+    }
   });
+  if (status) status.textContent = connected ? "API E4K odpowiada · " + connected + "/2 sojuszy" : "Nie udało się pobrać danych E4K";
+  if (short) short.textContent = connected ? "E4K API" : "API offline";
+  if (updated) updated.textContent = connected ? new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" }) : "Brak odczytu";
 }
 async function searchAlliance(query) {
-  renderMessage($("#search-results"), "Wyszukiwanie jest chwilowo wyłączone: nie znaleziono jeszcze źródła obsługującego mobilny świat E4K PL1. Nie używamy GGE Tracker, ponieważ nie zawiera naszego świata.");
+  renderMessage($("#search-results"), "Sprawdzam nazwę w publicznym API E4K…");
+  const normalized = query.toLocaleLowerCase("pl-PL");
+  const known = ALLIANCES.find((item) => item.name.toLocaleLowerCase("pl-PL").includes(normalized) || normalized.includes(item.name.toLocaleLowerCase("pl-PL")));
+  if (known) {
+    try {
+      const alliance = await fetchAlliance(known.aid);
+      renderAlliance(known.key, alliance, known.name);
+      renderMessage($("#search-results"), "Pobrano dane sojuszu " + (firstValue(alliance, ["N", "name", "NAME"]) || known.name) + " z API E4K. AID wymaga niezależnego potwierdzenia dla świata PL1.");
+    } catch (error) {
+      renderMessage($("#search-results"), "Nie udało się pobrać danych: " + error.message + ". Sprawdź ponownie później.");
+    }
+    return;
+  }
+  renderMessage($("#search-results"), "Publiczny interfejs API obsługuje wyszukiwanie po AID, ale nie potwierdziliśmy jeszcze metody wyszukiwania dowolnej nazwy sojuszu w E4K PL1. Nie pokazujemy wyników z innych światów jako PL1.");
 }
 document.addEventListener("DOMContentLoaded", () => {
-  setUnavailableStatus();
+  connectAllianceData();
   initPlayerProfile();
   $("#alliance-search-form")?.addEventListener("submit", (event) => {
     event.preventDefault();
