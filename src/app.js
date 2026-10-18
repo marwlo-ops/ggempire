@@ -133,7 +133,7 @@ async function searchAlliance(query) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadServerAndAlliances();
+  loadServerAndAlliances();\n  initPlayerProfile();
   $("#alliance-search-form")?.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = $("#alliance-query").value.trim();
@@ -168,7 +168,20 @@ function intelAgeDays(dateString) {
   if (Number.isNaN(date.getTime())) return Infinity;
   return Math.floor((new Date().setHours(12,0,0,0) - date.getTime()) / 86400000);
 }
-function initIntelligence() {
+const PLAYER_PROFILE_KEY = "ggempire.e4k.player-profile.v1";
+function initPlayerProfile() {
+ const form=$("#player-profile-form"); if(!form)return;
+ const nickname=$("#player-nickname"), personalId=$("#player-personal-id"), result=$("#player-profile-result"), status=$("#player-link-status");
+ function render(){
+  let p=null; try{p=JSON.parse(localStorage.getItem(PLAYER_PROFILE_KEY)||"null")}catch{}
+  if(!p||!p.nickname){status.textContent="○ Profil niepowiązany";nickname.value="";personalId.value="";result.innerHTML='<span class="profile-result-icon">i</span><div><b>Synchronizacja jeszcze niedostępna</b><p>Nie wykryto oficjalnego logowania ani potwierdzenia własności konta. Możesz zapisać nazwę lokalnie; profil pozostaje niezweryfikowany.</p></div>';return}
+  nickname.value=p.nickname;personalId.value=p.personalId||"";status.textContent="○ Profil lokalny · niezweryfikowany";
+  result.innerHTML='<span class="profile-result-icon">!</span><div><b>'+escapeHtml(p.nickname)+' · profil zapisany lokalnie</b><p>To nie jest sesja logowania Goodgame i nie potwierdza własności konta. Automatyczne statystyki i historia nie są połączone bez obsługiwanej metody API.</p></div>';
+ }
+ form.addEventListener("submit",e=>{e.preventDefault();const n=nickname.value.trim();if(!n)return;try{localStorage.setItem(PLAYER_PROFILE_KEY,JSON.stringify({nickname:n,personalId:personalId.value.trim(),savedAt:new Date().toISOString(),verified:false}));render()}catch{alert("Nie udało się zapisać profilu w tej przeglądarce.")}});
+ $("#player-profile-clear")?.addEventListener("click",()=>{try{localStorage.removeItem(PLAYER_PROFILE_KEY)}catch{}render()});render();
+}
+\nfunction initIntelligence() {
   const form = $("#intel-form");
   if (!form) return;
   const dateInput = $("#intel-date");
