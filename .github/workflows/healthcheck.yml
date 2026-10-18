@@ -1,0 +1,63 @@
+name: GGEmpire health check
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ggempire-healthcheck
+  cancel-in-progress: true
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check JavaScript syntax
+        run: node --check src/app.js
+
+      - name: Check required portal features are present
+        run: |
+          grep -q 'player-profile-form' index.html
+          grep -q 'intel-form' index.html
+          grep -q '5 * 60 * 1000' src/app.js
+          grep -q 'EmpirefourkingdomsExGG2_3' src/app.js
+
+      - name: Probe E4K alliance API
+        shell: bash
+        run: |
+          set -euo pipefail
+          for aid in 115 41343; do
+            url="https://empire-api.fly.dev/EmpirefourkingdomsExGG2_3/ain/%22AID%22:${aid}"
+            code="$(curl --silent --show-error --location --output /tmp/api.json --write-out '%{http_code}' --max-time 20 "$url" || true)"
+            if [ "$code" != "200" ]; then
+              echo "::warning::E4K API probe for AID $aid returned HTTP ${code:-network-error}; live data is not confirmed."
+              continue
+            fi
+            if ! grep -q '"return_code":"0"' /tmp/api.json && ! grep -q '"return_code":0' /tmp/api.json; then
+              echo "::warning::E4K API responded for AID $aid but did not confirm success. No live PL1 data should be assumed."
+              cat /tmp/api.json
+            else
+              echo "API returned a success code for AID $aid; verify response schema and PL1 mapping before trusting it."
+            fi
+          done
+
+      - name: Check deployed page
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://marwlo-ops.github.io/ggempire/"
+          code="$(curl --silent --show-error --location --output /tmp/site.html --write-out '%{http_code}' --max-time 20 "$url" || true)"
+          if [ "$code" != "200" ]; then
+            echo "::error::GitHub Pages returned HTTP ${code:-network-error} for $url"
+            exit 1
+          fi
+          grep -q 'GGEmpire' /tmp/site.html
+          echo "GitHub Pages returned HTTP 200 and includes the GGEmpire title."
