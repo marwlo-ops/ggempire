@@ -23,3 +23,9 @@ GitHub Actions deploys the static site to GitHub Pages. In **Settings → Pages*
 
 ## Historical alliance IDs (not yet verified for PL1)
 The conversation history contains these identifiers from the `EmpirefourkingdomsExGG2_3` server namespace (Empire: Four Kingdoms): `ReBorN` — AID `115`; `MADDEVILS` — AID `41343`. These are recorded as historical E4K IDs only. Do **not** treat them as confirmed IDs for the Goodgame Empire PC server PL1 until the server namespace and live API response are verified. The `empire-api` project uses separate server namespaces for GGE and E4K, so IDs must not be silently carried across games/servers.
+
+
+## Intelligence notebook
+- Manual in-game scouting/espionage report log for alliance, player, castle, troop/defense, resources and activity notes.
+- Reports are saved only in the visitor's browser using localStorage; there is no server upload or automatic access to private game data.
+- Reports older than 7 days are marked stale. Treat recorded intelligence as user-entered information, not verified live game data.
