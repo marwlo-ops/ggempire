@@ -1,7 +1,7 @@
 // GGEmpire portal for E4K PL1. Live alliance lookup uses the public empire-api endpoint.
 const $ = (selector) => document.querySelector(selector);
 const E4K_API_BASE = "https://empire-api.fly.dev";
-const E4K_SERVER = "EmpirefourkingdomsExGG_2";
+const E4K_SERVER = "EmpirefourkingdomsExGG2_3";
 const ALLIANCES = [
   { key: "reborn", name: "ReBoRN", aid: 115 },
   { key: "maddevil", name: "MADDEVILS", aid: 41343 }
@@ -58,7 +58,11 @@ function renderAlliance(key, alliance, fallbackName) {
   if (status) status.innerHTML = '<i></i> Dane pobrane z API · ' + new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
   return { name, members };
 }
+let allianceRefreshInProgress = false;
+let lastGoodAllianceData = {};
 async function connectAllianceData() {
+  if (allianceRefreshInProgress) return;
+  allianceRefreshInProgress = true;
   const status = $("#api-status");
   if (status) status.textContent = "Łączenie z publicznym API E4K…";
   const short = $("#api-stat-short");
@@ -71,11 +75,12 @@ async function connectAllianceData() {
     const item = ALLIANCES[index];
     if (result.status === "fulfilled") {
       renderAlliance(item.key, result.value.alliance, item.name);
+      lastGoodAllianceData[item.key] = { alliance: result.value.alliance, fetchedAt: new Date().toISOString() };
       connected++;
     } else {
       setAlliancePending(item.key, "API niedostępne lub AID niepotwierdzone");
       const card = document.getElementById(item.key + "-data");
-      if (card) {
+      if (card && !lastGoodAllianceData[item.key]) {
         const first = card.querySelector(".data-line b");
         if (first) first.textContent = "Brak odpowiedzi API";
       }
@@ -83,7 +88,8 @@ async function connectAllianceData() {
   });
   if (status) status.textContent = connected ? "API E4K odpowiada · " + connected + "/2 sojuszy" : "Nie udało się pobrać danych E4K";
   if (short) short.textContent = connected ? "E4K API" : "API offline";
-  if (updated) updated.textContent = connected ? new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" }) : "Brak odczytu";
+  if (updated) updated.textContent = connected ? new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" }) : (Object.keys(lastGoodAllianceData).length ? "API chwilowo offline · zachowano ostatnie dane" : "Brak odczytu");
+  allianceRefreshInProgress = false;
 }
 async function searchAlliance(query) {
   renderMessage($("#search-results"), "Sprawdzam nazwę w publicznym API E4K…");
@@ -103,6 +109,9 @@ async function searchAlliance(query) {
 }
 document.addEventListener("DOMContentLoaded", () => {
   connectAllianceData();
+  // Refresh live data every five minutes while the page is open; retry after network/API failures.
+  window.setInterval(() => { if (document.visibilityState === "visible") connectAllianceData().catch(() => { allianceRefreshInProgress = false; }); }, 5 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") connectAllianceData().catch(() => { allianceRefreshInProgress = false; }); });
   initPlayerProfile();
   $("#alliance-search-form")?.addEventListener("submit", (event) => {
     event.preventDefault();
