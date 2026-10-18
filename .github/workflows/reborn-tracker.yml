@@ -1,0 +1,39 @@
+name: Refresh ReBoRN tracker snapshots
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reborn-tracker-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Fetch verified E4K PL1 snapshot
+        env:
+          E4K_PL1_MAPPING_VERIFIED: ${{ vars.E4K_PL1_MAPPING_VERIFIED }}
+          E4K_SERVER: ${{ vars.E4K_SERVER }}
+          E4K_REBORN_AID: ${{ vars.E4K_REBORN_AID }}
+        run: python scripts/fetch_reborn.py
+      - name: Commit changed snapshot
+        run: |
+          if git diff --quiet -- data/reborn-latest.json; then
+            echo "No snapshot changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reborn-latest.json
+          git commit -m "chore: refresh ReBoRN tracker snapshot"
+          git push
