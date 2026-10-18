@@ -1,30 +1,21 @@
-# GGEmpire AI
+# GGEmpire — PL1 Community Hub
 
-A modular starting point for the GGEmpire AI platform, published as a static site with GitHub Pages.
+Fan-made Goodgame Empire community portal focused on the Polish PL1 server and the Reborn and MadDevil alliances.
 
-## Current scope
-- Responsive landing dashboard
-- Modular frontend assets in `src/`
-- GitHub Actions workflow for GitHub Pages deployment
-- Safe configuration example; never commit real API keys
+## Features
+- Responsive community landing page
+- API-backed alliance lookups and search using GGE Tracker
+- Links to player tools, community forums and event rankings
+- Honest unavailable-data states; no fabricated alliance stats
 
-## Deploy with GitHub Pages
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **GitHub Actions** as the source.
-3. Push to `main` (or run the workflow manually under **Actions → Deploy GGEmpire AI to GitHub Pages**).
-4. After the workflow succeeds, GitHub will show the published URL in Settings → Pages.
+## Data source
+The frontend uses the public GGE Tracker API: https://docs.gge-tracker.com/
+The API requires the `gge-server: PL1` header for server-specific alliance lookups. Server availability is checked at runtime. If PL1 is not supported by the API, the portal explains this rather than inventing data.
 
-## AI integration
-GitHub Pages only hosts static frontend files. Do not put provider API keys, passwords, or private business logic in browser JavaScript. Add a separate backend/serverless function for authenticated AI requests and store secrets in that backend's environment or secret manager.
+## Publish
+GitHub Actions deploys the static site to GitHub Pages. In **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**.
 
-## Project layout
-```
-.
-├── index.html
-├── src/
-│   ├── styles.css
-│   └── app.js
-├── .github/workflows/pages.yml
-├── .env.example
-└── .gitignore
-```
+## Notes
+- This is an independent fan project and is not affiliated with Goodgame Studios.
+- API data can be delayed or unavailable; the UI labels live data only when a response is received.
+- Do not place API keys or other secrets in frontend code.
