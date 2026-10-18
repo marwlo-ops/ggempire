@@ -32,3 +32,29 @@
 
 /* Local E4K player profile — explicitly not official authentication */
 .player-account-card{border:1px solid var(--line);border-radius:12px;padding:24px;background:linear-gradient(145deg,#191c26,#11131a)}.player-link-status{font-size:9px;color:#e7c989;border:1px solid #e5bd7233;border-radius:30px;padding:9px 12px;white-space:nowrap}.player-account-intro{display:flex;align-items:center;gap:13px;margin-bottom:20px}.player-avatar{width:49px;height:49px;border-radius:12px;display:grid;place-items:center;font-size:27px;color:var(--gold);background:#e5bd7212;border:1px solid #e5bd7224}.player-account-intro h3{font:800 16px Manrope,sans-serif;margin:0}.player-account-intro p{font-size:10px;color:var(--muted);line-height:1.6;margin:5px 0 0}.player-profile-form{display:grid;grid-template-columns:1fr 1fr auto;align-items:end;gap:12px}.player-profile-form label{display:block;font-size:10px;color:#c5c4c0;margin:0 0 7px}.player-profile-form input{width:100%;min-width:0;background:#0c0e14;border:1px solid #ffffff1b;border-radius:7px;color:var(--text);padding:12px;font-size:11px;outline:none}.player-profile-form input:focus{border-color:#e5bd7270}.player-profile-form button{cursor:pointer;white-space:nowrap}.player-profile-result{display:flex;gap:12px;padding:15px;margin-top:18px;border:1px solid #e5bd7224;background:#e5bd7208;border-radius:8px}.profile-result-icon{width:23px;height:23px;border:1px solid #e5bd7255;border-radius:50%;display:grid;place-items:center;flex-shrink:0;color:var(--gold);font:700 12px Manrope}.player-profile-result b{font-size:11px}.player-profile-result p{font-size:10px;line-height:1.75;color:#a4a5af;margin:5px 0 0}.player-profile-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px}.player-profile-actions>a{font-size:10px;color:var(--gold2)}@media(max-width:750px){.player-profile-form{grid-template-columns:1fr}.player-profile-form button{width:100%}}@media(max-width:600px){.player-account-card{padding:16px}.player-profile-actions{align-items:flex-start;flex-direction:column}.player-link-status{white-space:normal}}
+
+
+/* Global E4K world monitor — intentionally reports no live data until the source is verified. */
+.monitor-source-pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #e5bd7230;border-radius:30px;padding:9px 12px;color:var(--gold2);font-size:8px;letter-spacing:.1em;white-space:nowrap}
+.monitor-source-pill i{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block}
+.monitor-alert{display:flex;gap:14px;align-items:flex-start;padding:19px;border:1px solid #e5bd7230;background:#e5bd7208;border-radius:10px;margin-bottom:17px}
+.monitor-alert-icon{width:27px;height:27px;display:grid;place-items:center;flex-shrink:0;border:1px solid #e5bd7266;border-radius:50%;color:var(--gold);font-weight:800}
+.monitor-alert b{font-size:12px}.monitor-alert p{font-size:10px;line-height:1.8;color:var(--muted);margin:7px 0 0}
+.monitor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.monitor-card{border:1px solid var(--line);border-radius:10px;padding:18px;background:linear-gradient(145deg,#191c26,#11131a);min-width:0}
+.monitor-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.monitor-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:9px;background:#e5bd7210;color:var(--gold);font-size:19px}
+.monitor-state{font-size:8px;border-radius:30px;padding:6px 8px}
+.monitor-state.pending{color:#d9bd83;background:#e5bd7210;border:1px solid #e5bd7224}
+.monitor-card h3{font:700 14px Manrope,sans-serif;margin:17px 0 8px}
+.monitor-card p{font-size:10px;line-height:1.75;color:var(--muted);min-height:70px;margin:0}
+.monitor-metric{border-top:1px solid var(--line);margin-top:15px;padding-top:13px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.monitor-metric b{font:800 23px Manrope,sans-serif;color:#777b88}
+.monitor-metric small{font-size:9px;color:#8f929f}
+.monitor-roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:17px}
+.monitor-roadmap>div{display:flex;gap:11px;align-items:flex-start;padding:15px;border:1px solid var(--line);border-radius:9px;background:#ffffff03}
+.roadmap-number{font:800 11px Manrope,sans-serif;color:var(--gold);border:1px solid #e5bd7230;border-radius:6px;padding:7px}
+.monitor-roadmap b{font-size:10px}.monitor-roadmap p{font-size:9px;line-height:1.7;color:var(--muted);margin:5px 0 0}
+.monitor-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:17px}.monitor-links a{font-size:10px;color:var(--gold2)}
+@media(max-width:900px){.monitor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.monitor-roadmap{grid-template-columns:1fr}}
+@media(max-width:600px){.monitor-source-pill{font-size:7px}.monitor-alert{padding:14px}.monitor-grid{grid-template-columns:1fr}.monitor-card p{min-height:0}.monitor-roadmap>div{padding:13px}}
