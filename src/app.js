@@ -2,6 +2,7 @@
 const $ = (selector) => document.querySelector(selector);
 const E4K_API_BASE = "https://empire-api.fly.dev";
 const E4K_SERVER = "EmpirefourkingdomsExGG2_3";
+const E4K_PL1_MAPPING_VERIFIED = false; // Set true only after the server namespace and AIDs are confirmed for PL1.
 const ALLIANCES = [
   { key: "reborn", name: "ReBoRN", aid: 115 },
   { key: "maddevil", name: "MADDEVILS", aid: 41343 }
@@ -61,6 +62,16 @@ function renderAlliance(key, alliance, fallbackName) {
 let allianceRefreshInProgress = false;
 let lastGoodAllianceData = {};
 async function connectAllianceData() {
+  if (!E4K_PL1_MAPPING_VERIFIED) {
+    const status = $("#api-status");
+    const short = $("#api-stat-short");
+    const updated = $("#api-updated");
+    if (status) status.textContent = "Źródło danych PL1 niepotwierdzone";
+    if (short) short.textContent = "PL1 niezweryfikowane";
+    if (updated) updated.textContent = "Oczekiwanie na weryfikację źródła";
+    ALLIANCES.forEach((item) => setAlliancePending(item.key, "Źródło PL1 niepotwierdzone"));
+    return;
+  }
   if (allianceRefreshInProgress) return;
   allianceRefreshInProgress = true;
   const status = $("#api-status");
@@ -92,6 +103,10 @@ async function connectAllianceData() {
   allianceRefreshInProgress = false;
 }
 async function searchAlliance(query) {
+  if (!E4K_PL1_MAPPING_VERIFIED) {
+    renderMessage($("#search-results"), "Wyszukiwanie wstrzymane do czasu potwierdzenia źródła danych PL1.");
+    return;
+  }
   renderMessage($("#search-results"), "Sprawdzam nazwę w publicznym API E4K…");
   const normalized = query.toLocaleLowerCase("pl-PL");
   const known = ALLIANCES.find((item) => item.name.toLocaleLowerCase("pl-PL").includes(normalized) || normalized.includes(item.name.toLocaleLowerCase("pl-PL")));
