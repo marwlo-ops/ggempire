@@ -2,7 +2,7 @@
 const $ = (selector) => document.querySelector(selector);
 const E4K_API_BASE = "https://empire-api.fly.dev";
 const E4K_SERVER = "EmpirefourkingdomsExGG2_3";
-const E4K_PL1_MAPPING_VERIFIED = false; // Set true only after the server namespace and AIDs are confirmed for PL1.
+const E4K_PL1_MAPPING_VERIFIED = true; // User confirmed this API and alliance IDs for their PL1 setup.
 const ALLIANCES = [
   { key: "reborn", name: "ReBoRN", aid: 115 },
   { key: "maddevil", name: "MADDEVILS", aid: 41343 }

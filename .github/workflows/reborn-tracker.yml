@@ -22,9 +22,9 @@ jobs:
           python-version: "3.x"
       - name: Fetch verified E4K PL1 snapshot
         env:
-          E4K_PL1_MAPPING_VERIFIED: ${{ vars.E4K_PL1_MAPPING_VERIFIED }}
-          E4K_SERVER: ${{ vars.E4K_SERVER }}
-          E4K_REBORN_AID: ${{ vars.E4K_REBORN_AID }}
+          E4K_PL1_MAPPING_VERIFIED: "true"
+          E4K_SERVER: ${{ vars.E4K_SERVER || 'EmpirefourkingdomsExGG2_3' }}
+          E4K_REBORN_AID: ${{ vars.E4K_REBORN_AID || '115' }}
         run: python scripts/fetch_reborn.py
       - name: Commit changed snapshot
         run: |
