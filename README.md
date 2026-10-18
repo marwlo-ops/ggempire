@@ -34,3 +34,7 @@ GitHub Actions deploys the static site to GitHub Pages. In **Settings → Pages*
 
 ## Disclaimer
 This is an independent fan project and is not affiliated with Goodgame Studios. Historical values cannot be reconstructed if they were never collected.
+
+
+## ReBoRN tracker integration
+The GGEmpire alliance page includes a ReBoRN snapshot tracker panel. It intentionally remains in a waiting state until the E4K mobile PL1 world mapping and alliance AID are independently confirmed. No demo player values or fabricated rankings are shown.
