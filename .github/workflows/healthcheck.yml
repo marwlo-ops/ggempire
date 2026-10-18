@@ -27,7 +27,7 @@ jobs:
         run: |
           grep -q 'player-profile-form' index.html
           grep -q 'intel-form' index.html
-          grep -q '5 * 60 * 1000' src/app.js
+          grep -Fq '5 * 60 * 1000' src/app.js
           grep -q 'EmpirefourkingdomsExGG2_3' src/app.js
 
       - name: Probe E4K alliance API
