@@ -36,3 +36,11 @@ The conversation history contains these identifiers from the `Empirefourkingdoms
 - The site therefore provides a local profile note (nickname and optional personal ID) only. It is explicitly **not verified**, does not sign in to the game, and does not unlock live stats/history. Values remain in browser localStorage and can be removed with “Odłącz profil”.
 - Never request or store game passwords, one-time codes, or session cookies. Implement official OAuth only if Goodgame Studios publishes or grants an authorized flow and documented scopes.
 - Live stats, alliance membership and history remain dependent on a documented, reachable API endpoint for E4K server namespace `EmpirefourkingdomsExGG2_3`; the GGE Tracker PL1 integration must not be assumed to apply to E4K.
+
+
+## E4K PL1 world monitor status
+- The UI includes a world-monitor dashboard for attack movements, activity signals, player/alliance renames and honor changes.
+- These panels are deliberately marked **not connected** until a source is verified for the mobile E4K PL1 world. The public GGE Tracker API documents Goodgame Empire desktop server data; do not assume it covers E4K.
+- The public `danadum/empire-api` project can connect to E4K game sockets, but its implementation expects operator credentials in environment variables and exposes a generic command endpoint. Do not call an untrusted hosted instance or send a player's credentials to it. If an authorized, safe source is established, build a restricted server-side collector with allowlisted read-only commands, secrets stored only server-side, rate limits, and a durable snapshot store.
+- Attack history and "who is active" are only possible if the source actually emits those events or exposes sufficiently frequent snapshots. Honor loss needs a baseline and later measurements; no historical values can be reconstructed if they were never collected.
+- No live attack, activity, rename, alliance-change, or honor-loss data is fabricated by this portal.
