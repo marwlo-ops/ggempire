@@ -11,7 +11,7 @@
 <div class="backdrop-glow glow-a"></div><div class="backdrop-glow glow-b"></div>
 <header class="site-header">
  <a class="brand" href="#home"><span class="brand-emblem">G<span>G</span></span><span class="brand-word">GGE<span>MPIRE</span><small>PL1 COMMUNITY HUB</small></span></a>
- <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#alliances">Sojusze</a><a href="#rankings">Rankingi</a><a href="#tools">Narzędzia</a></nav>
+ <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#alliances">Sojusze</a><a href="#rankings">Rankingi</a><a href="#intelligence">Wywiad</a><a href="#tools">Narzędzia</a></nav>
  <div class="header-actions"><span class="server-pill"><i></i> ŚWIAT PL1</span><button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">☰</button></div>
 </header>
 <main id="home">
@@ -40,6 +40,31 @@
  </section>
  <section class="section rankings-section" id="rankings"><div class="section-head"><div><div class="eyebrow">MIEJSCE MA ZNACZENIE</div><h2>Rankingi <span>i statystyki</span></h2><p>Rozwijamy centrum analityczne PL1 na bazie publicznego API i dostępnych historii.</p></div></div>
   <div class="feature-grid"><a class="feature-card" href="https://danadum.github.io/empire-rankings/" target="_blank" rel="noreferrer"><span class="feature-icon">♛</span><div><small>01 / RANKINGI WYDARZEŃ</small><h3>Eventy i wyniki</h3><p>Rankingi wydarzeń GGE i historia wyników w zewnętrznym narzędziu.</p></div><span class="feature-arrow">↗</span></a><a class="feature-card" href="https://gge-tracker.com/" target="_blank" rel="noreferrer"><span class="feature-icon blue-icon">⌁</span><div><small>02 / ANALITYKA</small><h3>Gracze i sojusze</h3><p>Potęga, łupy, sława, historia zmian i profile oparte o dane.</p></div><span class="feature-arrow">↗</span></a><a class="feature-card" href="https://noxam93.github.io/Reborn-/" target="_blank" rel="noreferrer"><span class="feature-icon red-icon">⚔</span><div><small>03 / REBORN</small><h3>Strona sojuszu</h3><p>Osobna przestrzeń Reborn — inspiracja dla naszej sekcji sojuszowej.</p></div><span class="feature-arrow">↗</span></a></div>
+ </section>
+ <section class="section intelligence-section" id="intelligence">
+  <div class="section-head"><div><div class="eyebrow">CENTRUM INFORMACJI DOWÓDCY</div><h2>Wywiad <span>i szpiegowanie</span></h2><p>Rejestruj raporty z rozpoznania w grze, porównuj cele i pilnuj aktualności informacji. Dane zapisują się lokalnie w tej przeglądarce.</p></div><span class="intel-local-pill">⌑ TYLKO TWOJA PRZEGLĄDARKA</span></div>
+  <div class="intel-summary">
+   <div class="intel-stat"><span>⌕</span><div><small>ZAPISANE RAPORTY</small><b id="intel-total">0</b></div></div>
+   <div class="intel-stat"><span>◷</span><div><small>AKTUALNE · DO 7 DNI</small><b id="intel-fresh">0</b></div></div>
+   <div class="intel-stat"><span>⚑</span><div><small>RÓŻNE CELE</small><b id="intel-targets">0</b></div></div>
+  </div>
+  <div class="intel-layout">
+   <form class="intel-form" id="intel-form">
+    <div class="intel-form-heading"><span class="intel-form-icon">⌖</span><div><h3>Dodaj raport</h3><p>Uzupełnij dane z własnego rozpoznania.</p></div></div>
+    <label for="intel-target">Cel: gracz lub sojusz</label><input id="intel-target" name="target" maxlength="70" placeholder="Np. MADDEVILS / nazwa gracza" required>
+    <div class="intel-form-row"><div><label for="intel-kind">Rodzaj celu</label><select id="intel-kind" name="kind"><option value="Sojusz">Sojusz</option><option value="Gracz">Gracz</option><option value="Zamek">Zamek</option></select></div><div><label for="intel-report-type">Raport</label><select id="intel-report-type" name="reportType"><option>Wojsko</option><option>Obrona zamku</option><option>Zasoby</option><option>Aktywność</option><option>Ogólny</option></select></div></div>
+    <div class="intel-form-row"><div><label for="intel-date">Data raportu</label><input id="intel-date" name="date" type="date" required></div><div><label for="intel-result">Wynik</label><select id="intel-result" name="result"><option value="Sukces">Sukces</option><option value="Częściowy">Częściowy</option><option value="Nieudany">Nieudany</option><option value="Nieznany">Nieznany</option></select></div></div>
+    <label for="intel-strength">Wojsko / siła (opcjonalnie)</label><input id="intel-strength" name="strength" maxlength="100" placeholder="Np. 12 000 obrońców, skład nieznany">
+    <label for="intel-notes">Notatki i szczegóły</label><textarea id="intel-notes" name="notes" rows="4" maxlength="1200" placeholder="Jednostki, narzędzia, zasoby, aktywność, źródło informacji…"></textarea>
+    <button class="button button-gold intel-save" type="submit">Zapisz raport <span>↗</span></button>
+    <p class="intel-privacy-note">Raporty są przechowywane w localStorage tej przeglądarki. Nie są wysyłane do API ani na serwer.</p>
+   </form>
+   <div class="intel-archive">
+    <div class="intel-archive-head"><div><h3>Archiwum wywiadu</h3><p>Najświeższe raporty na górze.</p></div><span class="intel-shield">♜</span></div>
+    <div class="intel-filters"><input id="intel-filter" type="search" placeholder="Filtruj cele i notatki…" aria-label="Filtruj raporty"><select id="intel-fresh-filter" aria-label="Filtr aktualności"><option value="all">Wszystkie raporty</option><option value="fresh">Aktualne · do 7 dni</option><option value="stale">Nieaktualne · ponad 7 dni</option></select></div>
+    <div id="intel-list" class="intel-list" aria-live="polite"><div class="intel-empty"><span>⌕</span><b>Brak raportów</b><p>Dodaj pierwszy raport, a zobaczysz go tutaj.</p></div></div>
+   </div>
+  </div>
  </section>
  <section class="section tools-section" id="tools"><div class="section-head"><div><div class="eyebrow">ARSENAŁ DOWÓDCY</div><h2>Narzędzia <span>i społeczność</span></h2><p>Najważniejsze zasoby dla graczy PL1 zebrane w jednym miejscu.</p></div></div>
  <div class="tools-grid"><a class="tool-link" href="https://generalsforum.com/" target="_blank" rel="noreferrer"><span>⌘</span><div><b>Generals Forum</b><small>Narzędzia i społeczność GGE</small></div><i>↗</i></a><a class="tool-link" href="https://communityhub.goodgamestudios.com/" target="_blank" rel="noreferrer"><span>✦</span><div><b>Goodgame Community</b><small>Oficjalne forum i komunikaty</small></div><i>↗</i></a><a class="tool-link" href="https://gge.t8.pl/md/" target="_blank" rel="noreferrer"><span>◆</span><div><b>MadDevil Hub</b><small>Zasoby i informacje sojuszu</small></div><i>↗</i></a><a class="tool-link" href="https://docs.gge-tracker.com/" target="_blank" rel="noreferrer"><span>⌬</span><div><b>Dokumentacja API</b><small>Źródło danych i integracji</small></div><i>↗</i></a></div>
