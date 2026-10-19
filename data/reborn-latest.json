@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T02:12:02.286477+00:00",
+  "fetched_at": "2026-10-19T02:49:16.468386+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -201,7 +201,7 @@
     "1915987": {
       "honor": 596,
       "might": null,
-      "loot_current": 341667782
+      "loot_current": 307501004
     },
     "332746": {
       "honor": 1716,
@@ -266,7 +266,7 @@
     "854121": {
       "honor": 1371,
       "might": null,
-      "loot_current": 17883438
+      "loot_current": 16631597
     },
     "230756": {
       "honor": 1124,
@@ -704,7 +704,7 @@
       "name": "Piotus",
       "honor": 1124,
       "might": null,
-      "loot_current": 386065399
+      "loot_current": 347458859
     },
     "1936378": {
       "oid": "1936378",
@@ -788,7 +788,7 @@
       "name": "luki",
       "honor": 632,
       "might": null,
-      "loot_current": 13248321
+      "loot_current": 12453422
     }
   },
   "players": [
@@ -1161,7 +1161,7 @@
       "name": "Piotus",
       "honor": 1124,
       "might": null,
-      "loot_current": 386065399
+      "loot_current": 347458859
     },
     {
       "oid": "1936378",
@@ -1245,7 +1245,7 @@
       "name": "luki",
       "honor": 632,
       "might": null,
-      "loot_current": 13248321
+      "loot_current": 12453422
     }
   ]
 }
