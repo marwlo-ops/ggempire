@@ -32,8 +32,8 @@ jobs:
           PL1_SCAN_ALLIANCES: "50"
           PL1_SCAN_DELAY: "0.4"
         run: python scripts/scan_pl1.py
-      - name: Commit static PL1 databases
-        if: success()
+      - name: Commit scan status and any successful snapshots
+        if: always()
         run: |
           if git diff --quiet -- data/alliances_pl1.json data/players_pl1.json data/history_pl1.json data/scan_pl1_status.json; then
             echo "No PL1 database changes."
