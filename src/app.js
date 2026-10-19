@@ -315,3 +315,43 @@ async function loadRebornTracker() {
     document.getElementById("tracker-note").textContent = "Nie udało się odczytać archiwum snapshotów (" + error.message + "). Ostatni zapisany plik nie jest nadpisywany przez błąd odczytu.";
   }
 }
+
+
+async function loadServerAllianceRanking() {
+  const body = document.getElementById("server-alliance-ranking");
+  const status = document.getElementById("server-ranking-status");
+  if (!body || !status) return;
+  status.textContent = "Pobieranie rankingu sojuszy z API…";
+  try {
+    const url = `${E4K_API_BASE}/${E4K_SERVER}/hgh/%22LT%22:11,%22LID%22:1,%22SV%22:%221%22`;
+    const response = await fetch(url, {headers:{Accept:"application/json"}, cache:"no-store"});
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    const payload = await response.json();
+    if (String(payload.return_code) !== "0") throw new Error(payload.error || "API nie zwróciło poprawnego rankingu");
+    const content = payload.content || {};
+    let rows = content.L || content.A || content.alliances || content.list || [];
+    if (!Array.isArray(rows) && typeof rows === "object") rows = Object.values(rows);
+    if (!Array.isArray(rows) || !rows.length) throw new Error("Odpowiedź nie zawiera listy rankingowej");
+    body.replaceChildren();
+    rows.slice(0,100).forEach((item,index)=>{
+      const row=document.createElement("tr");
+      const values=[
+        index+1,
+        firstValue(item,["N","name","NAME","AN"]) || "—",
+        firstValue(item,["AID","aid","ID","id"]) ?? "—",
+        firstValue(item,["P","PO","PW","power","Power","S"]) ?? "—",
+        firstValue(item,["MC","MEM","memberCount","membersCount","C"]) ?? "—"
+      ];
+      values.forEach((value,i)=>{const cell=document.createElement("td");cell.textContent=i===0?String(value):String(value);row.appendChild(cell)});
+      body.appendChild(row);
+    });
+    status.textContent = "Pobrano " + Math.min(rows.length,100) + " pozycji · " + new Date().toLocaleTimeString("pl-PL",{hour:"2-digit",minute:"2-digit"});
+  } catch(error) {
+    status.textContent = "Ranking niedostępny: " + error.message + ".";
+    const row=document.createElement("tr"), cell=document.createElement("td");
+    cell.colSpan=5;cell.className="tracker-empty";cell.textContent="API nie zwróciło listy rankingu w oczekiwanym formacie. Szczegóły: "+error.message;
+    row.appendChild(cell);body.replaceChildren(row);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => { loadServerAllianceRanking(); window.setInterval(() => { if (document.visibilityState === 'visible') loadServerAllianceRanking(); }, 5 * 60 * 1000); });
