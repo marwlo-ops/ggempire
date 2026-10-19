@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T20:44:05.805967+00:00",
+  "fetched_at": "2026-10-19T21:12:17.896905+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -222,7 +222,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366766825
+      "loot_current": 366855807
     },
     "298959": {
       "name": "CZARA",
@@ -282,11 +282,11 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110776410
+      "loot_current": 110918834
     },
     "173914": {
       "name": "IllegalBlonde",
-      "honor": 1024,
+      "honor": 1015,
       "might": null,
       "loot_current": 43152240
     },
@@ -298,9 +298,9 @@
     },
     "53340": {
       "name": "szaft",
-      "honor": 2120,
+      "honor": 2078,
       "might": null,
-      "loot_current": 362333065
+      "loot_current": 362337606
     },
     "642004": {
       "name": "Sajmon W",
@@ -346,15 +346,15 @@
     },
     "1751146": {
       "name": "Tottenham 1882",
-      "honor": 1648,
+      "honor": 1430,
       "might": null,
       "loot_current": 8827293
     },
     "273782": {
       "name": "Dark_Imperator",
-      "honor": 1814,
+      "honor": 1615,
       "might": null,
-      "loot_current": 2392918180
+      "loot_current": 2393906410
     },
     "1950953": {
       "name": "oj Pawel",
@@ -372,7 +372,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 181801584
+      "loot_current": 182007541
     },
     "644336": {
       "name": "FRYDKA",
@@ -382,7 +382,7 @@
     },
     "1417454": {
       "name": "Bolesław chrobr",
-      "honor": 1444,
+      "honor": 1575,
       "might": null,
       "loot_current": 71107723
     },
@@ -720,14 +720,14 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110918834
+      "loot_current": 110988361
     },
     "173914": {
       "oid": "173914",
       "name": "IllegalBlonde",
       "honor": 1015,
       "might": null,
-      "loot_current": 43152240
+      "loot_current": 43238699
     },
     "235098": {
       "oid": "235098",
@@ -802,9 +802,9 @@
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1615,
+      "honor": 1961,
       "might": null,
-      "loot_current": 2393906410
+      "loot_current": 2394311108
     },
     "1950953": {
       "oid": "1950953",
@@ -1177,14 +1177,14 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110918834
+      "loot_current": 110988361
     },
     {
       "oid": "173914",
       "name": "IllegalBlonde",
       "honor": 1015,
       "might": null,
-      "loot_current": 43152240
+      "loot_current": 43238699
     },
     {
       "oid": "235098",
@@ -1259,9 +1259,9 @@
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1615,
+      "honor": 1961,
       "might": null,
-      "loot_current": 2393906410
+      "loot_current": 2394311108
     },
     {
       "oid": "1950953",
