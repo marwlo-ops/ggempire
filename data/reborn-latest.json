@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T00:57:51.045665+00:00",
+  "fetched_at": "2026-10-19T01:34:43.623384+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -216,7 +216,7 @@
     "1774409": {
       "honor": 1071,
       "might": null,
-      "loot_current": 46779592
+      "loot_current": 42101633
     },
     "1818825": {
       "honor": 583,
@@ -261,7 +261,7 @@
     "1259980": {
       "honor": 740,
       "might": null,
-      "loot_current": 3064304
+      "loot_current": 2972375
     },
     "854121": {
       "honor": 1371,
@@ -585,7 +585,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 407475053
+      "loot_current": 366727548
     },
     "298959": {
       "oid": "298959",
@@ -753,7 +753,7 @@
       "name": "VanKord 2.0",
       "honor": 980,
       "might": null,
-      "loot_current": 4266608499
+      "loot_current": 3839947649
     },
     "1679328": {
       "oid": "1679328",
@@ -1042,7 +1042,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 407475053
+      "loot_current": 366727548
     },
     {
       "oid": "298959",
@@ -1210,7 +1210,7 @@
       "name": "VanKord 2.0",
       "honor": 980,
       "might": null,
-      "loot_current": 4266608499
+      "loot_current": 3839947649
     },
     {
       "oid": "1679328",
