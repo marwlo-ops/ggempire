@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T16:16:31.034867+00:00",
+  "fetched_at": "2026-10-19T17:02:45.859173+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -551,9 +551,9 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1599,
+      "honor": 1805,
       "might": null,
-      "loot_current": 1650126246
+      "loot_current": 1656938508
     },
     "1920035": {
       "oid": "1920035",
@@ -854,9 +854,9 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1599,
+      "honor": 1805,
       "might": null,
-      "loot_current": 1650126246
+      "loot_current": 1656938508
     },
     {
       "oid": "1920035",
