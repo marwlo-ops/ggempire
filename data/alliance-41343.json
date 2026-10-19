@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T18:55:21.023708+00:00",
+  "fetched_at": "2026-10-19T19:28:23.539047+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -36,7 +36,7 @@
       "name": "NOXAM",
       "honor": 1196,
       "might": null,
-      "loot_current": 580396162
+      "loot_current": 580700698
     },
     "1762193": {
       "name": "Tomovsky",
@@ -132,7 +132,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 169157319
+      "loot_current": 170033428
     },
     "1808763": {
       "name": "RoB",
@@ -299,9 +299,9 @@
     "941700": {
       "oid": "941700",
       "name": "NOXAM",
-      "honor": 1196,
+      "honor": 1119,
       "might": null,
-      "loot_current": 580700698
+      "loot_current": 580890541
     },
     "1762193": {
       "oid": "1762193",
@@ -392,7 +392,7 @@
       "name": "SG-1",
       "honor": 1458,
       "might": null,
-      "loot_current": 717324736
+      "loot_current": 717724135
     },
     "1013972": {
       "oid": "1013972",
@@ -602,9 +602,9 @@
     {
       "oid": "941700",
       "name": "NOXAM",
-      "honor": 1196,
+      "honor": 1119,
       "might": null,
-      "loot_current": 580700698
+      "loot_current": 580890541
     },
     {
       "oid": "1762193",
@@ -695,7 +695,7 @@
       "name": "SG-1",
       "honor": 1458,
       "might": null,
-      "loot_current": 717324736
+      "loot_current": 717724135
     },
     {
       "oid": "1013972",
