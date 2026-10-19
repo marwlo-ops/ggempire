@@ -34,13 +34,13 @@ jobs:
         run: python scripts/fetch_reborn.py
       - name: Commit changed snapshots
         run: |
-          if git diff --quiet -- data/reborn-latest.json data/alliance-41343.json data/alliance-ranking.json; then
+          if git diff --quiet -- data/reborn-latest.json data/alliance-41343.json; then
             echo "No snapshot changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reborn-latest.json data/alliance-41343.json data/alliance-ranking.json
+          git add data/reborn-latest.json data/alliance-41343.json
           git commit -m "chore: refresh alliance tracker snapshots"
           git pull --rebase origin main
           git push
