@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T06:04:19.430096+00:00",
+  "fetched_at": "2026-10-19T07:02:47.315575+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -81,7 +81,7 @@
     "1270327": {
       "honor": 749,
       "might": null,
-      "loot_current": 69781572
+      "loot_current": 62803415
     },
     "340001": {
       "honor": 954,
@@ -121,7 +121,7 @@
     "1598120": {
       "honor": 1622,
       "might": null,
-      "loot_current": 182567959
+      "loot_current": 164311163
     },
     "983615": {
       "honor": 2444,
@@ -169,9 +169,9 @@
       "loot_current": 189547190
     },
     "1345366": {
-      "honor": 1576,
+      "honor": 1603,
       "might": null,
-      "loot_current": 48038381
+      "loot_current": 48038389
     },
     "146502": {
       "honor": 0,
@@ -196,7 +196,7 @@
     "271439": {
       "honor": 1701,
       "might": null,
-      "loot_current": 297208408
+      "loot_current": 267487567
     },
     "1915987": {
       "honor": 596,
@@ -396,7 +396,7 @@
       "name": ".Wini7.",
       "honor": 1846,
       "might": null,
-      "loot_current": 692511558
+      "loot_current": 623260402
     },
     "1957380": {
       "oid": "1957380",
@@ -550,7 +550,7 @@
       "name": "PREZES785",
       "honor": 931,
       "might": null,
-      "loot_current": 334844
+      "loot_current": 331496
     },
     "535240": {
       "oid": "535240",
@@ -564,7 +564,7 @@
       "name": "Andrzejklimek83",
       "honor": 1603,
       "might": null,
-      "loot_current": 48038389
+      "loot_current": 48075063
     },
     "146502": {
       "oid": "146502",
@@ -655,7 +655,7 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 122935452
+      "loot_current": 110641907
     },
     "173914": {
       "oid": "173914",
@@ -674,9 +674,9 @@
     "53340": {
       "oid": "53340",
       "name": "szaft",
-      "honor": 2066,
+      "honor": 2120,
       "might": null,
-      "loot_current": 402577952
+      "loot_current": 362333065
     },
     "642004": {
       "oid": "642004",
@@ -853,7 +853,7 @@
       "name": ".Wini7.",
       "honor": 1846,
       "might": null,
-      "loot_current": 692511558
+      "loot_current": 623260402
     },
     {
       "oid": "1957380",
@@ -1007,7 +1007,7 @@
       "name": "PREZES785",
       "honor": 931,
       "might": null,
-      "loot_current": 334844
+      "loot_current": 331496
     },
     {
       "oid": "535240",
@@ -1021,7 +1021,7 @@
       "name": "Andrzejklimek83",
       "honor": 1603,
       "might": null,
-      "loot_current": 48038389
+      "loot_current": 48075063
     },
     {
       "oid": "146502",
@@ -1112,7 +1112,7 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 122935452
+      "loot_current": 110641907
     },
     {
       "oid": "173914",
@@ -1131,9 +1131,9 @@
     {
       "oid": "53340",
       "name": "szaft",
-      "honor": 2066,
+      "honor": 2120,
       "might": null,
-      "loot_current": 402577952
+      "loot_current": 362333065
     },
     {
       "oid": "642004",
