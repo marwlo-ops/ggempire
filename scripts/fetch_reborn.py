@@ -10,66 +10,77 @@ ALLIANCES = [(115, "reborn-latest.json", "ReBoRN"), (41343, "alliance-41343.json
 
 
 def fetch_server_alliance_ranking(server, base):
-    """Fetch the server alliance leaderboard via hgh and persist a validated snapshot."""
-    params = json.dumps({"LT": 11, "LID": 1, "SV": "5"}, separators=(",", ":"))
+    """Fetch hgh ranking; preserve raw rows and save diagnostics without inventing fields."""
     from urllib.parse import quote
-    url = f"{base}/{server}/hgh/{quote(params, safe='')}"
+    params = {"LT": 11, "LID": 1, "SV": "5"}
+    encoded = quote(json.dumps(params, separators=(",", ":")), safe="")
+    url = f"{base}/{server}/hgh/{encoded}"
     req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "GGEmpire-ReadOnly-Tracker/1.0"})
-    with urllib.request.urlopen(req, timeout=25) as response:
-        payload = json.loads(response.read().decode("utf-8"))
-    if str(payload.get("return_code")) != "0":
-        raise RuntimeError(f"hgh ranking API error: {payload.get('error', payload.get('return_code'))}")
-    content = payload.get("content") or {}
+    output = DATA / "alliance-ranking.json"
+    try:
+        with urllib.request.urlopen(req, timeout=25) as response:
+            raw_text = response.read().decode("utf-8")
+        payload = json.loads(raw_text)
+    except Exception as exc:
+        debug = {"verified": False, "source": url, "server": server, "parameters": params,
+                 "fetched_at": datetime.now(timezone.utc).isoformat(), "error": str(exc)}
+        DATA.mkdir(parents=True, exist_ok=True)
+        (DATA / "alliance-ranking-debug.json").write_text(json.dumps(debug, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        raise RuntimeError(f"hgh request/JSON failed; raw diagnostic saved to data/alliance-ranking-debug.json: {exc}") from exc
+
+    content = payload.get("content") if isinstance(payload, dict) else None
     rows = content.get("L") if isinstance(content, dict) else None
     if isinstance(rows, dict):
         rows = list(rows.values())
-    if not isinstance(rows, list) or not rows:
-        raise RuntimeError("hgh response has no non-empty content.L list; existing ranking JSON preserved")
+    if not isinstance(rows, list):
+        rows = []
+    if not rows or (isinstance(payload, dict) and str(payload.get("return_code")) != "0"):
+        debug = {"verified": False, "source": url, "server": server, "parameters": params,
+                 "fetched_at": datetime.now(timezone.utc).isoformat(),
+                 "error": payload.get("error") if isinstance(payload, dict) else "Unexpected response shape",
+                 "debug_raw": payload}
+        DATA.mkdir(parents=True, exist_ok=True)
+        (DATA / "alliance-ranking-debug.json").write_text(json.dumps(debug, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        raise RuntimeError("hgh returned no usable content.L list; raw response saved to data/alliance-ranking-debug.json")
+
     normalized = []
     for index, row in enumerate(rows, 1):
-        item = row
-        rank = index
-        score = None
-        if isinstance(row, list):
-            objects = [value for value in row if isinstance(value, dict)]
-            if objects:
-                item = objects[-1]
-            else:
-                # Preserve unknown tuple layouts instead of inventing field meanings.
-                item = {"raw": row}
-        if not isinstance(item, dict):
-            item = {"raw": item}
+        # Keep every original row. Only extract fields when a row/object explicitly exposes them.
+        candidates = []
+        if isinstance(row, dict):
+            candidates = [row]
+        elif isinstance(row, list):
+            candidates = [value for value in row if isinstance(value, dict)]
+        item = candidates[-1] if candidates else {}
         def pick(*keys):
             for key in keys:
                 value = item.get(key)
                 if value is not None and value != "":
                     return value
             return None
-        rank_value = pick("R", "rank", "RANK", "POS", "position")
-        if rank_value is not None:
-            try: rank = int(rank_value)
-            except (TypeError, ValueError): pass
-        score = pick("PP", "P", "PO", "PW", "MP", "power", "Power", "S", "score", "points")
+        rank = pick("R", "rank", "RANK", "POS", "position")
+        try:
+            rank = int(rank) if rank is not None else index
+        except (TypeError, ValueError):
+            rank = index
         normalized.append({
             "rank": rank,
             "name": pick("N", "name", "NAME", "AN", "alliance_name"),
             "aid": pick("AID", "aid", "ID", "id", "allianceId"),
-            "power": score,
+            "power": pick("PP", "P", "PO", "PW", "MP", "power", "Power", "S", "score", "points"),
             "member_count": pick("MC", "NM", "MEM", "MCount", "memberCount", "membersCount", "C"),
             "raw": row,
         })
     snapshot = {
-        "verified": True, "source": url, "server": server,
-        "ranking_type": "server_alliance", "parameters": {"LT": 11, "LID": 1, "SV": "5"},
-        "fetched_at": datetime.now(timezone.utc).isoformat(),
-        "count": len(normalized), "alliances": normalized,
+        "verified": True, "source": url, "server": server, "ranking_type": "server_alliance",
+        "parameters": params, "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "count": len(normalized), "alliances": normalized, "debug_raw": payload,
     }
-    output = DATA / "alliance-ranking.json"
     DATA.mkdir(parents=True, exist_ok=True)
     tmp = output.with_suffix(".tmp")
     tmp.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
     tmp.replace(output)
-    print(f"hgh: saved {len(normalized)} alliance ranking rows to data/alliance-ranking.json")
+    print(f"hgh: saved {len(normalized)} raw alliance ranking rows to data/alliance-ranking.json")
 
 def fetch(aid, filename, fallback_name, server, base):
     url = f'{base}/{server}/ain/%22AID%22:{aid}'
