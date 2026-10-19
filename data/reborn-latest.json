@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T18:11:02.500623+00:00",
+  "fetched_at": "2026-10-19T18:55:20.762061+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -222,7 +222,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366727548
+      "loot_current": 366766634
     },
     "298959": {
       "name": "CZARA",
@@ -262,9 +262,9 @@
     },
     "1818825": {
       "name": "Toruń główny",
-      "honor": 683,
+      "honor": 890,
       "might": null,
-      "loot_current": 71522752
+      "loot_current": 71646659
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -346,9 +346,9 @@
     },
     "1751146": {
       "name": "Tottenham 1882",
-      "honor": 1483,
+      "honor": 1570,
       "might": null,
-      "loot_current": 7672490
+      "loot_current": 7672505
     },
     "273782": {
       "name": "Dark_Imperator",
@@ -496,7 +496,7 @@
       "name": "MTA",
       "honor": 1911,
       "might": null,
-      "loot_current": 360449
+      "loot_current": 356845
     },
     "1270327": {
       "oid": "1270327",
@@ -699,7 +699,7 @@
       "name": "Toruń główny",
       "honor": 890,
       "might": null,
-      "loot_current": 71646659
+      "loot_current": 71647585
     },
     "1878344": {
       "oid": "1878344",
@@ -797,7 +797,7 @@
       "name": "Tottenham 1882",
       "honor": 1570,
       "might": null,
-      "loot_current": 7672505
+      "loot_current": 8827293
     },
     "273782": {
       "oid": "273782",
@@ -839,7 +839,7 @@
       "name": "Bolesław chrobr",
       "honor": 1273,
       "might": null,
-      "loot_current": 69103184
+      "loot_current": 69172691
     },
     "1847009": {
       "oid": "1847009",
@@ -953,7 +953,7 @@
       "name": "MTA",
       "honor": 1911,
       "might": null,
-      "loot_current": 360449
+      "loot_current": 356845
     },
     {
       "oid": "1270327",
@@ -1156,7 +1156,7 @@
       "name": "Toruń główny",
       "honor": 890,
       "might": null,
-      "loot_current": 71646659
+      "loot_current": 71647585
     },
     {
       "oid": "1878344",
@@ -1254,7 +1254,7 @@
       "name": "Tottenham 1882",
       "honor": 1570,
       "might": null,
-      "loot_current": 7672505
+      "loot_current": 8827293
     },
     {
       "oid": "273782",
@@ -1296,7 +1296,7 @@
       "name": "Bolesław chrobr",
       "honor": 1273,
       "might": null,
-      "loot_current": 69103184
+      "loot_current": 69172691
     },
     {
       "oid": "1847009",
