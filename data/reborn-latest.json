@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T03:27:11.554486+00:00",
+  "fetched_at": "2026-10-19T04:08:34.414348+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -16,7 +16,7 @@
     "1806100": {
       "honor": 1196,
       "might": null,
-      "loot_current": 4665128
+      "loot_current": 4478523
     },
     "1848844": {
       "honor": 1845,
@@ -66,7 +66,7 @@
     "26911": {
       "honor": 995,
       "might": null,
-      "loot_current": 145040654
+      "loot_current": 130536589
     },
     "145184": {
       "honor": 1082,
@@ -296,12 +296,12 @@
     "273782": {
       "honor": 1602,
       "might": null,
-      "loot_current": 2628775231
+      "loot_current": 2392185460
     },
     "1950953": {
       "honor": 1294,
       "might": null,
-      "loot_current": 196834235
+      "loot_current": 177150811
     },
     "1295460": {
       "honor": 980,
@@ -354,7 +354,7 @@
       "name": "grzes83",
       "honor": 1845,
       "might": null,
-      "loot_current": 816272032
+      "loot_current": 734644829
     },
     "1255555": {
       "oid": "1255555",
@@ -452,7 +452,7 @@
       "name": "Napoleon",
       "honor": 1436,
       "might": null,
-      "loot_current": 178411806
+      "loot_current": 160570625
     },
     "638767": {
       "oid": "638767",
@@ -466,7 +466,7 @@
       "name": "Wojtas2137",
       "honor": 2015,
       "might": null,
-      "loot_current": 55156780
+      "loot_current": 49641102
     },
     "1834928": {
       "oid": "1834928",
@@ -564,7 +564,7 @@
       "name": "Andrzejklimek83",
       "honor": 1480,
       "might": null,
-      "loot_current": 53360068
+      "loot_current": 48037824
     },
     "146502": {
       "oid": "146502",
@@ -613,7 +613,7 @@
       "name": "-LUCEK-",
       "honor": 1716,
       "might": null,
-      "loot_current": 458976894
+      "loot_current": 413079205
     },
     "888925": {
       "oid": "888925",
@@ -811,7 +811,7 @@
       "name": "grzes83",
       "honor": 1845,
       "might": null,
-      "loot_current": 816272032
+      "loot_current": 734644829
     },
     {
       "oid": "1255555",
@@ -909,7 +909,7 @@
       "name": "Napoleon",
       "honor": 1436,
       "might": null,
-      "loot_current": 178411806
+      "loot_current": 160570625
     },
     {
       "oid": "638767",
@@ -923,7 +923,7 @@
       "name": "Wojtas2137",
       "honor": 2015,
       "might": null,
-      "loot_current": 55156780
+      "loot_current": 49641102
     },
     {
       "oid": "1834928",
@@ -1021,7 +1021,7 @@
       "name": "Andrzejklimek83",
       "honor": 1480,
       "might": null,
-      "loot_current": 53360068
+      "loot_current": 48037824
     },
     {
       "oid": "146502",
@@ -1070,7 +1070,7 @@
       "name": "-LUCEK-",
       "honor": 1716,
       "might": null,
-      "loot_current": 458976894
+      "loot_current": 413079205
     },
     {
       "oid": "888925",
