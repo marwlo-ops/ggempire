@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T02:49:16.468386+00:00",
+  "fetched_at": "2026-10-19T03:27:11.554486+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -271,7 +271,7 @@
     "230756": {
       "honor": 1124,
       "might": null,
-      "loot_current": 386065399
+      "loot_current": 347458859
     },
     "1936378": {
       "honor": 1150,
@@ -331,7 +331,7 @@
     "173692": {
       "honor": 632,
       "might": null,
-      "loot_current": 13248321
+      "loot_current": 12453422
     }
   },
   "players_by_oid": {
@@ -347,7 +347,7 @@
       "name": "kiler171",
       "honor": 1196,
       "might": null,
-      "loot_current": 4665128
+      "loot_current": 4478523
     },
     "1848844": {
       "oid": "1848844",
@@ -417,7 +417,7 @@
       "name": "Vortex",
       "honor": 995,
       "might": null,
-      "loot_current": 145040654
+      "loot_current": 130536589
     },
     "145184": {
       "oid": "145184",
@@ -739,14 +739,14 @@
       "name": "Dark_Imperator",
       "honor": 1602,
       "might": null,
-      "loot_current": 2628775231
+      "loot_current": 2392185460
     },
     "1950953": {
       "oid": "1950953",
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 196834235
+      "loot_current": 177150811
     },
     "1295460": {
       "oid": "1295460",
@@ -804,7 +804,7 @@
       "name": "kiler171",
       "honor": 1196,
       "might": null,
-      "loot_current": 4665128
+      "loot_current": 4478523
     },
     {
       "oid": "1848844",
@@ -874,7 +874,7 @@
       "name": "Vortex",
       "honor": 995,
       "might": null,
-      "loot_current": 145040654
+      "loot_current": 130536589
     },
     {
       "oid": "145184",
@@ -1196,14 +1196,14 @@
       "name": "Dark_Imperator",
       "honor": 1602,
       "might": null,
-      "loot_current": 2628775231
+      "loot_current": 2392185460
     },
     {
       "oid": "1950953",
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 196834235
+      "loot_current": 177150811
     },
     {
       "oid": "1295460",
