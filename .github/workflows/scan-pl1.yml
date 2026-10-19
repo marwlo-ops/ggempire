@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: pl1-server-scan
+  group: ggempire-data-writers
   cancel-in-progress: false
 
 jobs:
