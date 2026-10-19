@@ -73,3 +73,6 @@
 .server-ranking-table-wrap{overflow:auto;max-height:620px}
 .server-ranking-table-wrap table{min-width:560px;width:100%}
 @media(max-width:600px){.server-ranking-card{padding:14px;margin:16px 0}.server-ranking-head{display:block}.server-ranking-head .alliance-tag{display:inline-block;margin-top:10px}.tracker-switch-btn{flex:1}}
+
+/* Generals Forum calendar source */
+.calendar-source-link{margin-top:10px;display:inline-flex}.calendar-source-panel{display:flex;align-items:flex-start;gap:18px;padding:25px;border:1px solid #e5bd7233;border-radius:14px;background:linear-gradient(125deg,#e5bd7210,#ffffff04);margin:22px 0}.calendar-source-panel-icon{width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;border-radius:12px;background:#e5bd7215;font-size:25px}.calendar-source-panel h3{margin:2px 0 9px;font:700 17px Manrope,sans-serif}.calendar-source-panel p{margin:0 0 12px;color:var(--muted);font-size:12px;line-height:1.8}.calendar-source-panel a{font-size:12px;font-weight:700;color:var(--gold2)}.calendar-source-panel a:hover{text-decoration:underline}.calendar-note{display:flex;gap:10px;align-items:flex-start}.calendar-note p{font-size:11px;line-height:1.8;color:var(--muted)}@media(max-width:600px){.calendar-source-panel{padding:18px;gap:12px}.calendar-source-panel-icon{width:42px;height:42px;flex-basis:42px}}
