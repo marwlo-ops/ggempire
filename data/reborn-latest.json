@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T05:28:04.476429+00:00",
+  "fetched_at": "2026-10-19T06:04:19.430096+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -169,9 +169,9 @@
       "loot_current": 189547190
     },
     "1345366": {
-      "honor": 1533,
+      "honor": 1576,
       "might": null,
-      "loot_current": 48038373
+      "loot_current": 48038381
     },
     "146502": {
       "honor": 0,
@@ -211,7 +211,7 @@
     "888925": {
       "honor": 1660,
       "might": null,
-      "loot_current": 3162129
+      "loot_current": 3067265
     },
     "1774409": {
       "honor": 1071,
@@ -438,7 +438,7 @@
       "name": "maksik",
       "honor": 749,
       "might": null,
-      "loot_current": 69781572
+      "loot_current": 62803415
     },
     "340001": {
       "oid": "340001",
@@ -494,7 +494,7 @@
       "name": "PremierPL",
       "honor": 1622,
       "might": null,
-      "loot_current": 182567959
+      "loot_current": 164311163
     },
     "983615": {
       "oid": "983615",
@@ -562,9 +562,9 @@
     "1345366": {
       "oid": "1345366",
       "name": "Andrzejklimek83",
-      "honor": 1576,
+      "honor": 1603,
       "might": null,
-      "loot_current": 48038381
+      "loot_current": 48038389
     },
     "146502": {
       "oid": "146502",
@@ -599,7 +599,7 @@
       "name": "Gerg",
       "honor": 1701,
       "might": null,
-      "loot_current": 297208408
+      "loot_current": 267487567
     },
     "1915987": {
       "oid": "1915987",
@@ -895,7 +895,7 @@
       "name": "maksik",
       "honor": 749,
       "might": null,
-      "loot_current": 69781572
+      "loot_current": 62803415
     },
     {
       "oid": "340001",
@@ -951,7 +951,7 @@
       "name": "PremierPL",
       "honor": 1622,
       "might": null,
-      "loot_current": 182567959
+      "loot_current": 164311163
     },
     {
       "oid": "983615",
@@ -1019,9 +1019,9 @@
     {
       "oid": "1345366",
       "name": "Andrzejklimek83",
-      "honor": 1576,
+      "honor": 1603,
       "might": null,
-      "loot_current": 48038381
+      "loot_current": 48038389
     },
     {
       "oid": "146502",
@@ -1056,7 +1056,7 @@
       "name": "Gerg",
       "honor": 1701,
       "might": null,
-      "loot_current": 297208408
+      "loot_current": 267487567
     },
     {
       "oid": "1915987",
