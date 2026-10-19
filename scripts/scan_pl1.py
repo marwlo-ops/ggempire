@@ -46,7 +46,7 @@ def content_of(payload):
 def rows_from(payload):
     content = content_of(payload)
     if isinstance(content, dict):
-        for key in ("L", "A", "M", "ML", "alliances", "items", "R"):
+        for key in ("L", "A", "M", "ML", "alliances", "items", "R", "D", "DATA"):
             value = content.get(key)
             if isinstance(value, list):
                 return value
@@ -80,8 +80,8 @@ def normalize_rank_row(row, rank):
     item = candidates[-1] if candidates else {}
     return {
         "rank": first(item, ("R", "rank", "RANK", "POS", "position")) or rank,
-        "aid": first(item, ("AID", "aid", "allianceId", "alliance_id")),
-        "name": first(item, ("AN", "N", "name", "NAME", "alliance_name")),
+        "aid": first(item, ("AID", "A10", "aid", "allianceId", "alliance_id")),
+        "name": first(item, ("AN", "N", "name", "NAME", "alliance_name", "ALN")),
         "power": first(item, ("PP", "P", "PO", "PW", "MP", "power", "Power", "score", "points")),
         "member_count": first(item, ("MC", "NM", "MEM", "memberCount", "membersCount", "C")),
         "raw": row,
@@ -102,7 +102,7 @@ def get_aid(row):
 def alliance_detail(aid):
     # Keep the documented AID form first; try the legacy A10 shape only if needed.
     last_error = None
-    for params in ({"AID": int(aid)}, {"A10": int(aid)}):
+    for params in ({"A10": int(aid)}, {"AID": int(aid)}):
         try:
             payload = api_get("ain", params)
             if isinstance(payload, dict) and str(payload.get("return_code")) == "0" and content_of(payload):
