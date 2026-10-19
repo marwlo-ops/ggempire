@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: alliance-tracker-snapshot
+  group: ggempire-data-writers
   cancel-in-progress: false
 
 jobs:
