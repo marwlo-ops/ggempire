@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T20:05:22.233155+00:00",
+  "fetched_at": "2026-10-19T20:44:05.977041+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -112,9 +112,9 @@
     },
     "1299720": {
       "name": "SG-1",
-      "honor": 1458,
+      "honor": 1525,
       "might": null,
-      "loot_current": 717724135
+      "loot_current": 718049228
     },
     "1013972": {
       "name": "Theo",
@@ -204,7 +204,7 @@
       "name": "قطط المحاربين",
       "honor": 904,
       "might": null,
-      "loot_current": 1050793
+      "loot_current": 1029777
     },
     "1667373": {
       "name": "Vanula",
@@ -252,7 +252,7 @@
       "name": "Pomidorek",
       "honor": 1613,
       "might": null,
-      "loot_current": 1656938508
+      "loot_current": 1669020374
     },
     "1920035": {
       "name": "eDuke",
@@ -390,9 +390,9 @@
     "1299720": {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1525,
+      "honor": 1675,
       "might": null,
-      "loot_current": 718049228
+      "loot_current": 718655842
     },
     "1013972": {
       "oid": "1013972",
@@ -551,9 +551,9 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1613,
+      "honor": 1931,
       "might": null,
-      "loot_current": 1669020374
+      "loot_current": 1705858524
     },
     "1920035": {
       "oid": "1920035",
@@ -693,9 +693,9 @@
     {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1525,
+      "honor": 1675,
       "might": null,
-      "loot_current": 718049228
+      "loot_current": 718655842
     },
     {
       "oid": "1013972",
@@ -854,9 +854,9 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1613,
+      "honor": 1931,
       "might": null,
-      "loot_current": 1669020374
+      "loot_current": 1705858524
     },
     {
       "oid": "1920035",
