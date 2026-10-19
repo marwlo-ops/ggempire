@@ -152,11 +152,22 @@ function intelAgeDays(dateString) {
 }
 const PLAYER_PROFILE_KEY = "ggempire.e4k.player-profile.v1";
 async function fetchPlayerByNickname(nick) {
+  // Static same-origin index first; only use live API if player is not indexed.
+  try {
+    const response = await fetch("./data/players_pl1.json", { cache: "no-cache" });
+    if (response.ok) {
+      const db = await response.json();
+      if (db?.verified === true && Array.isArray(db.players)) {
+        const found = db.players.find(p => String(p.name || "").toLocaleLowerCase("pl-PL") === nick.toLocaleLowerCase("pl-PL"));
+        if (found) return { source: "static", return_code: "0", content: found, updated_at: db.updated_at };
+      }
+    }
+  } catch (_) {}
   const payload = encodeURIComponent(JSON.stringify({ LT: 6, LID: 1, SV: nick }));
   const url = `${E4K_API_BASE}/${E4K_SERVER}/hgh/${payload}`;
   const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
   if (!response.ok) throw new Error("API HTTP " + response.status);
-  return response.json();
+  return { source: "live", ...(await response.json()) };
 }
 function initPlayerProfile() {
  const form=$("#player-profile-form"); if(!form)return;
@@ -190,10 +201,18 @@ function initPlayerProfile() {
    fetchPlayerByNickname(urlNickname).then((payload) => {
      const content = payload && typeof payload === "object" ? payload.content : null;
      const detail = document.createElement("p");
-     if (String(payload?.return_code) === "0" && content != null) {
-       detail.textContent = "Odpowiedź hgh dla wyszukiwania nicku została odebrana. Fragment odpowiedzi: " + JSON.stringify(content).slice(0, 900);
+     if (String(payload?.return_code) === "0" && content != null && payload.source === "static") {
+       detail.textContent = "Lokalna baza PL1: " + String(content.name || urlNickname) +
+         " · sojusz: " + String(content.alliance_name || "nieznany") +
+         " · AID: " + String(content.alliance_aid ?? "brak") +
+         " · PID: " + String(content.pid ?? "brak") +
+         " · honor: " + String(content.honor ?? "brak") +
+         " · moc: " + String(content.might ?? "brak") +
+         " · aktualizacja bazy: " + String(payload.updated_at || "brak daty") + ".";
+     } else if (String(payload?.return_code) === "0" && content != null) {
+       detail.textContent = "Awaryjna odpowiedź API na żywo (pola niezweryfikowane): " + JSON.stringify(content).slice(0, 900);
      } else {
-       detail.textContent = "hgh nie zwróciło potwierdzonych danych profilu. Kod API: " + String(payload?.return_code ?? "brak") + ".";
+       detail.textContent = "Nick nie występuje w lokalnym indeksie, a API awaryjne nie zwróciło potwierdzonych danych. Kod: " + String(payload?.return_code ?? "brak") + ".";
      }
      result.appendChild(detail);
    }).catch((error) => {
