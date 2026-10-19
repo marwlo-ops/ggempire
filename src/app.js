@@ -46,7 +46,7 @@ function renderAlliance(key, alliance, fallbackName) {
   const status = document.getElementById(key + "-status");
   const name = firstValue(alliance, ["N", "name", "NAME"]) || fallbackName;
   const members = Array.isArray(alliance.M) ? alliance.M : Array.isArray(alliance.members) ? alliance.members : [];
-  const power = firstValue(alliance, ["P", "PO", "PW", "power", "Power", "STR", "S"]);
+  const power = firstValue(alliance, ["PP", "P", "PO", "PW", "power", "Power", "STR", "S"]);
   const count = firstValue(alliance, ["MC", "MEM", "memberCount", "membersCount"]) ?? (members.length || null);
   if (card) {
     const rows = [
