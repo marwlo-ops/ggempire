@@ -130,11 +130,6 @@ def main():
     server=os.getenv("E4K_SERVER","EmpirefourkingdomsExGG2_3")
     base=os.getenv("E4K_API_BASE","https://empire-api.fly.dev").rstrip("/")
     failures=[]
-    try:
-        fetch_server_alliance_ranking(server, base)
-    except Exception as e:
-        failures.append("hgh ranking: " + str(e))
-        print(f"Ranking collector warning: {e}", file=sys.stderr)
     for aid,filename,name in ALLIANCES:
         try: fetch(aid,filename,name,server,base)
         except Exception as e: failures.append(str(e)); print(f"Collector warning: {e}",file=sys.stderr)
