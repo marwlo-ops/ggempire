@@ -319,16 +319,31 @@ async function loadServerAllianceRanking() {
     if (!Array.isArray(rows) && typeof rows === "object") rows = Object.values(rows);
     if (!Array.isArray(rows) || !rows.length) throw new Error("Odpowiedź nie zawiera listy rankingowej");
     body.replaceChildren();
-    rows.slice(0,100).forEach((item,index)=>{
+    rows.slice(0,100).forEach((entry,index)=>{
+      // llsp returns leaderboard rows as [rank, score, payload], not always plain objects.
+      let item = entry, rank = index + 1, score = null;
+      if (Array.isArray(entry)) {
+        const objectIndex = entry.findIndex(value => value && typeof value === "object");
+        if (objectIndex >= 0) {
+          item = entry[objectIndex] || {};
+          const rankValue = Number(entry[objectIndex - 2]);
+          const scoreValue = Number(entry[objectIndex - 1]);
+          if (Number.isFinite(rankValue)) rank = rankValue;
+          if (Number.isFinite(scoreValue)) score = scoreValue;
+        } else {
+          item = { N: entry.find(value => typeof value === "string"), AID: entry[0] };
+        }
+      }
+      if (!item || typeof item !== "object") item = {};
       const row=document.createElement("tr");
       const values=[
-        index+1,
-        firstValue(item,["N","name","NAME","AN"]) || "—",
-        firstValue(item,["AID","aid","ID","id"]) ?? "—",
-        firstValue(item,["P","PO","PW","power","Power","S"]) ?? "—",
-        firstValue(item,["MC","MEM","memberCount","membersCount","C"]) ?? "—"
+        rank,
+        firstValue(item,["N","name","NAME","AN","alliance_name"]) || "—",
+        firstValue(item,["AID","aid","ID","id","allianceId"]) ?? "—",
+        firstValue(item,["MP","PP","P","PO","PW","power","Power","S"]) ?? score ?? "—",
+        firstValue(item,["MC","NM","MEM","MCount","memberCount","membersCount","C"]) ?? "—"
       ];
-      values.forEach((value,i)=>{const cell=document.createElement("td");cell.textContent=i===0?String(value):String(value);row.appendChild(cell)});
+      values.forEach((value,i)=>{const cell=document.createElement("td");cell.textContent=typeof value==="number"?value.toLocaleString("pl-PL"):String(value);row.appendChild(cell)});
       body.appendChild(row);
     });
     status.textContent = "Pobrano " + Math.min(rows.length,100) + " pozycji · " + new Date().toLocaleTimeString("pl-PL",{hour:"2-digit",minute:"2-digit"});
