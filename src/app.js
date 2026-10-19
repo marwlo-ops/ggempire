@@ -1,8 +1,8 @@
 // GGEmpire portal for E4K PL1. Live alliance lookup uses the public empire-api endpoint.
 const $ = (selector) => document.querySelector(selector);
 const E4K_API_BASE = "https://empire-api.fly.dev";
-const E4K_SERVER = "EmpirefourkingdomsExGG2_3";
-const E4K_PL1_MAPPING_VERIFIED = true; // User confirmed this API and alliance IDs for their PL1 setup.
+const E4K_SERVER = "EmpirefourkingdomsExGG_3";
+const E4K_PL1_MAPPING_VERIFIED = false; // Keep live PL1 claims disabled until production API identity is verified.
 const ALLIANCES = [
   { key: "reborn", name: "ReBoRN", aid: 115 },
   { key: "maddevil", name: "MADDEVILS", aid: 41343 }
@@ -34,8 +34,17 @@ async function fetchAlliance(aid) {
   const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
   if (!response.ok) throw new Error("API HTTP " + response.status);
   const data = await response.json();
-  if (String(data.return_code) !== "0" || !data.content?.A) throw new Error(data.error || "API nie zwróciło danych sojuszu");
-  return data.content.A;
+  if (String(data.return_code) !== "0" || !data.content?.A || typeof data.content.A !== "object") {
+    throw new Error(data.error || "API nie zwróciło danych sojuszu");
+  }
+  const alliance = data.content.A;
+  const returnedAid = firstValue(alliance, ["AID", "aid", "ID", "id"]);
+  const returnedName = firstValue(alliance, ["N", "name", "NAME"]);
+  if (returnedAid === null || String(returnedAid) !== String(aid)) {
+    throw new Error("AID zwrócony przez API nie zgadza się z żądaniem");
+  }
+  if (returnedName === null) throw new Error("API nie zwróciło nazwy sojuszu");
+  return alliance;
 }
 function setAlliancePending(key, message) {
   const status = document.getElementById(key + "-status");
@@ -151,9 +160,13 @@ document.addEventListener("DOMContentLoaded", () => {
 const INTEL_STORAGE_KEY = "ggempire.pl1.intelligence.v1";
 function getIntelReports() {
   try {
-    const value = JSON.parse(localStorage.getItem(INTEL_STORAGE_KEY) || "[]");
-    return Array.isArray(value) ? value : [];
-  } catch { return []; }
+    const raw = localStorage.getItem(INTEL_STORAGE_KEY);
+    if (raw === null) return [];
+    const value = JSON.parse(raw);
+    return Array.isArray(value) ? value : null;
+  } catch {
+    return null;
+  }
 }
 function saveIntelReports(reports) {
   try { localStorage.setItem(INTEL_STORAGE_KEY, JSON.stringify(reports)); return true; }
@@ -166,16 +179,84 @@ function intelAgeDays(dateString) {
 }
 const PLAYER_PROFILE_KEY = "ggempire.e4k.player-profile.v1";
 function initPlayerProfile() {
- const form=$("#player-profile-form"); if(!form)return;
- const nickname=$("#player-nickname"), personalId=$("#player-personal-id"), result=$("#player-profile-result"), status=$("#player-link-status");
- function render(){
-  let p=null; try{p=JSON.parse(localStorage.getItem(PLAYER_PROFILE_KEY)||"null")}catch{}
-  if(!p||!p.nickname){status.textContent="○ Profil niepowiązany";nickname.value="";personalId.value="";result.innerHTML='<span class="profile-result-icon">i</span><div><b>Synchronizacja jeszcze niedostępna</b><p>Nie wykryto oficjalnego logowania ani potwierdzenia własności konta. Możesz zapisać nazwę lokalnie; profil pozostaje niezweryfikowany.</p></div>';return}
-  nickname.value=p.nickname;personalId.value=p.personalId||"";status.textContent="○ Profil lokalny · niezweryfikowany";
-  result.innerHTML='<span class="profile-result-icon">!</span><div><b>'+escapeHtml(p.nickname)+' · profil zapisany lokalnie</b><p>To nie jest sesja logowania Goodgame i nie potwierdza własności konta. Automatyczne statystyki i historia nie są połączone bez obsługiwanej metody API.</p></div>';
- }
- form.addEventListener("submit",e=>{e.preventDefault();const n=nickname.value.trim();if(!n)return;try{localStorage.setItem(PLAYER_PROFILE_KEY,JSON.stringify({nickname:n,personalId:personalId.value.trim(),savedAt:new Date().toISOString(),verified:false}));render()}catch{alert("Nie udało się zapisać profilu w tej przeglądarce.")}});
- $("#player-profile-clear")?.addEventListener("click",()=>{try{localStorage.removeItem(PLAYER_PROFILE_KEY)}catch{}render()});render();
+  const form = $("#player-profile-form");
+  if (!form) return;
+  const nickname = $("#player-nickname");
+  const personalId = $("#player-personal-id");
+  const result = $("#player-profile-result");
+  const status = $("#player-link-status");
+
+  function showReadError() {
+    status.textContent = "⚠ Nie można odczytać profilu";
+    nickname.value = "";
+    personalId.value = "";
+    result.innerHTML = '<span class="profile-result-icon">!</span><div><b>Zapis profilu wymaga sprawdzenia</b><p>Nie udało się odczytać istniejących danych. Nie zmieniono ich; użyj „Wyczyść profil” tylko wtedy, gdy chcesz świadomie usunąć zapis.</p></div>';
+  }
+
+  function readProfile() {
+    const raw = localStorage.getItem(PLAYER_PROFILE_KEY);
+    if (raw === null) return null;
+    const profile = JSON.parse(raw);
+    if (!profile || typeof profile !== "object" || Array.isArray(profile)) {
+      throw new Error("Nieprawidłowa struktura profilu");
+    }
+    return profile;
+  }
+
+  function render() {
+    let profile;
+    try {
+      profile = readProfile();
+    } catch {
+      showReadError();
+      return;
+    }
+    if (!profile || !profile.nickname) {
+      status.textContent = "○ Profil niepowiązany";
+      nickname.value = "";
+      personalId.value = "";
+      result.innerHTML = '<span class="profile-result-icon">i</span><div><b>Synchronizacja jeszcze niedostępna</b><p>Nie wykryto oficjalnego logowania ani potwierdzenia własności konta. Możesz zapisać nazwę lokalnie; profil pozostaje niezweryfikowany.</p></div>';
+      return;
+    }
+    nickname.value = profile.nickname;
+    personalId.value = profile.personalId || "";
+    status.textContent = "○ Profil lokalny · niezweryfikowany";
+    result.innerHTML = '<span class="profile-result-icon">!</span><div><b>' + escapeHtml(profile.nickname) + ' · profil zapisany lokalnie</b><p>To nie jest sesja logowania Goodgame i nie potwierdza własności konta. Automatyczne statystyki i historia nie są połączone bez obsługiwanej metody API.</p></div>';
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = nickname.value.trim();
+    if (!name) return;
+    try {
+      const existing = localStorage.getItem(PLAYER_PROFILE_KEY);
+      if (existing !== null) {
+        const parsed = JSON.parse(existing);
+        if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+          throw new Error("Nieprawidłowa struktura profilu");
+        }
+      }
+      localStorage.setItem(PLAYER_PROFILE_KEY, JSON.stringify({
+        nickname: name,
+        personalId: personalId.value.trim(),
+        savedAt: new Date().toISOString(),
+        verified: false
+      }));
+      render();
+    } catch {
+      alert("Nie można bezpiecznie odczytać lub zapisać profilu. Istniejący zapis pozostawiono bez zmian.");
+    }
+  });
+
+  $("#player-profile-clear")?.addEventListener("click", () => {
+    try {
+      localStorage.removeItem(PLAYER_PROFILE_KEY);
+      render();
+    } catch {
+      alert("Nie udało się usunąć profilu z pamięci przeglądarki.");
+    }
+  });
+  render();
 }
 
 function initIntelligence() {
@@ -191,6 +272,10 @@ function initIntelligence() {
     const target = String(fd.get("target") || "").trim();
     if (!target) return;
     const reports = getIntelReports();
+    if (!reports) {
+      alert("Nie można odczytać zapisanych raportów. Nie zmieniono istniejących danych.");
+      return;
+    }
     reports.push({
       id: (globalThis.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2),
       target, kind: String(fd.get("kind")), reportType: String(fd.get("reportType")),
@@ -212,15 +297,28 @@ function initIntelligence() {
     const button = event.target.closest("[data-delete-intel]");
     if (!button) return;
     const id = button.getAttribute("data-delete-intel");
-    saveIntelReports(getIntelReports().filter((report) => report.id !== id));
-    renderIntelReports();
+    const reports = getIntelReports();
+    if (!reports) {
+      alert("Nie można odczytać zapisanych raportów. Nie usunięto żadnych danych.");
+      return;
+    }
+    if (saveIntelReports(reports.filter((report) => report.id !== id))) renderIntelReports();
   });
   renderIntelReports();
 }
 function renderIntelReports() {
   const list = $("#intel-list");
   if (!list) return;
-  const reports = getIntelReports().sort((a,b) => String(b.date).localeCompare(String(a.date)) || String(b.createdAt).localeCompare(String(a.createdAt)));
+  const reports = getIntelReports();
+  if (!reports) {
+    list.innerHTML = '<div class="intel-empty"><b>Nie można odczytać zapisanych raportów</b><p>Zawartość pamięci nie została zmieniona. Sprawdź zapis przed dodaniem lub usunięciem raportów.</p></div>';
+    ["#intel-total", "#intel-fresh", "#intel-targets"].forEach((selector) => {
+      const counter = $(selector);
+      if (counter) counter.textContent = "—";
+    });
+    return;
+  }
+  reports.sort((a,b) => String(b.date).localeCompare(String(a.date)) || String(b.createdAt).localeCompare(String(a.createdAt)));
   const query = ($("#intel-filter")?.value || "").trim().toLocaleLowerCase("pl-PL");
   const mode = $("#intel-fresh-filter")?.value || "all";
   const visible = reports.filter((report) => {
