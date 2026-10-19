@@ -44,10 +44,10 @@
   </div>
 
   <div class="reborn-tracker card" id="reborn-tracker">
-   <div class="tracker-head"><div><div class="eyebrow">ARCHIWUM SOJUSZU · SNAPSHOTY</div><h3>ReBoRN <span>Tracker</span></h3><p>Historia mocy, honoru i aktywności graczy oparta na kolejnych odczytach źródła.</p></div><span class="tracker-badge" id="tracker-state">OCZEKUJE NA ŹRÓDŁO</span></div>
+   <div class="tracker-head"><div><div class="eyebrow">ARCHIWUM SOJUSZU · SNAPSHOTY</div><h3><span id="tracker-alliance-name">ReBoRN</span> <span>Tracker</span></h3><p>Wybierz sojusz. Dane i historia aktualizują się automatycznie po udanym odczycie API.</p><div class="tracker-switch" role="group" aria-label="Wybór sojuszu"><button type="button" class="tracker-switch-btn active" data-tracker-aid="115">ReBoRN</button><button type="button" class="tracker-switch-btn" data-tracker-aid="41343">MADDEVILS</button></div></div><span class="tracker-badge" id="tracker-state">ŁADOWANIE</span></div>
    <div class="tracker-stats"><div><small>GRACZE W SNAPSHOCIE</small><b id="tracker-count">—</b></div><div><small>ŁĄCZNA MOC</small><b id="tracker-might">—</b></div><div><small>OSTATNI ODCZYT</small><b id="tracker-updated">Brak danych</b></div></div>
    <div class="tracker-table-wrap"><table class="tracker-table"><thead><tr><th>#</th><th>Gracz</th><th>Aktywność</th><th class="numeric">Δ Honor</th><th class="numeric">Δ Moc</th><th class="numeric">Honor</th><th class="numeric">Moc</th><th class="numeric">Łupy</th></tr></thead><tbody id="tracker-players"><tr><td colspan="8" class="tracker-empty">Nie ma jeszcze zweryfikowanego snapshotu E4K PL1.</td></tr></tbody></table></div>
-   <p class="tracker-footnote" id="tracker-note">Dane historyczne i ranking nie będą zgadywane. Identyfikator sojuszu oraz zgodność źródła z mobilnym światem PL1 wymagają potwierdzenia przed uruchomieniem kolektora.</p>
+   <p class="tracker-footnote" id="tracker-note">Odczyty pochodzą z publicznego API. Brakujące pola są pokazywane jako „—”, nie jako zero.</p>
   </div>
   <div class="api-search-panel"><div><span class="search-icon">⌕</span><div><b>Wyszukiwarka sojuszy E4K PL1</b><small>Wyszukiwanie zostanie uruchomione po podłączeniu źródła danych</small></div></div><form id="alliance-search-form"><input id="alliance-query" minlength="2" maxlength="40" placeholder="Wpisz nazwę sojuszu…" autocomplete="off" required><button class="button button-gold" type="submit">Szukaj <span>→</span></button></form><div id="search-results" class="search-results" aria-live="polite"></div></div>
  </section>
