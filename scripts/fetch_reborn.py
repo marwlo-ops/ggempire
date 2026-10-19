@@ -37,7 +37,7 @@ def fetch(aid, filename, fallback_name, server, base):
         prev=json.loads(output.read_text(encoding="utf-8"))
         old=prev.get("players_by_oid") or {str(p["oid"]):p for p in prev.get("players",[])}
     except (OSError,json.JSONDecodeError): pass
-    prev_players={str(k):{field:v.get(field) for field in ("honor","might","loot_current")} for k,v in old.items()}
+    prev_players={str(k):{field:v.get(field) for field in ("name","honor","might","loot_current")} for k,v in old.items()}
     total=sum(float(p["might"]) for p in players if p["might"] is not None and str(p["might"]).replace(".","",1).isdigit())
     snapshot={"verified":True,"source":base,"server":server,"aid":aid,
       "alliance_name":alliance.get("N",alliance.get("name",fallback_name)),
