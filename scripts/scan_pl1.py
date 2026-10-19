@@ -32,9 +32,15 @@ def api_get(endpoint, params):
         conn.request("GET", path, headers={"Accept": "application/json", "User-Agent": "GGEmpire-PL1-Scanner/2.1"})
         response = conn.getresponse()
         body = response.read()
+        text_body = body.decode("utf-8", errors="replace")
         if response.status != 200:
-            raise RuntimeError(f"HTTP {response.status} for {endpoint}")
-        return json.loads(body.decode("utf-8"))
+            print(f"[api_get] endpoint={endpoint} params={raw} HTTP={response.status} body={text_body[:1800]!r}", flush=True)
+            raise RuntimeError(f"HTTP {response.status} for {endpoint}: {text_body[:300]}")
+        try:
+            return json.loads(text_body)
+        except json.JSONDecodeError as exc:
+            print(f"[api_get] INVALID JSON endpoint={endpoint} params={raw} body={text_body[:3000]!r}", flush=True)
+            raise RuntimeError(f"Invalid JSON from {endpoint}: {exc}") from exc
     finally:
         conn.close()
 
@@ -172,6 +178,7 @@ def main():
             payload = api_get("hgh", {"LT": 11, "LID": 1, "SV": start})
             rows = rows_from(payload)
             if not rows:
+                print(f"[hgh] SV={start} no recognized rows; payload sample={json.dumps(payload, ensure_ascii=False)[:3000]}", flush=True)
                 ranking_errors.append({"sv": start, "error": "No ranking rows", "raw": payload})
             else:
                 ranking_rows.extend(rows)
@@ -302,4 +309,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        DATA.mkdir(parents=True, exist_ok=True)
+        atomic_json(DATA / "scan_pl1_status.json", {
+            "verified": False,
+            "server": SERVER,
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "error": str(exc),
+            "exception_type": type(exc).__name__,
+        })
+        print(f"[scan_pl1] FATAL {type(exc).__name__}: {exc}", flush=True)
+        raise
