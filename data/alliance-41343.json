@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T17:42:46.446454+00:00",
+  "fetched_at": "2026-10-19T18:11:02.871323+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -250,7 +250,7 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1805,
+      "honor": 1613,
       "might": null,
       "loot_current": 1656938508
     },
@@ -441,7 +441,7 @@
       "name": "BloodLine",
       "honor": 3009,
       "might": null,
-      "loot_current": 641788253
+      "loot_current": 577609428
     },
     "138661": {
       "oid": "138661",
@@ -537,7 +537,7 @@
     "259322": {
       "oid": "259322",
       "name": "ΓΞQUIΞM",
-      "honor": 1192,
+      "honor": 1105,
       "might": null,
       "loot_current": 423830047
     },
@@ -744,7 +744,7 @@
       "name": "BloodLine",
       "honor": 3009,
       "might": null,
-      "loot_current": 641788253
+      "loot_current": 577609428
     },
     {
       "oid": "138661",
@@ -840,7 +840,7 @@
     {
       "oid": "259322",
       "name": "ΓΞQUIΞM",
-      "honor": 1192,
+      "honor": 1105,
       "might": null,
       "loot_current": 423830047
     },

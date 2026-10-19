@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T17:42:45.992150+00:00",
+  "fetched_at": "2026-10-19T18:11:02.500623+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -262,9 +262,9 @@
     },
     "1818825": {
       "name": "Toruń główny",
-      "honor": 583,
+      "honor": 683,
       "might": null,
-      "loot_current": 71522751
+      "loot_current": 71522752
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -352,7 +352,7 @@
     },
     "273782": {
       "name": "Dark_Imperator",
-      "honor": 1622,
+      "honor": 1814,
       "might": null,
       "loot_current": 2392496018
     },
@@ -650,7 +650,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366727548
+      "loot_current": 366766634
     },
     "298959": {
       "oid": "298959",
@@ -697,9 +697,9 @@
     "1818825": {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 683,
+      "honor": 890,
       "might": null,
-      "loot_current": 71522752
+      "loot_current": 71646659
     },
     "1878344": {
       "oid": "1878344",
@@ -795,9 +795,9 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1483,
+      "honor": 1570,
       "might": null,
-      "loot_current": 7672490
+      "loot_current": 7672505
     },
     "273782": {
       "oid": "273782",
@@ -1107,7 +1107,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366727548
+      "loot_current": 366766634
     },
     {
       "oid": "298959",
@@ -1154,9 +1154,9 @@
     {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 683,
+      "honor": 890,
       "might": null,
-      "loot_current": 71522752
+      "loot_current": 71646659
     },
     {
       "oid": "1878344",
@@ -1252,9 +1252,9 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1483,
+      "honor": 1570,
       "might": null,
-      "loot_current": 7672490
+      "loot_current": 7672505
     },
     {
       "oid": "273782",
