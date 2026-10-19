@@ -4,9 +4,9 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T10:50:40.309746+00:00",
+  "fetched_at": "2026-10-19T11:03:32.298203+00:00",
   "player_count": 43,
-  "total_might": 0,
+  "total_might": null,
   "prev_players": {
     "1942173": {
       "name": "-Sławek-",
@@ -523,7 +523,7 @@
     "1868650": {
       "oid": "1868650",
       "name": "MaTT",
-      "honor": 1094,
+      "honor": 935,
       "might": null,
       "loot_current": 1244138
     },
@@ -826,7 +826,7 @@
     {
       "oid": "1868650",
       "name": "MaTT",
-      "honor": 1094,
+      "honor": 935,
       "might": null,
       "loot_current": 1244138
     },
