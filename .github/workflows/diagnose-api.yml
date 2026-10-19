@@ -21,6 +21,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Test diagnostic schema summarizer
+        run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Inspect read-only API response shapes
         env:
           E4K_SERVER: ${{ vars.E4K_SERVER || 'EmpirefourkingdomsExGG2_3' }}
