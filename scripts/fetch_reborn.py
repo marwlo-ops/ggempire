@@ -27,7 +27,7 @@ def fetch(aid, filename, fallback_name, server, base):
         if oid is None or name is None: continue
         players.append({"oid":str(oid),"name":str(name),
           "honor":member.get("H",member.get("honor",member.get("HONOR"))),
-          "might":member.get("P",member.get("PO",member.get("PW",member.get("might",member.get("power"))))),
+          "might":member.get("PP",member.get("P",member.get("PO",member.get("PW",member.get("might",member.get("power")))))),
           "loot_current":member.get("CF",member.get("loot_current",member.get("loot")))})
     if not players: raise RuntimeError(f"AID {aid}: member schema was not recognized")
     players.sort(key=lambda p:(p["might"] is None, -(float(p["might"]) if str(p["might"]).replace(".","",1).isdigit() else 0)))
