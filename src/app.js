@@ -367,7 +367,7 @@ async function loadServerAllianceRanking() {
   if (!body || !status) return;
   status.textContent = "Pobieranie rankingu sojuszy przez hgh…";
   try {
-    const response = await fetch("./data/alliance-ranking.json?t=" + Date.now(), { cache: "no-store" });
+    const response = await fetch("./data/alliances_pl1.json?t=" + Date.now(), { cache: "no-store" });
     if (!response.ok) throw new Error("HTTP " + response.status);
     const snapshot = await response.json();
     const rows = snapshot.alliances;
