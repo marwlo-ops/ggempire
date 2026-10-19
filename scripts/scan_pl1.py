@@ -231,10 +231,10 @@ def main():
 
     # Do not replace the player DB with a partial scan if most roster calls failed.
     successful = len(alliance_details)
-    if successful < len(selected_aids) or not players_by_key:
+    if successful == 0 or not players_by_key:
         atomic_json(DATA / "scan_pl1_status.json", {
             "verified": False, "server": SERVER, "updated_at": now.isoformat(),
-            "error": "Too many roster failures; previous player database preserved.",
+            "error": "No usable alliance rosters; previous player database preserved.",
             "alliances_attempted": len(selected_aids), "alliances_succeeded": successful,
             "failures": failures, "ranking_errors": ranking_errors,
         })
