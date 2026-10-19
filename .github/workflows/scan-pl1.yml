@@ -1,0 +1,47 @@
+name: Scan full E4K PL1 server
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/scan_pl1.py"
+      - ".github/workflows/scan-pl1.yml"
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pl1-server-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Scan PL1 ranking, alliance rosters and history
+        env:
+          E4K_SERVER: EmpirefourkingdomsExGG2_3
+          PL1_SCAN_ALLIANCES: "50"
+          PL1_SCAN_DELAY: "0.4"
+        run: python scripts/scan_pl1.py
+      - name: Commit static PL1 databases
+        if: success()
+        run: |
+          if git diff --quiet -- data/alliances_pl1.json data/players_pl1.json data/history_pl1.json data/scan_pl1_status.json; then
+            echo "No PL1 database changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/alliances_pl1.json data/players_pl1.json data/history_pl1.json data/scan_pl1_status.json
+          git commit -m "chore: refresh static PL1 server database"
+          git pull --rebase origin main
+          git push
