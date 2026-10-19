@@ -4,10 +4,226 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-19T10:44:55.075372+00:00",
+  "fetched_at": "2026-10-19T10:45:21.874779+00:00",
   "player_count": 43,
   "total_might": 0,
-  "prev_players": {},
+  "prev_players": {
+    "1942173": {
+      "honor": 2218,
+      "might": null,
+      "loot_current": 5913271
+    },
+    "1524565": {
+      "honor": 1239,
+      "might": null,
+      "loot_current": 195941990
+    },
+    "1141204": {
+      "honor": 2517,
+      "might": null,
+      "loot_current": 573769430
+    },
+    "1681311": {
+      "honor": 1827,
+      "might": null,
+      "loot_current": 170901038
+    },
+    "941700": {
+      "honor": 1196,
+      "might": null,
+      "loot_current": 580396162
+    },
+    "1762193": {
+      "honor": 1328,
+      "might": null,
+      "loot_current": 4353214
+    },
+    "8653": {
+      "honor": 283,
+      "might": null,
+      "loot_current": 3280
+    },
+    "1883601": {
+      "honor": 315,
+      "might": null,
+      "loot_current": 70720
+    },
+    "1729556": {
+      "honor": 1970,
+      "might": null,
+      "loot_current": 250290656
+    },
+    "1827540": {
+      "honor": 1210,
+      "might": null,
+      "loot_current": 98667119
+    },
+    "1934546": {
+      "honor": 1619,
+      "might": null,
+      "loot_current": 19484542
+    },
+    "1814411": {
+      "honor": 1258,
+      "might": null,
+      "loot_current": 609576
+    },
+    "1931787": {
+      "honor": 1729,
+      "might": null,
+      "loot_current": 375743335
+    },
+    "1906821": {
+      "honor": 831,
+      "might": null,
+      "loot_current": 62161574
+    },
+    "1046871": {
+      "honor": 644,
+      "might": null,
+      "loot_current": 962234
+    },
+    "1888134": {
+      "honor": 1080,
+      "might": null,
+      "loot_current": 221054513
+    },
+    "1755905": {
+      "honor": 1293,
+      "might": null,
+      "loot_current": 70545
+    },
+    "1299720": {
+      "honor": 1458,
+      "might": null,
+      "loot_current": 717324736
+    },
+    "1013972": {
+      "honor": 1641,
+      "might": null,
+      "loot_current": 574810372
+    },
+    "1940547": {
+      "honor": 1178,
+      "might": null,
+      "loot_current": 946158
+    },
+    "1817531": {
+      "honor": 2136,
+      "might": null,
+      "loot_current": 169157319
+    },
+    "1808763": {
+      "honor": 1482,
+      "might": null,
+      "loot_current": 291520498
+    },
+    "1668728": {
+      "honor": 879,
+      "might": null,
+      "loot_current": 802173985
+    },
+    "1933752": {
+      "honor": 1177,
+      "might": null,
+      "loot_current": 3781060
+    },
+    "1671423": {
+      "honor": 3009,
+      "might": null,
+      "loot_current": 641788253
+    },
+    "138661": {
+      "honor": 1875,
+      "might": null,
+      "loot_current": 4735440
+    },
+    "1866228": {
+      "honor": 1903,
+      "might": null,
+      "loot_current": 159763248
+    },
+    "1866802": {
+      "honor": 3105,
+      "might": null,
+      "loot_current": 350487219
+    },
+    "1189628": {
+      "honor": 1934,
+      "might": null,
+      "loot_current": 123583596
+    },
+    "1813227": {
+      "honor": 2320,
+      "might": null,
+      "loot_current": 556141683
+    },
+    "1891821": {
+      "honor": 1048,
+      "might": null,
+      "loot_current": 35473435
+    },
+    "1196131": {
+      "honor": 1285,
+      "might": null,
+      "loot_current": 118222437
+    },
+    "1956780": {
+      "honor": 904,
+      "might": null,
+      "loot_current": 1050793
+    },
+    "1667373": {
+      "honor": 1345,
+      "might": null,
+      "loot_current": 645177
+    },
+    "1873065": {
+      "honor": 2549,
+      "might": null,
+      "loot_current": 98195498
+    },
+    "1002425": {
+      "honor": 1339,
+      "might": null,
+      "loot_current": 274558907
+    },
+    "1868650": {
+      "honor": 1094,
+      "might": null,
+      "loot_current": 1244138
+    },
+    "514929": {
+      "honor": 1099,
+      "might": null,
+      "loot_current": 20221418
+    },
+    "259322": {
+      "honor": 1192,
+      "might": null,
+      "loot_current": 423830047
+    },
+    "369918": {
+      "honor": 1706,
+      "might": null,
+      "loot_current": 86754314
+    },
+    "1708518": {
+      "honor": 1592,
+      "might": null,
+      "loot_current": 1647847297
+    },
+    "1920035": {
+      "honor": 2036,
+      "might": null,
+      "loot_current": 2251592
+    },
+    "1858019": {
+      "honor": 1773,
+      "might": null,
+      "loot_current": 245735317
+    }
+  },
   "players_by_oid": {
     "1942173": {
       "oid": "1942173",
