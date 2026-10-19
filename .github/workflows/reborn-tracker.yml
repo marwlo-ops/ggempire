@@ -1,6 +1,11 @@
-name: Refresh ReBoRN tracker snapshots
+name: Refresh alliance tracker snapshots
 
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/fetch_reborn.py"
+      - ".github/workflows/reborn-tracker.yml"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
@@ -9,31 +14,31 @@ permissions:
   contents: write
 
 concurrency:
-  group: reborn-tracker-snapshot
+  group: alliance-tracker-snapshot
   cancel-in-progress: false
 
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Fetch verified E4K PL1 snapshot
+      - name: Fetch snapshots for both configured alliances
         env:
           E4K_PL1_MAPPING_VERIFIED: "true"
           E4K_SERVER: ${{ vars.E4K_SERVER || 'EmpirefourkingdomsExGG2_3' }}
-          E4K_REBORN_AID: ${{ vars.E4K_REBORN_AID || '115' }}
         run: python scripts/fetch_reborn.py
-      - name: Commit changed snapshot
+      - name: Commit changed snapshots
         run: |
-          if git diff --quiet -- data/reborn-latest.json; then
+          if git diff --quiet -- data/reborn-latest.json data/alliance-41343.json; then
             echo "No snapshot changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reborn-latest.json
-          git commit -m "chore: refresh ReBoRN tracker snapshot"
+          git config user.email "41898282+users.noreply.github.com"
+          git add data/reborn-latest.json data/alliance-41343.json
+          git commit -m "chore: refresh alliance tracker snapshots"
           git push
