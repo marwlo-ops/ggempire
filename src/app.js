@@ -320,7 +320,7 @@ async function loadServerAllianceRanking() {
     if (!Array.isArray(rows) || !rows.length) throw new Error("Odpowiedź nie zawiera listy rankingowej");
     body.replaceChildren();
     rows.slice(0,100).forEach((entry,index)=>{
-      // llsp returns leaderboard rows as [rank, score, payload], not always plain objects.
+      // llsw leaderboard rows may be [rank, score, payload], not always plain objects.
       let item = entry, rank = index + 1, score = null;
       if (Array.isArray(entry)) {
         const objectIndex = entry.findIndex(value => value && typeof value === "object");
