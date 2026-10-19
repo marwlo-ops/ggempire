@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T07:02:47.315575+00:00",
+  "fetched_at": "2026-10-19T07:59:17.824409+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -51,7 +51,7 @@
     "1718275": {
       "honor": 1846,
       "might": null,
-      "loot_current": 692511558
+      "loot_current": 623260402
     },
     "1957380": {
       "honor": 1028,
@@ -161,7 +161,7 @@
     "1109550": {
       "honor": 931,
       "might": null,
-      "loot_current": 334844
+      "loot_current": 331496
     },
     "535240": {
       "honor": 1580,
@@ -171,7 +171,7 @@
     "1345366": {
       "honor": 1603,
       "might": null,
-      "loot_current": 48038389
+      "loot_current": 48075063
     },
     "146502": {
       "honor": 0,
@@ -236,7 +236,7 @@
     "1153991": {
       "honor": 1501,
       "might": null,
-      "loot_current": 122935452
+      "loot_current": 110641907
     },
     "173914": {
       "honor": 1024,
@@ -249,9 +249,9 @@
       "loot_current": 677496
     },
     "53340": {
-      "honor": 2066,
+      "honor": 2120,
       "might": null,
-      "loot_current": 402577952
+      "loot_current": 362333065
     },
     "642004": {
       "honor": 1664,
@@ -515,7 +515,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 1872035
+      "loot_current": 1834594
     },
     "222651": {
       "oid": "222651",
@@ -557,14 +557,14 @@
       "name": "Placek78",
       "honor": 1580,
       "might": null,
-      "loot_current": 189547190
+      "loot_current": 170592471
     },
     "1345366": {
       "oid": "1345366",
       "name": "Andrzejklimek83",
-      "honor": 1603,
+      "honor": 1622,
       "might": null,
-      "loot_current": 48075063
+      "loot_current": 48076004
     },
     "146502": {
       "oid": "146502",
@@ -669,7 +669,7 @@
       "name": "HEVE",
       "honor": 738,
       "might": null,
-      "loot_current": 677496
+      "loot_current": 663946
     },
     "53340": {
       "oid": "53340",
@@ -716,9 +716,9 @@
     "511724": {
       "oid": "511724",
       "name": "Monik...",
-      "honor": 1408,
+      "honor": 1547,
       "might": null,
-      "loot_current": 77227740
+      "loot_current": 77493223
     },
     "1836535": {
       "oid": "1836535",
@@ -774,7 +774,7 @@
       "name": "Bolesław chrobr",
       "honor": 1273,
       "might": null,
-      "loot_current": 76781316
+      "loot_current": 69103184
     },
     "1847009": {
       "oid": "1847009",
@@ -972,7 +972,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 1872035
+      "loot_current": 1834594
     },
     {
       "oid": "222651",
@@ -1014,14 +1014,14 @@
       "name": "Placek78",
       "honor": 1580,
       "might": null,
-      "loot_current": 189547190
+      "loot_current": 170592471
     },
     {
       "oid": "1345366",
       "name": "Andrzejklimek83",
-      "honor": 1603,
+      "honor": 1622,
       "might": null,
-      "loot_current": 48075063
+      "loot_current": 48076004
     },
     {
       "oid": "146502",
@@ -1126,7 +1126,7 @@
       "name": "HEVE",
       "honor": 738,
       "might": null,
-      "loot_current": 677496
+      "loot_current": 663946
     },
     {
       "oid": "53340",
@@ -1173,9 +1173,9 @@
     {
       "oid": "511724",
       "name": "Monik...",
-      "honor": 1408,
+      "honor": 1547,
       "might": null,
-      "loot_current": 77227740
+      "loot_current": 77493223
     },
     {
       "oid": "1836535",
@@ -1231,7 +1231,7 @@
       "name": "Bolesław chrobr",
       "honor": 1273,
       "might": null,
-      "loot_current": 76781316
+      "loot_current": 69103184
     },
     {
       "oid": "1847009",
