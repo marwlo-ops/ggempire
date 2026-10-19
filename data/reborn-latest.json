@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T15:09:01.448707+00:00",
+  "fetched_at": "2026-10-19T15:48:58.529851+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -641,7 +641,7 @@
     "1230550": {
       "oid": "1230550",
       "name": "Baobab",
-      "honor": 1090,
+      "honor": 1222,
       "might": null,
       "loot_current": 38871707
     },
@@ -795,7 +795,7 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1681,
+      "honor": 1483,
       "might": null,
       "loot_current": 7672490
     },
@@ -1098,7 +1098,7 @@
     {
       "oid": "1230550",
       "name": "Baobab",
-      "honor": 1090,
+      "honor": 1222,
       "might": null,
       "loot_current": 38871707
     },
@@ -1252,7 +1252,7 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1681,
+      "honor": 1483,
       "might": null,
       "loot_current": 7672490
     },
