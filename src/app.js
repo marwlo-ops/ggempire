@@ -309,7 +309,7 @@ async function loadServerAllianceRanking() {
   if (!body || !status) return;
   status.textContent = "Pobieranie rankingu sojuszy z API…";
   try {
-    const url = `${E4K_API_BASE}/${E4K_SERVER}/hgh/%22LT%22:11,%22LID%22:1,%22SV%22:%221%22`;
+    const url = `${E4K_API_BASE}/${E4K_SERVER}/llsp/%22LT%22:11,%22R%22:1`;
     const response = await fetch(url, {headers:{Accept:"application/json"}, cache:"no-store"});
     if (!response.ok) throw new Error("HTTP " + response.status);
     const payload = await response.json();
