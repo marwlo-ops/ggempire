@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T19:28:23.309583+00:00",
+  "fetched_at": "2026-10-19T20:05:21.959255+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -126,7 +126,7 @@
       "name": "-Izud-Jacek-",
       "honor": 1386,
       "might": null,
-      "loot_current": 2044452
+      "loot_current": 2003563
     },
     "315695": {
       "name": "SzakoPL",
@@ -282,13 +282,13 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110641907
+      "loot_current": 110709108
     },
     "173914": {
       "name": "IllegalBlonde",
       "honor": 1024,
       "might": null,
-      "loot_current": 42809433
+      "loot_current": 42981444
     },
     "235098": {
       "name": "HEVE",
@@ -330,13 +330,13 @@
       "name": "Tango",
       "honor": 1150,
       "might": null,
-      "loot_current": 355001310
+      "loot_current": 355029772
     },
     "511724": {
       "name": "Monik...",
-      "honor": 1547,
+      "honor": 1624,
       "might": null,
-      "loot_current": 77493223
+      "loot_current": 77771644
     },
     "1836535": {
       "name": "Bawid",
@@ -372,7 +372,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 181647101
+      "loot_current": 181724496
     },
     "644336": {
       "name": "FRYDKA",
@@ -382,9 +382,9 @@
     },
     "1417454": {
       "name": "Bolesław chrobr",
-      "honor": 1273,
+      "honor": 1367,
       "might": null,
-      "loot_current": 69172691
+      "loot_current": 70060844
     },
     "1847009": {
       "name": "Włóczykij",
@@ -510,7 +510,7 @@
       "name": "zzimny",
       "honor": 954,
       "might": null,
-      "loot_current": 305468
+      "loot_current": 299389
     },
     "1727679": {
       "oid": "1727679",
@@ -650,7 +650,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366766634
+      "loot_current": 366766825
     },
     "298959": {
       "oid": "298959",
@@ -697,9 +697,9 @@
     "1818825": {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 890,
+      "honor": 1012,
       "might": null,
-      "loot_current": 71647585
+      "loot_current": 72573717
     },
     "1878344": {
       "oid": "1878344",
@@ -720,14 +720,14 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110709108
+      "loot_current": 110776410
     },
     "173914": {
       "oid": "173914",
       "name": "IllegalBlonde",
       "honor": 1024,
       "might": null,
-      "loot_current": 42981444
+      "loot_current": 43152240
     },
     "235098": {
       "oid": "235098",
@@ -774,9 +774,9 @@
     "1936378": {
       "oid": "1936378",
       "name": "Tango",
-      "honor": 1150,
+      "honor": 1083,
       "might": null,
-      "loot_current": 355029772
+      "loot_current": 355029922
     },
     "511724": {
       "oid": "511724",
@@ -795,7 +795,7 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1570,
+      "honor": 1648,
       "might": null,
       "loot_current": 8827293
     },
@@ -804,7 +804,7 @@
       "name": "Dark_Imperator",
       "honor": 1814,
       "might": null,
-      "loot_current": 2392496018
+      "loot_current": 2392918180
     },
     "1950953": {
       "oid": "1950953",
@@ -825,7 +825,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 181724496
+      "loot_current": 181801584
     },
     "644336": {
       "oid": "644336",
@@ -837,9 +837,9 @@
     "1417454": {
       "oid": "1417454",
       "name": "Bolesław chrobr",
-      "honor": 1367,
+      "honor": 1444,
       "might": null,
-      "loot_current": 70060844
+      "loot_current": 71107723
     },
     "1847009": {
       "oid": "1847009",
@@ -967,7 +967,7 @@
       "name": "zzimny",
       "honor": 954,
       "might": null,
-      "loot_current": 305468
+      "loot_current": 299389
     },
     {
       "oid": "1727679",
@@ -1107,7 +1107,7 @@
       "name": "radziollo",
       "honor": 1613,
       "might": null,
-      "loot_current": 366766634
+      "loot_current": 366766825
     },
     {
       "oid": "298959",
@@ -1154,9 +1154,9 @@
     {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 890,
+      "honor": 1012,
       "might": null,
-      "loot_current": 71647585
+      "loot_current": 72573717
     },
     {
       "oid": "1878344",
@@ -1177,14 +1177,14 @@
       "name": "N0R",
       "honor": 1501,
       "might": null,
-      "loot_current": 110709108
+      "loot_current": 110776410
     },
     {
       "oid": "173914",
       "name": "IllegalBlonde",
       "honor": 1024,
       "might": null,
-      "loot_current": 42981444
+      "loot_current": 43152240
     },
     {
       "oid": "235098",
@@ -1231,9 +1231,9 @@
     {
       "oid": "1936378",
       "name": "Tango",
-      "honor": 1150,
+      "honor": 1083,
       "might": null,
-      "loot_current": 355029772
+      "loot_current": 355029922
     },
     {
       "oid": "511724",
@@ -1252,7 +1252,7 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1570,
+      "honor": 1648,
       "might": null,
       "loot_current": 8827293
     },
@@ -1261,7 +1261,7 @@
       "name": "Dark_Imperator",
       "honor": 1814,
       "might": null,
-      "loot_current": 2392496018
+      "loot_current": 2392918180
     },
     {
       "oid": "1950953",
@@ -1282,7 +1282,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 181724496
+      "loot_current": 181801584
     },
     {
       "oid": "644336",
@@ -1294,9 +1294,9 @@
     {
       "oid": "1417454",
       "name": "Bolesław chrobr",
-      "honor": 1367,
+      "honor": 1444,
       "might": null,
-      "loot_current": 70060844
+      "loot_current": 71107723
     },
     {
       "oid": "1847009",
