@@ -42,4 +42,4 @@ jobs:
           git add data/reborn-latest.json data/alliance-41343.json
           git commit -m "chore: refresh alliance tracker snapshots"
           git pull --rebase origin main
-git push
+          git push
