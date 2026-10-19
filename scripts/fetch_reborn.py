@@ -8,6 +8,69 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 ALLIANCES = [(115, "reborn-latest.json", "ReBoRN"), (41343, "alliance-41343.json", "MADDEVILS")]
 
+
+def fetch_server_alliance_ranking(server, base):
+    """Fetch the server alliance leaderboard via hgh and persist a validated snapshot."""
+    params = json.dumps({"LT": 11, "LID": 1, "SV": "5"}, separators=(",", ":"))
+    from urllib.parse import quote
+    url = f"{base}/{server}/hgh/{quote(params, safe='')}"
+    req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "GGEmpire-ReadOnly-Tracker/1.0"})
+    with urllib.request.urlopen(req, timeout=25) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    if str(payload.get("return_code")) != "0":
+        raise RuntimeError(f"hgh ranking API error: {payload.get('error', payload.get('return_code'))}")
+    content = payload.get("content") or {}
+    rows = content.get("L") if isinstance(content, dict) else None
+    if isinstance(rows, dict):
+        rows = list(rows.values())
+    if not isinstance(rows, list) or not rows:
+        raise RuntimeError("hgh response has no non-empty content.L list; existing ranking JSON preserved")
+    normalized = []
+    for index, row in enumerate(rows, 1):
+        item = row
+        rank = index
+        score = None
+        if isinstance(row, list):
+            objects = [value for value in row if isinstance(value, dict)]
+            if objects:
+                item = objects[-1]
+            else:
+                # Preserve unknown tuple layouts instead of inventing field meanings.
+                item = {"raw": row}
+        if not isinstance(item, dict):
+            item = {"raw": item}
+        def pick(*keys):
+            for key in keys:
+                value = item.get(key)
+                if value is not None and value != "":
+                    return value
+            return None
+        rank_value = pick("R", "rank", "RANK", "POS", "position")
+        if rank_value is not None:
+            try: rank = int(rank_value)
+            except (TypeError, ValueError): pass
+        score = pick("PP", "P", "PO", "PW", "MP", "power", "Power", "S", "score", "points")
+        normalized.append({
+            "rank": rank,
+            "name": pick("N", "name", "NAME", "AN", "alliance_name"),
+            "aid": pick("AID", "aid", "ID", "id", "allianceId"),
+            "power": score,
+            "member_count": pick("MC", "NM", "MEM", "MCount", "memberCount", "membersCount", "C"),
+            "raw": row,
+        })
+    snapshot = {
+        "verified": True, "source": url, "server": server,
+        "ranking_type": "server_alliance", "parameters": {"LT": 11, "LID": 1, "SV": "5"},
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "count": len(normalized), "alliances": normalized,
+    }
+    output = DATA / "alliance-ranking.json"
+    DATA.mkdir(parents=True, exist_ok=True)
+    tmp = output.with_suffix(".tmp")
+    tmp.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    tmp.replace(output)
+    print(f"hgh: saved {len(normalized)} alliance ranking rows to data/alliance-ranking.json")
+
 def fetch(aid, filename, fallback_name, server, base):
     url = f'{base}/{server}/ain/%22AID%22:{aid}'
     req = urllib.request.Request(url, headers={"Accept":"application/json","User-Agent":"GGEmpire-ReadOnly-Tracker/1.0"})
@@ -56,6 +119,11 @@ def main():
     server=os.getenv("E4K_SERVER","EmpirefourkingdomsExGG2_3")
     base=os.getenv("E4K_API_BASE","https://empire-api.fly.dev").rstrip("/")
     failures=[]
+    try:
+        fetch_server_alliance_ranking(server, base)
+    except Exception as e:
+        failures.append("hgh ranking: " + str(e))
+        print(f"Ranking collector warning: {e}", file=sys.stderr)
     for aid,filename,name in ALLIANCES:
         try: fetch(aid,filename,name,server,base)
         except Exception as e: failures.append(str(e)); print(f"Collector warning: {e}",file=sys.stderr)
