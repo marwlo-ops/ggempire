@@ -340,4 +340,58 @@ async function loadServerAllianceRanking() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => { loadServerAllianceRanking(); window.setInterval(() => { if (document.visibilityState === 'visible') loadServerAllianceRanking(); }, 5 * 60 * 1000); });
+
+async function loadWorldMonitorFromApi() {
+  const cards = document.querySelectorAll("#world-monitor .monitor-card");
+  if (!cards.length) return;
+  const activityCard = cards[1];
+  const changeCard = cards[2];
+  const honorCard = cards[3];
+  const setMetric = (card, value, label, status) => {
+    if (!card) return;
+    const metric = card.querySelector(".monitor-metric b");
+    const small = card.querySelector(".monitor-metric small");
+    const badge = card.querySelector(".monitor-state");
+    if (metric) metric.textContent = value;
+    if (small) small.textContent = label;
+    if (badge) badge.textContent = status;
+  };
+  try {
+    const snapshots = await Promise.all([
+      fetch("./data/reborn-latest.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null),
+      fetch("./data/alliance-41343.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null)
+    ]);
+    const valid = snapshots.filter(s => s && Array.isArray(s.players) && s.players.length);
+    const players = valid.flatMap(s => s.players.map(p => ({...p, aid:s.aid})));
+    const unique = new Map(players.map(p => [String(p.oid), p]));
+    const list = [...unique.values()];
+    const measured = list.filter(p => p.honor !== null && p.honor !== undefined).length;
+    setMetric(activityCard, measured.toLocaleString("pl-PL"), "graczy z pomiarem w zapisanych sojuszach", valid.length ? "Dane z archiwum API" : "Oczekuje na pierwszy odczyt");
+    let changes = 0, honorChanges = 0;
+    for (const s of valid) {
+      const prev = s.prev_players || {};
+      for (const p of (s.players || [])) {
+        const old = prev[String(p.oid)] || prev[p.oid];
+        if (!old) continue;
+        if (String(old.name || "") !== String(p.name || "")) changes++;
+        if (p.honor != null && old.honor != null && Number(p.honor) !== Number(old.honor)) honorChanges++;
+      }
+    }
+    setMetric(changeCard, String(changes), "zmian nicków wykrytych w śledzonych sojuszach", valid.length ? "Porównano snapshoty" : "Oczekuje na pierwszy odczyt");
+    setMetric(honorCard, String(honorChanges), "zmian honoru między ostatnimi odczytami", valid.length ? "Porównano snapshoty" : "Oczekuje na pierwszy odczyt");
+    const note = document.querySelector("#world-monitor .monitor-alert p");
+    if (note) note.textContent = "Dane pobierane są z publicznego API E4K. Ranking serwera działa osobno; statystyki aktywności i zmian liczone są na podstawie kolejnych zapisanych pomiarów sojuszy ReBoRN i MADDEVILS. API nie zwraca historii ataków w obecnie podłączonym endpointcie.";
+  } catch (error) {
+    setMetric(activityCard, "—", "brak odczytu z archiwum API", "API niedostępne");
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  loadServerAllianceRanking();
+  loadWorldMonitorFromApi();
+  window.setInterval(() => {
+    if (document.visibilityState === "visible") {
+      loadServerAllianceRanking();
+      loadWorldMonitorFromApi();
+    }
+  }, 5 * 60 * 1000);
+});
