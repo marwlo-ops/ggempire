@@ -231,7 +231,7 @@ def main():
 
     # Do not replace the player DB with a partial scan if most roster calls failed.
     successful = len(alliance_details)
-    if successful < max(2, int(len(selected_aids) * 0.5)) or not players_by_key:
+    if successful < len(selected_aids) or not players_by_key:
         atomic_json(DATA / "scan_pl1_status.json", {
             "verified": False, "server": SERVER, "updated_at": now.isoformat(),
             "error": "Too many roster failures; previous player database preserved.",
@@ -266,12 +266,17 @@ def main():
 
     history = read_json(DATA / "history_pl1.json", {"server": SERVER, "snapshots": []})
     snapshots = history.get("snapshots", [])
-    snapshots.append({
-        "at": now.isoformat(), "players": {
-            key: {field: player.get(field) for field in ("pid", "name", "might", "honor", "alliance_aid", "alliance_name")}
-            for key, player in players_by_key.items()
-        }, "changes": changes,
-    })
+    # Full baseline snapshots every 6 hours; between baselines retain only change events.
+    # This keeps 14-day history useful without duplicating every player record every 30 minutes.
+    if now.hour % 6 == 0 and now.minute < 35:
+        snapshots.append({
+            "at": now.isoformat(), "kind": "baseline", "players": {
+                key: {field: player.get(field) for field in ("pid", "name", "might", "honor", "alliance_aid", "alliance_name")}
+                for key, player in players_by_key.items()
+            }, "changes": changes,
+        })
+    elif changes:
+        snapshots.append({"at": now.isoformat(), "kind": "changes", "changes": changes})
     cutoff = now - timedelta(days=HISTORY_DAYS)
     snapshots = [s for s in snapshots if s.get("at") and datetime.fromisoformat(s["at"].replace("Z", "+00:00")) >= cutoff]
     atomic_json(DATA / "alliances_pl1.json", {
