@@ -32,7 +32,7 @@
       const response = await fetch(selected.file + "?t=" + Date.now(), {cache:"no-store"});
       if (!response.ok) throw new Error("HTTP " + response.status);
       const data = await response.json();
-      if (!data.verified || !Array.isArray(data.players) || !data.players.length) throw new Error("Brak danych graczy w snapshotcie");
+      if (!Array.isArray(data.players) || !data.players.length) throw new Error("API nie zwróciło listy graczy w snapshotcie");
       byId("tracker-alliance-name").textContent = data.alliance_name || selected.name;
       byId("tracker-count").textContent = fmt(data.players.length);
       byId("tracker-might").textContent = data.total_might > 0 ? fmt(data.total_might) : "Brak danych";
