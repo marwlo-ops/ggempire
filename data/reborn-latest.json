@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T12:03:57.857501+00:00",
+  "fetched_at": "2026-10-19T12:55:25.819601+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -480,9 +480,9 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1131,
+      "honor": 1549,
       "might": null,
-      "loot_current": 130955385
+      "loot_current": 130955605
     },
     "145184": {
       "oid": "145184",
@@ -795,9 +795,9 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1647,
+      "honor": 1673,
       "might": null,
-      "loot_current": 3137681
+      "loot_current": 4543620
     },
     "273782": {
       "oid": "273782",
@@ -937,9 +937,9 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1131,
+      "honor": 1549,
       "might": null,
-      "loot_current": 130955385
+      "loot_current": 130955605
     },
     {
       "oid": "145184",
@@ -1252,9 +1252,9 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1647,
+      "honor": 1673,
       "might": null,
-      "loot_current": 3137681
+      "loot_current": 4543620
     },
     {
       "oid": "273782",
