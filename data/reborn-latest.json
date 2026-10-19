@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T12:55:25.819601+00:00",
+  "fetched_at": "2026-10-19T13:40:18.176733+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -76,9 +76,9 @@
     },
     "26911": {
       "name": "Vortex",
-      "honor": 1131,
+      "honor": 1549,
       "might": null,
-      "loot_current": 130955385
+      "loot_current": 130955605
     },
     "145184": {
       "name": "Aldo Raine",
@@ -346,9 +346,9 @@
     },
     "1751146": {
       "name": "Tottenham 1882",
-      "honor": 1647,
+      "honor": 1673,
       "might": null,
-      "loot_current": 3137681
+      "loot_current": 4543620
     },
     "273782": {
       "name": "Dark_Imperator",
@@ -676,7 +676,7 @@
     "332746": {
       "oid": "332746",
       "name": "-LUCEK-",
-      "honor": 1716,
+      "honor": 1883,
       "might": null,
       "loot_current": 413079205
     },
@@ -795,9 +795,9 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1673,
+      "honor": 1681,
       "might": null,
-      "loot_current": 4543620
+      "loot_current": 6428152
     },
     "273782": {
       "oid": "273782",
@@ -1133,7 +1133,7 @@
     {
       "oid": "332746",
       "name": "-LUCEK-",
-      "honor": 1716,
+      "honor": 1883,
       "might": null,
       "loot_current": 413079205
     },
@@ -1252,9 +1252,9 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1673,
+      "honor": 1681,
       "might": null,
-      "loot_current": 4543620
+      "loot_current": 6428152
     },
     {
       "oid": "273782",
