@@ -9,16 +9,16 @@ SPEC.loader.exec_module(diagnose_api)
 
 
 class SummarizeTests(unittest.TestCase):
-    def test_dict_shape_is_preserved_without_values_at_depth_limit(self):
-        value = {"content": {"A": {"N": "Alliance", "M": [{"N": "private-player-name", "OID": 123}]}}}
+    def test_nested_player_records_are_reduced_to_keys(self):
+        value = {"content": {"A": {"M": [{"N": "private-player-name", "OID": 123}]}}}
         result = diagnose_api.summarize(value)
-        self.assertEqual(result["content"]["A"]["N"], "Alliance")
         self.assertEqual(result["content"]["A"]["M"]["type"], "array")
         self.assertNotIn("private-player-name", repr(result))
+        self.assertNotIn("123", repr(result))
 
-    def test_long_strings_are_redacted_to_length(self):
-        result = diagnose_api.summarize({"token": "x" * 300})
-        self.assertEqual(result["token"], {"type": "string", "length": 300})
+    def test_long_string_is_reduced_at_depth_limit(self):
+        result = diagnose_api.summarize({"a": {"b": {"c": "x" * 300}}})
+        self.assertEqual(result["a"]["b"]["c"], {"type": "string", "length": 300})
 
     def test_empty_arrays_are_safe(self):
         self.assertEqual(diagnose_api.summarize([]), {"type": "array", "length": 0, "samples": []})
