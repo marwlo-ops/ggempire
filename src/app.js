@@ -151,6 +151,13 @@ function intelAgeDays(dateString) {
   return Math.floor((new Date().setHours(12,0,0,0) - date.getTime()) / 86400000);
 }
 const PLAYER_PROFILE_KEY = "ggempire.e4k.player-profile.v1";
+async function fetchPlayerByNickname(nick) {
+  const payload = encodeURIComponent(JSON.stringify({ LT: 6, LID: 1, SV: nick }));
+  const url = `${E4K_API_BASE}/${E4K_SERVER}/hgh/${payload}`;
+  const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
+  if (!response.ok) throw new Error("API HTTP " + response.status);
+  return response.json();
+}
 function initPlayerProfile() {
  const form=$("#player-profile-form"); if(!form)return;
  const nickname=$("#player-nickname"), personalId=$("#player-personal-id"), result=$("#player-profile-result"), status=$("#player-link-status");
@@ -177,7 +184,24 @@ function initPlayerProfile() {
   result.innerHTML='<span class="profile-result-icon">!</span><div><b>'+escapeHtml(p.nickname)+' · profil zapisany lokalnie</b><p>To nie jest sesja logowania Goodgame i nie potwierdza własności konta. Automatyczne statystyki i historia nie są połączone bez obsługiwanej metody API.</p></div>';
  }
  form.addEventListener("submit",e=>{e.preventDefault();const n=nickname.value.trim();if(!n)return;try{localStorage.setItem(PLAYER_PROFILE_KEY,JSON.stringify({nickname:n,personalId:personalId.value.trim(),savedAt:new Date().toISOString(),verified:false}));render()}catch{alert("Nie udało się zapisać profilu w tej przeglądarce.")}});
- $("#player-profile-clear")?.addEventListener("click",()=>{try{localStorage.removeItem(PLAYER_PROFILE_KEY)}catch{}render()});render();
+ $("#player-profile-clear")?.addEventListener("click",()=>{try{localStorage.removeItem(PLAYER_PROFILE_KEY)}catch{}render();});
+ render();
+ if (urlNickname) {
+   fetchPlayerByNickname(urlNickname).then((payload) => {
+     const content = payload && typeof payload === "object" ? payload.content : null;
+     const detail = document.createElement("p");
+     if (String(payload?.return_code) === "0" && content != null) {
+       detail.textContent = "Odpowiedź hgh dla wyszukiwania nicku została odebrana. Fragment odpowiedzi: " + JSON.stringify(content).slice(0, 900);
+     } else {
+       detail.textContent = "hgh nie zwróciło potwierdzonych danych profilu. Kod API: " + String(payload?.return_code ?? "brak") + ".";
+     }
+     result.appendChild(detail);
+   }).catch((error) => {
+     const detail = document.createElement("p");
+     detail.textContent = "Nie udało się pobrać profilu po nicku (sieć/CORS/API): " + error.message + ". Nick pozostaje zapisany lokalnie.";
+     result.appendChild(detail);
+   });
+ }
 }
 function initIntelligence() {
   const form = $("#intel-form");
