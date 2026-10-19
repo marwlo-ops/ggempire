@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T07:59:17.824409+00:00",
+  "fetched_at": "2026-10-19T08:40:43.827270+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -136,7 +136,7 @@
     "1845163": {
       "honor": 1050,
       "might": null,
-      "loot_current": 1872035
+      "loot_current": 1834594
     },
     "222651": {
       "honor": 429,
@@ -166,12 +166,12 @@
     "535240": {
       "honor": 1580,
       "might": null,
-      "loot_current": 189547190
+      "loot_current": 170592471
     },
     "1345366": {
-      "honor": 1603,
+      "honor": 1622,
       "might": null,
-      "loot_current": 48075063
+      "loot_current": 48076004
     },
     "146502": {
       "honor": 0,
@@ -246,7 +246,7 @@
     "235098": {
       "honor": 738,
       "might": null,
-      "loot_current": 677496
+      "loot_current": 663946
     },
     "53340": {
       "honor": 2120,
@@ -279,9 +279,9 @@
       "loot_current": 355001310
     },
     "511724": {
-      "honor": 1408,
+      "honor": 1547,
       "might": null,
-      "loot_current": 77227740
+      "loot_current": 77493223
     },
     "1836535": {
       "honor": 672,
@@ -321,7 +321,7 @@
     "1417454": {
       "honor": 1273,
       "might": null,
-      "loot_current": 76781316
+      "loot_current": 69103184
     },
     "1847009": {
       "honor": 909,
@@ -415,7 +415,7 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 995,
+      "honor": 1225,
       "might": null,
       "loot_current": 130536589
     },
@@ -725,7 +725,7 @@
       "name": "Bawid",
       "honor": 672,
       "might": null,
-      "loot_current": 13776225
+      "loot_current": 12949651
     },
     "1751146": {
       "oid": "1751146",
@@ -737,9 +737,9 @@
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1602,
+      "honor": 1828,
       "might": null,
-      "loot_current": 2392185460
+      "loot_current": 2392257625
     },
     "1950953": {
       "oid": "1950953",
@@ -872,7 +872,7 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 995,
+      "honor": 1225,
       "might": null,
       "loot_current": 130536589
     },
@@ -1182,7 +1182,7 @@
       "name": "Bawid",
       "honor": 672,
       "might": null,
-      "loot_current": 13776225
+      "loot_current": 12949651
     },
     {
       "oid": "1751146",
@@ -1194,9 +1194,9 @@
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1602,
+      "honor": 1828,
       "might": null,
-      "loot_current": 2392185460
+      "loot_current": 2392257625
     },
     {
       "oid": "1950953",
