@@ -307,54 +307,44 @@ async function loadServerAllianceRanking() {
   const body = document.getElementById("server-alliance-ranking");
   const status = document.getElementById("server-ranking-status");
   if (!body || !status) return;
-  status.textContent = "Pobieranie rankingu sojuszy z API…";
+  status.textContent = "Pobieranie rankingu sojuszy przez hgh…";
   try {
-    const url = `${E4K_API_BASE}/${E4K_SERVER}/llsp/%22LT%22:11,%22R%22:1`;
-    const response = await fetch(url, {headers:{Accept:"application/json"}, cache:"no-store"});
+    const response = await fetch("./data/alliance-ranking.json?t=" + Date.now(), { cache: "no-store" });
     if (!response.ok) throw new Error("HTTP " + response.status);
-    const payload = await response.json();
-    if (String(payload.return_code) !== "0") throw new Error(payload.error || "API nie zwróciło poprawnego rankingu");
-    const content = payload.content || {};
-    let rows = content.L || content.A || content.alliances || content.list || [];
-    if (!Array.isArray(rows) && typeof rows === "object") rows = Object.values(rows);
-    if (!Array.isArray(rows) || !rows.length) throw new Error("Odpowiedź nie zawiera listy rankingowej");
+    const snapshot = await response.json();
+    const rows = snapshot.alliances;
+    if (snapshot.verified !== true || !Array.isArray(rows) || !rows.length) {
+      throw new Error("Brak poprawnego snapshotu rankingu hgh");
+    }
     body.replaceChildren();
-    rows.slice(0,100).forEach((entry,index)=>{
-      // llsw leaderboard rows may be [rank, score, payload], not always plain objects.
-      let item = entry, rank = index + 1, score = null;
-      if (Array.isArray(entry)) {
-        const objectIndex = entry.findIndex(value => value && typeof value === "object");
-        if (objectIndex >= 0) {
-          item = entry[objectIndex] || {};
-          const rankValue = Number(entry[objectIndex - 2]);
-          const scoreValue = Number(entry[objectIndex - 1]);
-          if (Number.isFinite(rankValue)) rank = rankValue;
-          if (Number.isFinite(scoreValue)) score = scoreValue;
-        } else {
-          item = { N: entry.find(value => typeof value === "string"), AID: entry[0] };
-        }
-      }
-      if (!item || typeof item !== "object") item = {};
-      const row=document.createElement("tr");
-      const values=[
-        rank,
-        firstValue(item,["N","name","NAME","AN","alliance_name"]) || "—",
-        firstValue(item,["AID","aid","ID","id","allianceId"]) ?? "—",
-        firstValue(item,["MP","PP","P","PO","PW","power","Power","S"]) ?? score ?? "—",
-        firstValue(item,["MC","NM","MEM","MCount","memberCount","membersCount","C"]) ?? "—"
+    rows.slice(0, 100).forEach((entry, index) => {
+      const row = document.createElement("tr");
+      const values = [
+        entry.rank ?? index + 1,
+        entry.name ?? "—",
+        entry.aid ?? "—",
+        entry.power ?? "—",
+        entry.member_count ?? "—"
       ];
-      values.forEach((value,i)=>{const cell=document.createElement("td");cell.textContent=typeof value==="number"?value.toLocaleString("pl-PL"):String(value);row.appendChild(cell)});
+      values.forEach((value) => {
+        const cell = document.createElement("td");
+        cell.textContent = typeof value === "number" ? value.toLocaleString("pl-PL") : String(value);
+        row.appendChild(cell);
+      });
       body.appendChild(row);
     });
-    status.textContent = "Pobrano " + Math.min(rows.length,100) + " pozycji · " + new Date().toLocaleTimeString("pl-PL",{hour:"2-digit",minute:"2-digit"});
-  } catch(error) {
+    const fetched = snapshot.fetched_at ? new Date(snapshot.fetched_at).toLocaleString("pl-PL") : "—";
+    status.textContent = "Snapshot hgh · " + Math.min(rows.length, 100) + " pozycji · aktualizacja " + fetched;
+  } catch (error) {
     status.textContent = "Ranking niedostępny: " + error.message + ".";
-    const row=document.createElement("tr"), cell=document.createElement("td");
-    cell.colSpan=5;cell.className="tracker-empty";cell.textContent="API nie zwróciło listy rankingu w oczekiwanym formacie. Szczegóły: "+error.message;
-    row.appendChild(cell);body.replaceChildren(row);
+    const row = document.createElement("tr"), cell = document.createElement("td");
+    cell.colSpan = 5;
+    cell.className = "tracker-empty";
+    cell.textContent = "Brak zapisanego rankingu z endpointu hgh. Po udanym przebiegu GitHub Actions dane pojawią się automatycznie.";
+    row.appendChild(cell);
+    body.replaceChildren(row);
   }
 }
-
 
 async function loadWorldMonitorFromApi() {
   const cards = document.querySelectorAll("#world-monitor .monitor-card");
