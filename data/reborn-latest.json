@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T10:06:58.665768+00:00",
+  "fetched_at": "2026-10-19T10:44:54.940187+00:00",
   "player_count": 65,
   "total_might": 0,
   "prev_players": {
@@ -46,17 +46,17 @@
     "30359": {
       "honor": 2251,
       "might": null,
-      "loot_current": 201182360
-    },
-    "1718275": {
-      "honor": 1846,
-      "might": null,
-      "loot_current": 623260402
+      "loot_current": 181064124
     },
     "1957380": {
       "honor": 1028,
       "might": null,
       "loot_current": 578876494
+    },
+    "1718275": {
+      "honor": 1846,
+      "might": null,
+      "loot_current": 623260402
     },
     "1331978": {
       "honor": 1215,
@@ -64,9 +64,9 @@
       "loot_current": 136557311
     },
     "26911": {
-      "honor": 1225,
+      "honor": 1131,
       "might": null,
-      "loot_current": 130536589
+      "loot_current": 130937728
     },
     "145184": {
       "honor": 1082,
@@ -169,9 +169,9 @@
       "loot_current": 170592471
     },
     "1345366": {
-      "honor": 1622,
+      "honor": 1740,
       "might": null,
-      "loot_current": 48076004
+      "loot_current": 48087798
     },
     "146502": {
       "honor": 0,
@@ -256,7 +256,7 @@
     "642004": {
       "honor": 1664,
       "might": null,
-      "loot_current": 615733
+      "loot_current": 603418
     },
     "1259980": {
       "honor": 740,
@@ -401,7 +401,7 @@
     "1718275": {
       "oid": "1718275",
       "name": ".Wini7.",
-      "honor": 1846,
+      "honor": 1948,
       "might": null,
       "loot_current": 623260402
     },
@@ -417,7 +417,7 @@
       "name": "Vortex",
       "honor": 1131,
       "might": null,
-      "loot_current": 130937728
+      "loot_current": 130955385
     },
     "145184": {
       "oid": "145184",
@@ -732,7 +732,7 @@
       "name": "Tottenham 1882",
       "honor": 1647,
       "might": null,
-      "loot_current": 3137677
+      "loot_current": 3137681
     },
     "273782": {
       "oid": "273782",
@@ -858,7 +858,7 @@
     {
       "oid": "1718275",
       "name": ".Wini7.",
-      "honor": 1846,
+      "honor": 1948,
       "might": null,
       "loot_current": 623260402
     },
@@ -874,7 +874,7 @@
       "name": "Vortex",
       "honor": 1131,
       "might": null,
-      "loot_current": 130937728
+      "loot_current": 130955385
     },
     {
       "oid": "145184",
@@ -1189,7 +1189,7 @@
       "name": "Tottenham 1882",
       "honor": 1647,
       "might": null,
-      "loot_current": 3137677
+      "loot_current": 3137681
     },
     {
       "oid": "273782",
