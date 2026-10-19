@@ -38,15 +38,16 @@ def fetch(aid, filename, fallback_name, server, base):
         old=prev.get("players_by_oid") or {str(p["oid"]):p for p in prev.get("players",[])}
     except (OSError,json.JSONDecodeError): pass
     prev_players={str(k):{field:v.get(field) for field in ("name","honor","might","loot_current")} for k,v in old.items()}
-    total=sum(float(p["might"]) for p in players if p["might"] is not None and str(p["might"]).replace(".","",1).isdigit())
+    might_values=[float(p["might"]) for p in players if p["might"] is not None and str(p["might"]).replace(".","",1).isdigit()]
+    total_might=round(sum(might_values)) if might_values else None
     snapshot={"verified":True,"source":base,"server":server,"aid":aid,
       "alliance_name":alliance.get("N",alliance.get("name",fallback_name)),
       "fetched_at":datetime.now(timezone.utc).isoformat(),"player_count":len(players),
-      "total_might":round(total),"prev_players":prev_players,
+      "total_might":total_might,"prev_players":prev_players,
       "players_by_oid":{p["oid"]:p for p in players},"players":players}
     DATA.mkdir(parents=True,exist_ok=True)
     tmp=output.with_suffix(".tmp"); tmp.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); tmp.replace(output)
-    print(f"AID {aid}: saved {len(players)} players to {filename}; total_might={round(total)}")
+    print(f"AID {aid}: saved {len(players)} players to {filename}; total_might={total_might if total_might is not None else chr(110)+chr(47)+chr(97)}")
     return True
 
 def main():
