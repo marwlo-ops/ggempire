@@ -405,47 +405,58 @@ async function loadServerAllianceRanking() {
 }
 
 async function loadWorldMonitorFromApi() {
-  const cards = document.querySelectorAll("#world-monitor .monitor-card");
-  if (!cards.length) return;
-  const activityCard = cards[1];
-  const changeCard = cards[2];
-  const honorCard = cards[3];
-  const setMetric = (card, value, label, status) => {
-    if (!card) return;
-    const metric = card.querySelector(".monitor-metric b");
-    const small = card.querySelector(".monitor-metric small");
-    const badge = card.querySelector(".monitor-state");
-    if (metric) metric.textContent = value;
-    if (small) small.textContent = label;
-    if (badge) badge.textContent = status;
+  const rankingBody = document.getElementById("world-alliance-ranking");
+  const changesBody = document.getElementById("world-player-changes");
+  if (!rankingBody || !changesBody) return;
+  const empty = (body, message) => {
+    const row = document.createElement("tr"), cell = document.createElement("td");
+    cell.colSpan = 5; cell.textContent = message; row.appendChild(cell); body.replaceChildren(row);
   };
   try {
-    const snapshots = await Promise.all([
-      fetch("./data/reborn-latest.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null),
-      fetch("./data/alliance-41343.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok ? r.json() : null)
+    const [ar, pr, hr] = await Promise.all([
+      fetch("./data/alliances_pl1.json?t=" + Date.now(), {cache:"no-store"}),
+      fetch("./data/players_pl1.json?t=" + Date.now(), {cache:"no-store"}),
+      fetch("./data/history_pl1.json?t=" + Date.now(), {cache:"no-store"})
     ]);
-    const valid = snapshots.filter(s => s && Array.isArray(s.players) && s.players.length);
-    const players = valid.flatMap(s => s.players.map(p => ({...p, aid:s.aid})));
-    const unique = new Map(players.map(p => [String(p.oid), p]));
-    const list = [...unique.values()];
-    const measured = list.filter(p => p.honor !== null && p.honor !== undefined).length;
-    setMetric(activityCard, measured.toLocaleString("pl-PL"), "graczy z pomiarem w zapisanych sojuszach", valid.length ? "Dane z archiwum API" : "Oczekuje na pierwszy odczyt");
-    let changes = 0, honorChanges = 0;
-    for (const s of valid) {
-      const prev = s.prev_players || {};
-      for (const p of (s.players || [])) {
-        const old = prev[String(p.oid)] || prev[p.oid];
-        if (!old) continue;
-        if (String(old.name || "") !== String(p.name || "")) changes++;
-        if (p.honor != null && old.honor != null && Number(p.honor) !== Number(old.honor)) honorChanges++;
-      }
-    }
-    setMetric(changeCard, String(changes), "zmian nicków wykrytych w śledzonych sojuszach", valid.length ? "Porównano snapshoty" : "Oczekuje na pierwszy odczyt");
-    setMetric(honorCard, String(honorChanges), "zmian honoru między ostatnimi odczytami", valid.length ? "Porównano snapshoty" : "Oczekuje na pierwszy odczyt");
-    const note = document.querySelector("#world-monitor .monitor-alert p");
-    if (note) note.textContent = "Dane pobierane są z publicznego API E4K. Ranking serwera działa osobno; statystyki aktywności i zmian liczone są na podstawie kolejnych zapisanych pomiarów sojuszy ReBoRN i MADDEVILS. API nie zwraca historii ataków w obecnie podłączonym endpointcie.";
-  } catch (error) {
-    setMetric(activityCard, "—", "brak odczytu z archiwum API", "API niedostępne");
+    if (!ar.ok || !pr.ok) throw new Error("baza PL1 nie została jeszcze opublikowana");
+    const [ad, pd, hd] = await Promise.all([ar.json(), pr.json(), hr.ok ? hr.json() : Promise.resolve({snapshots:[]})]);
+    const alliances = Array.isArray(ad.alliances) ? ad.alliances : [];
+    const players = Array.isArray(pd.players) ? pd.players : [];
+    rankingBody.replaceChildren();
+    alliances.slice(0,100).forEach((a,i) => {
+      const row=document.createElement("tr");
+      [a.rank ?? i+1,a.name ?? "—",a.aid ?? "—",a.power == null ? "—" : Number(a.power).toLocaleString("pl-PL"),a.member_count == null ? "—" : Number(a.member_count).toLocaleString("pl-PL")].forEach(v=>{const td=document.createElement("td");td.textContent=String(v);row.appendChild(td);});
+      rankingBody.appendChild(row);
+    });
+    if (!alliances.length) empty(rankingBody,"Ranking nie zawiera jeszcze użytecznych pozycji.");
+    const rankingStatus=document.getElementById("world-ranking-status");
+    if(rankingStatus) rankingStatus.textContent="Ostatnia baza: "+String(ad.updated_at || "brak daty")+" · "+alliances.length+" pozycji";
+    const allianceCount=document.getElementById("world-alliance-count");
+    if(allianceCount) allianceCount.textContent=alliances.length.toLocaleString("pl-PL");
+    const playerCount=document.querySelector("#world-monitor .monitor-card:nth-child(2) .monitor-metric b");
+    if(playerCount) playerCount.textContent=players.length.toLocaleString("pl-PL");
+    const history=Array.isArray(hd.snapshots)?hd.snapshots:[];
+    const latest=history[history.length-1];
+    const events=Array.isArray(latest?.changes)?latest.changes:[];
+    const changesCount=document.querySelector("#world-monitor .monitor-card:nth-child(3) .monitor-metric b");
+    if(changesCount) changesCount.textContent=events.length.toLocaleString("pl-PL");
+    changesBody.replaceChildren();
+    events.slice(-100).reverse().forEach(e=>{
+      const row=document.createElement("tr");
+      let field=e.field || "zmiana";
+      if(field==="might") field="Moc";
+      else if(field==="honor") field="Honor";
+      else if(field==="alliance_aid" || field==="alliance_name") field="Zmiana sojuszu";
+      else if(field==="not_seen_in_scan") field="Nieobecny w skanie";
+      [e.name || e.key || "—",field,e.old == null ? "—" : String(e.old),e.new == null ? "—" : String(e.new),e.alliance_name || "—"].forEach(v=>{const td=document.createElement("td");td.textContent=String(v);row.appendChild(td);});
+      changesBody.appendChild(row);
+    });
+    if(!events.length) empty(changesBody,"Brak zmian w ostatnim zapisanym pomiarze.");
+  } catch(error) {
+    const status=document.getElementById("world-ranking-status");
+    if(status) status.textContent="Baza PL1 niedostępna: "+error.message;
+    empty(rankingBody,"Skaner nie opublikował jeszcze bazy sojuszy.");
+    empty(changesBody,"Historia pojawi się po pierwszym poprawnym skanie.");
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
