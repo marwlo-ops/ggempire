@@ -4,10 +4,336 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-19T00:01:18.638576+00:00",
+  "fetched_at": "2026-10-19T00:57:51.045665+00:00",
   "player_count": 65,
   "total_might": 0,
-  "prev_players": {},
+  "prev_players": {
+    "60811": {
+      "honor": 2114,
+      "might": null,
+      "loot_current": 430677397
+    },
+    "1806100": {
+      "honor": 1196,
+      "might": null,
+      "loot_current": 4665128
+    },
+    "1848844": {
+      "honor": 1845,
+      "might": null,
+      "loot_current": 816272032
+    },
+    "1255555": {
+      "honor": 1097,
+      "might": null,
+      "loot_current": 97329917
+    },
+    "1170944": {
+      "honor": 1347,
+      "might": null,
+      "loot_current": 173271071
+    },
+    "1813640": {
+      "honor": 996,
+      "might": null,
+      "loot_current": 163441318
+    },
+    "1856395": {
+      "honor": 1175,
+      "might": null,
+      "loot_current": 2285970
+    },
+    "30359": {
+      "honor": 2251,
+      "might": null,
+      "loot_current": 201182360
+    },
+    "1718275": {
+      "honor": 1846,
+      "might": null,
+      "loot_current": 692511558
+    },
+    "1957380": {
+      "honor": 1028,
+      "might": null,
+      "loot_current": 636128015
+    },
+    "1331978": {
+      "honor": 1215,
+      "might": null,
+      "loot_current": 136557311
+    },
+    "26911": {
+      "honor": 995,
+      "might": null,
+      "loot_current": 145040654
+    },
+    "145184": {
+      "honor": 1082,
+      "might": null,
+      "loot_current": 73008548
+    },
+    "1936831": {
+      "honor": 1911,
+      "might": null,
+      "loot_current": 360449
+    },
+    "1270327": {
+      "honor": 749,
+      "might": null,
+      "loot_current": 69781572
+    },
+    "340001": {
+      "honor": 954,
+      "might": null,
+      "loot_current": 305468
+    },
+    "1727679": {
+      "honor": 1436,
+      "might": null,
+      "loot_current": 178411806
+    },
+    "638767": {
+      "honor": 936,
+      "might": null,
+      "loot_current": 24178632
+    },
+    "1834428": {
+      "honor": 2015,
+      "might": null,
+      "loot_current": 55156780
+    },
+    "1834928": {
+      "honor": 1386,
+      "might": null,
+      "loot_current": 2044452
+    },
+    "315695": {
+      "honor": 1540,
+      "might": null,
+      "loot_current": 117961507
+    },
+    "1940528": {
+      "honor": 1207,
+      "might": null,
+      "loot_current": 750107462
+    },
+    "1598120": {
+      "honor": 1622,
+      "might": null,
+      "loot_current": 182567959
+    },
+    "983615": {
+      "honor": 2444,
+      "might": null,
+      "loot_current": 603779269
+    },
+    "140466": {
+      "honor": 902,
+      "might": null,
+      "loot_current": 110490212
+    },
+    "1845163": {
+      "honor": 1050,
+      "might": null,
+      "loot_current": 1872035
+    },
+    "222651": {
+      "honor": 429,
+      "might": null,
+      "loot_current": 18192709
+    },
+    "1870884": {
+      "honor": 1229,
+      "might": null,
+      "loot_current": 140240768
+    },
+    "1197230": {
+      "honor": 1007,
+      "might": null,
+      "loot_current": 199989474
+    },
+    "1382313": {
+      "honor": 1783,
+      "might": null,
+      "loot_current": 145652954
+    },
+    "1109550": {
+      "honor": 931,
+      "might": null,
+      "loot_current": 334844
+    },
+    "535240": {
+      "honor": 1580,
+      "might": null,
+      "loot_current": 189547190
+    },
+    "1345366": {
+      "honor": 1480,
+      "might": null,
+      "loot_current": 53360068
+    },
+    "146502": {
+      "honor": 0,
+      "might": null,
+      "loot_current": 4389
+    },
+    "1230550": {
+      "honor": 931,
+      "might": null,
+      "loot_current": 38871707
+    },
+    "1772369": {
+      "honor": 1613,
+      "might": null,
+      "loot_current": 407475053
+    },
+    "298959": {
+      "honor": 1091,
+      "might": null,
+      "loot_current": 696623
+    },
+    "271439": {
+      "honor": 1701,
+      "might": null,
+      "loot_current": 297208408
+    },
+    "1915987": {
+      "honor": 596,
+      "might": null,
+      "loot_current": 341667782
+    },
+    "332746": {
+      "honor": 1716,
+      "might": null,
+      "loot_current": 458976894
+    },
+    "888925": {
+      "honor": 1660,
+      "might": null,
+      "loot_current": 3162129
+    },
+    "1774409": {
+      "honor": 1071,
+      "might": null,
+      "loot_current": 46779592
+    },
+    "1818825": {
+      "honor": 583,
+      "might": null,
+      "loot_current": 71522751
+    },
+    "1878344": {
+      "honor": 1282,
+      "might": null,
+      "loot_current": 229385232
+    },
+    "1783375": {
+      "honor": 1068,
+      "might": null,
+      "loot_current": 1512022
+    },
+    "1153991": {
+      "honor": 1501,
+      "might": null,
+      "loot_current": 122935452
+    },
+    "173914": {
+      "honor": 1024,
+      "might": null,
+      "loot_current": 42809433
+    },
+    "235098": {
+      "honor": 738,
+      "might": null,
+      "loot_current": 677496
+    },
+    "53340": {
+      "honor": 2066,
+      "might": null,
+      "loot_current": 402577952
+    },
+    "642004": {
+      "honor": 1664,
+      "might": null,
+      "loot_current": 615733
+    },
+    "1259980": {
+      "honor": 740,
+      "might": null,
+      "loot_current": 3064304
+    },
+    "854121": {
+      "honor": 1371,
+      "might": null,
+      "loot_current": 17883438
+    },
+    "230756": {
+      "honor": 1124,
+      "might": null,
+      "loot_current": 386065399
+    },
+    "1936378": {
+      "honor": 1150,
+      "might": null,
+      "loot_current": 394445900
+    },
+    "511724": {
+      "honor": 1408,
+      "might": null,
+      "loot_current": 77227740
+    },
+    "1836535": {
+      "honor": 672,
+      "might": null,
+      "loot_current": 13776225
+    },
+    "1751146": {
+      "honor": 1647,
+      "might": null,
+      "loot_current": 3137677
+    },
+    "273782": {
+      "honor": 1602,
+      "might": null,
+      "loot_current": 2628775231
+    },
+    "1950953": {
+      "honor": 1294,
+      "might": null,
+      "loot_current": 196834235
+    },
+    "1295460": {
+      "honor": 980,
+      "might": null,
+      "loot_current": 4266608499
+    },
+    "1679328": {
+      "honor": 2078,
+      "might": null,
+      "loot_current": 201830112
+    },
+    "644336": {
+      "honor": 1665,
+      "might": null,
+      "loot_current": 2657539
+    },
+    "1417454": {
+      "honor": 1273,
+      "might": null,
+      "loot_current": 76781316
+    },
+    "1847009": {
+      "honor": 909,
+      "might": null,
+      "loot_current": 305295831
+    },
+    "173692": {
+      "honor": 632,
+      "might": null,
+      "loot_current": 13248321
+    }
+  },
   "players_by_oid": {
     "60811": {
       "oid": "60811",
@@ -301,7 +627,7 @@
       "name": "Nathalie93",
       "honor": 1071,
       "might": null,
-      "loot_current": 46779592
+      "loot_current": 42101633
     },
     "1818825": {
       "oid": "1818825",
@@ -364,7 +690,7 @@
       "name": "Slapen1",
       "honor": 740,
       "might": null,
-      "loot_current": 3064304
+      "loot_current": 2972375
     },
     "854121": {
       "oid": "854121",
@@ -758,7 +1084,7 @@
       "name": "Nathalie93",
       "honor": 1071,
       "might": null,
-      "loot_current": 46779592
+      "loot_current": 42101633
     },
     {
       "oid": "1818825",
@@ -821,7 +1147,7 @@
       "name": "Slapen1",
       "honor": 740,
       "might": null,
-      "loot_current": 3064304
+      "loot_current": 2972375
     },
     {
       "oid": "854121",
