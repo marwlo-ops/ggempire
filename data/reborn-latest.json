@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T09:08:04.032990+00:00",
+  "fetched_at": "2026-10-20T09:43:45.431282+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -66,7 +66,7 @@
       "name": ".Wini7.",
       "honor": 1948,
       "might": null,
-      "loot_current": 560934362
+      "loot_current": 613985624
     },
     "1331978": {
       "name": "crynio",
@@ -76,9 +76,9 @@
     },
     "26911": {
       "name": "Vortex",
-      "honor": 1911,
+      "honor": 1673,
       "might": null,
-      "loot_current": 118163087
+      "loot_current": 118353844
     },
     "145184": {
       "name": "Aldo Raine",
@@ -126,7 +126,7 @@
       "name": "-Izud-Jacek-",
       "honor": 1386,
       "might": null,
-      "loot_current": 2003563
+      "loot_current": 1963492
     },
     "315695": {
       "name": "SzakoPL",
@@ -174,7 +174,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 113595022
+      "loot_current": 162788431
     },
     "1197230": {
       "name": "kappa123",
@@ -240,7 +240,7 @@
       "name": "Ciuciek1984",
       "honor": 596,
       "might": null,
-      "loot_current": 276750904
+      "loot_current": 288758053
     },
     "332746": {
       "name": "-LUCEK-",
@@ -264,7 +264,7 @@
       "name": "Toruń główny",
       "honor": 1224,
       "might": null,
-      "loot_current": 65503662
+      "loot_current": 81658503
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -330,7 +330,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 319526930
+      "loot_current": 356411879
     },
     "511724": {
       "name": "Monik...",
@@ -354,19 +354,19 @@
       "name": "Dark_Imperator",
       "honor": 1849,
       "might": null,
-      "loot_current": 2179104160
+      "loot_current": 2202138968
     },
     "1950953": {
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 159435730
+      "loot_current": 169567561
     },
     "1295460": {
       "name": "VanKord 2.0",
-      "honor": 980,
+      "honor": 939,
       "might": null,
-      "loot_current": 3471800480
+      "loot_current": 3577018984
     },
     "1679328": {
       "name": "Sopelo",
@@ -390,7 +390,7 @@
       "name": "Włóczykij",
       "honor": 909,
       "might": null,
-      "loot_current": 274766248
+      "loot_current": 322249955
     },
     "173692": {
       "name": "luki",
@@ -480,9 +480,9 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1673,
+      "honor": 1483,
       "might": null,
-      "loot_current": 118353844
+      "loot_current": 118358675
     },
     "145184": {
       "oid": "145184",
@@ -594,7 +594,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 162788431
+      "loot_current": 196301288
     },
     "1197230": {
       "oid": "1197230",
@@ -671,7 +671,7 @@
       "name": "Ciuciek1984",
       "honor": 596,
       "might": null,
-      "loot_current": 288758053
+      "loot_current": 301680269
     },
     "332746": {
       "oid": "332746",
@@ -699,7 +699,7 @@
       "name": "Toruń główny",
       "honor": 1224,
       "might": null,
-      "loot_current": 81658503
+      "loot_current": 88645431
     },
     "1878344": {
       "oid": "1878344",
@@ -776,7 +776,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 356411879
+      "loot_current": 416661193
     },
     "511724": {
       "oid": "511724",
@@ -811,21 +811,21 @@
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 169567561
+      "loot_current": 176810382
     },
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 939,
       "might": null,
-      "loot_current": 3577018984
+      "loot_current": 3640088261
     },
     "1679328": {
       "oid": "1679328",
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 163806787
+      "loot_current": 214557509
     },
     "644336": {
       "oid": "644336",
@@ -844,9 +844,9 @@
     "1847009": {
       "oid": "1847009",
       "name": "Włóczykij",
-      "honor": 909,
+      "honor": 1078,
       "might": null,
-      "loot_current": 322249955
+      "loot_current": 356664971
     },
     "173692": {
       "oid": "173692",
@@ -937,9 +937,9 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1673,
+      "honor": 1483,
       "might": null,
-      "loot_current": 118353844
+      "loot_current": 118358675
     },
     {
       "oid": "145184",
@@ -1051,7 +1051,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 162788431
+      "loot_current": 196301288
     },
     {
       "oid": "1197230",
@@ -1128,7 +1128,7 @@
       "name": "Ciuciek1984",
       "honor": 596,
       "might": null,
-      "loot_current": 288758053
+      "loot_current": 301680269
     },
     {
       "oid": "332746",
@@ -1156,7 +1156,7 @@
       "name": "Toruń główny",
       "honor": 1224,
       "might": null,
-      "loot_current": 81658503
+      "loot_current": 88645431
     },
     {
       "oid": "1878344",
@@ -1233,7 +1233,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 356411879
+      "loot_current": 416661193
     },
     {
       "oid": "511724",
@@ -1268,21 +1268,21 @@
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 169567561
+      "loot_current": 176810382
     },
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 939,
       "might": null,
-      "loot_current": 3577018984
+      "loot_current": 3640088261
     },
     {
       "oid": "1679328",
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 163806787
+      "loot_current": 214557509
     },
     {
       "oid": "644336",
@@ -1301,9 +1301,9 @@
     {
       "oid": "1847009",
       "name": "Włóczykij",
-      "honor": 909,
+      "honor": 1078,
       "might": null,
-      "loot_current": 322249955
+      "loot_current": 356664971
     },
     {
       "oid": "173692",
