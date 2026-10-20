@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-20T21:47:28.447010+00:00",
+  "fetched_at": "2026-10-20T22:23:01.195586+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -24,13 +24,13 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 910461917
+      "loot_current": 952041683
     },
     "1681311": {
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 311130389
+      "loot_current": 344829175
     },
     "941700": {
       "name": "NOXAM",
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 504878072
+      "loot_current": 505136599
     },
     "1891821": {
       "name": "Aber",
@@ -198,7 +198,7 @@
       "name": "pablo dux",
       "honor": 1285,
       "might": null,
-      "loot_current": 106400193
+      "loot_current": 113436818
     },
     "1956780": {
       "name": "قطط المحاربين",
@@ -250,9 +250,9 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1633,
+      "honor": 1707,
       "might": null,
-      "loot_current": 2514506115
+      "loot_current": 2704007727
     },
     "1920035": {
       "name": "eDuke",
@@ -280,35 +280,35 @@
       "name": "Tazgov",
       "honor": 1239,
       "might": null,
-      "loot_current": 207202006
+      "loot_current": 186481805
     },
     "1141204": {
       "oid": "1141204",
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 952041683
+      "loot_current": 856837515
     },
     "1681311": {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 344829175
+      "loot_current": 310346257
     },
     "941700": {
       "oid": "941700",
       "name": "NOXAM",
       "honor": 1076,
       "might": null,
-      "loot_current": 523054281
+      "loot_current": 470748853
     },
     "1762193": {
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 1328,
       "might": null,
-      "loot_current": 4179085
+      "loot_current": 4053712
     },
     "8653": {
       "oid": "8653",
@@ -364,7 +364,7 @@
       "name": "Lord Szakal",
       "honor": 831,
       "might": null,
-      "loot_current": 55945417
+      "loot_current": 50350875
     },
     "1046871": {
       "oid": "1046871",
@@ -420,7 +420,7 @@
       "name": "RoB",
       "honor": 1482,
       "might": null,
-      "loot_current": 262368448
+      "loot_current": 236131603
     },
     "1668728": {
       "oid": "1668728",
@@ -476,7 +476,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 505136599
+      "loot_current": 454859314
     },
     "1891821": {
       "oid": "1891821",
@@ -490,7 +490,7 @@
       "name": "pablo dux",
       "honor": 1285,
       "might": null,
-      "loot_current": 113436818
+      "loot_current": 107544471
     },
     "1956780": {
       "oid": "1956780",
@@ -504,7 +504,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 3340034
+      "loot_current": 3239833
     },
     "1873065": {
       "oid": "1873065",
@@ -532,7 +532,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 395458620
+      "loot_current": 364464515
     },
     "259322": {
       "oid": "259322",
@@ -551,9 +551,9 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1707,
+      "honor": 2195,
       "might": null,
-      "loot_current": 2704007727
+      "loot_current": 2748524664
     },
     "1920035": {
       "oid": "1920035",
@@ -583,35 +583,35 @@
       "name": "Tazgov",
       "honor": 1239,
       "might": null,
-      "loot_current": 207202006
+      "loot_current": 186481805
     },
     {
       "oid": "1141204",
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 952041683
+      "loot_current": 856837515
     },
     {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 344829175
+      "loot_current": 310346257
     },
     {
       "oid": "941700",
       "name": "NOXAM",
       "honor": 1076,
       "might": null,
-      "loot_current": 523054281
+      "loot_current": 470748853
     },
     {
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 1328,
       "might": null,
-      "loot_current": 4179085
+      "loot_current": 4053712
     },
     {
       "oid": "8653",
@@ -667,7 +667,7 @@
       "name": "Lord Szakal",
       "honor": 831,
       "might": null,
-      "loot_current": 55945417
+      "loot_current": 50350875
     },
     {
       "oid": "1046871",
@@ -723,7 +723,7 @@
       "name": "RoB",
       "honor": 1482,
       "might": null,
-      "loot_current": 262368448
+      "loot_current": 236131603
     },
     {
       "oid": "1668728",
@@ -779,7 +779,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 505136599
+      "loot_current": 454859314
     },
     {
       "oid": "1891821",
@@ -793,7 +793,7 @@
       "name": "pablo dux",
       "honor": 1285,
       "might": null,
-      "loot_current": 113436818
+      "loot_current": 107544471
     },
     {
       "oid": "1956780",
@@ -807,7 +807,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 3340034
+      "loot_current": 3239833
     },
     {
       "oid": "1873065",
@@ -835,7 +835,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 395458620
+      "loot_current": 364464515
     },
     {
       "oid": "259322",
@@ -854,9 +854,9 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1707,
+      "honor": 2195,
       "might": null,
-      "loot_current": 2704007727
+      "loot_current": 2748524664
     },
     {
       "oid": "1920035",

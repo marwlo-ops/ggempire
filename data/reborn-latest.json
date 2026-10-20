@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T21:47:28.282113+00:00",
+  "fetched_at": "2026-10-20T22:23:00.822188+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -78,7 +78,7 @@
       "name": "Vortex",
       "honor": 1960,
       "might": null,
-      "loot_current": 320846601
+      "loot_current": 352400333
     },
     "145184": {
       "name": "Aldo Raine",
@@ -216,7 +216,7 @@
       "name": "Baobab",
       "honor": 1222,
       "might": null,
-      "loot_current": 49501799
+      "loot_current": 135183202
     },
     "1772369": {
       "name": "radziollo",
@@ -264,7 +264,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 191828838
+      "loot_current": 191916761
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -298,9 +298,9 @@
     },
     "53340": {
       "name": "szaft",
-      "honor": 2035,
+      "honor": 1961,
       "might": null,
-      "loot_current": 352468538
+      "loot_current": 378890375
     },
     "642004": {
       "name": "Sajmon W",
@@ -330,7 +330,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 774265510
+      "loot_current": 817273634
     },
     "511724": {
       "name": "Monik...",
@@ -366,7 +366,7 @@
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 4014011545
+      "loot_current": 4100491606
     },
     "1679328": {
       "name": "Sopelo",
@@ -447,7 +447,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 2240251
+      "loot_current": 2195446
     },
     "30359": {
       "oid": "30359",
@@ -480,9 +480,9 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1960,
+      "honor": 1829,
       "might": null,
-      "loot_current": 352400333
+      "loot_current": 343845589
     },
     "145184": {
       "oid": "145184",
@@ -545,7 +545,7 @@
       "name": "SzakoPL",
       "honor": 1540,
       "might": null,
-      "loot_current": 106165356
+      "loot_current": 95548820
     },
     "1940528": {
       "oid": "1940528",
@@ -566,7 +566,7 @@
       "name": "Raven333",
       "honor": 2444,
       "might": null,
-      "loot_current": 543401342
+      "loot_current": 489061208
     },
     "140466": {
       "oid": "140466",
@@ -643,7 +643,7 @@
       "name": "Baobab",
       "honor": 1222,
       "might": null,
-      "loot_current": 135183202
+      "loot_current": 185347145
     },
     "1772369": {
       "oid": "1772369",
@@ -699,7 +699,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 191916761
+      "loot_current": 192342557
     },
     "1878344": {
       "oid": "1878344",
@@ -739,16 +739,16 @@
     "53340": {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1961,
+      "honor": 1791,
       "might": null,
-      "loot_current": 378890375
+      "loot_current": 341225457
     },
     "642004": {
       "oid": "642004",
       "name": "Sajmon W",
       "honor": 1664,
       "might": null,
-      "loot_current": 591350
+      "loot_current": 579523
     },
     "1259980": {
       "oid": "1259980",
@@ -790,21 +790,21 @@
       "name": "Bawid",
       "honor": 672,
       "might": null,
-      "loot_current": 12172672
+      "loot_current": 11442312
     },
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
       "honor": 1248,
       "might": null,
-      "loot_current": 8415946
+      "loot_current": 7995149
     },
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1857,
+      "honor": 1670,
       "might": null,
-      "loot_current": 2301048847
+      "loot_current": 2093989918
     },
     "1950953": {
       "oid": "1950953",
@@ -904,7 +904,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 2240251
+      "loot_current": 2195446
     },
     {
       "oid": "30359",
@@ -937,9 +937,9 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1960,
+      "honor": 1829,
       "might": null,
-      "loot_current": 352400333
+      "loot_current": 343845589
     },
     {
       "oid": "145184",
@@ -1002,7 +1002,7 @@
       "name": "SzakoPL",
       "honor": 1540,
       "might": null,
-      "loot_current": 106165356
+      "loot_current": 95548820
     },
     {
       "oid": "1940528",
@@ -1023,7 +1023,7 @@
       "name": "Raven333",
       "honor": 2444,
       "might": null,
-      "loot_current": 543401342
+      "loot_current": 489061208
     },
     {
       "oid": "140466",
@@ -1100,7 +1100,7 @@
       "name": "Baobab",
       "honor": 1222,
       "might": null,
-      "loot_current": 135183202
+      "loot_current": 185347145
     },
     {
       "oid": "1772369",
@@ -1156,7 +1156,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 191916761
+      "loot_current": 192342557
     },
     {
       "oid": "1878344",
@@ -1196,16 +1196,16 @@
     {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1961,
+      "honor": 1791,
       "might": null,
-      "loot_current": 378890375
+      "loot_current": 341225457
     },
     {
       "oid": "642004",
       "name": "Sajmon W",
       "honor": 1664,
       "might": null,
-      "loot_current": 591350
+      "loot_current": 579523
     },
     {
       "oid": "1259980",
@@ -1247,21 +1247,21 @@
       "name": "Bawid",
       "honor": 672,
       "might": null,
-      "loot_current": 12172672
+      "loot_current": 11442312
     },
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
       "honor": 1248,
       "might": null,
-      "loot_current": 8415946
+      "loot_current": 7995149
     },
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1857,
+      "honor": 1670,
       "might": null,
-      "loot_current": 2301048847
+      "loot_current": 2093989918
     },
     {
       "oid": "1950953",
