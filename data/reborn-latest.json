@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T19:18:43.437448+00:00",
+  "fetched_at": "2026-10-20T19:58:19.654276+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -64,9 +64,9 @@
     },
     "1718275": {
       "name": ".Wini7.",
-      "honor": 1948,
+      "honor": 1736,
       "might": null,
-      "loot_current": 1563212033
+      "loot_current": 1581147131
     },
     "1331978": {
       "name": "crynio",
@@ -78,7 +78,7 @@
       "name": "Vortex",
       "honor": 1664,
       "might": null,
-      "loot_current": 235642347
+      "loot_current": 257225745
     },
     "145184": {
       "name": "Aldo Raine",
@@ -96,7 +96,7 @@
       "name": "maksik",
       "honor": 747,
       "might": null,
-      "loot_current": 82707601
+      "loot_current": 99529093
     },
     "340001": {
       "name": "zzimny",
@@ -174,7 +174,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 470766608
+      "loot_current": 505495929
     },
     "1197230": {
       "name": "kappa123",
@@ -222,7 +222,7 @@
       "name": "radziollo",
       "honor": 1635,
       "might": null,
-      "loot_current": 480430226
+      "loot_current": 493757138
     },
     "298959": {
       "name": "CZARA",
@@ -246,7 +246,7 @@
       "name": "-LUCEK-",
       "honor": 1883,
       "might": null,
-      "loot_current": 714749492
+      "loot_current": 884775658
     },
     "888925": {
       "name": "gwid",
@@ -334,9 +334,9 @@
     },
     "511724": {
       "name": "Monik...",
-      "honor": 1624,
+      "honor": 1667,
       "might": null,
-      "loot_current": 69994480
+      "loot_current": 70324871
     },
     "1836535": {
       "name": "Bawid",
@@ -384,7 +384,7 @@
       "name": "Bolesław chrobr",
       "honor": 1575,
       "might": null,
-      "loot_current": 64355014
+      "loot_current": 65270844
     },
     "1847009": {
       "name": "Włóczykij",
@@ -503,7 +503,7 @@
       "name": "maksik",
       "honor": 747,
       "might": null,
-      "loot_current": 99529093
+      "loot_current": 134693383
     },
     "340001": {
       "oid": "340001",
@@ -594,7 +594,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 505495929
+      "loot_current": 521141805
     },
     "1197230": {
       "oid": "1197230",
@@ -671,14 +671,14 @@
       "name": "Ciuciek1984",
       "honor": 596,
       "might": null,
-      "loot_current": 430127170
+      "loot_current": 442763380
     },
     "332746": {
       "oid": "332746",
       "name": "-LUCEK-",
       "honor": 1883,
       "might": null,
-      "loot_current": 884775658
+      "loot_current": 969385955
     },
     "888925": {
       "oid": "888925",
@@ -816,9 +816,9 @@
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 939,
+      "honor": 885,
       "might": null,
-      "loot_current": 3824073216
+      "loot_current": 3917324986
     },
     "1679328": {
       "oid": "1679328",
@@ -960,7 +960,7 @@
       "name": "maksik",
       "honor": 747,
       "might": null,
-      "loot_current": 99529093
+      "loot_current": 134693383
     },
     {
       "oid": "340001",
@@ -1051,7 +1051,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 505495929
+      "loot_current": 521141805
     },
     {
       "oid": "1197230",
@@ -1128,14 +1128,14 @@
       "name": "Ciuciek1984",
       "honor": 596,
       "might": null,
-      "loot_current": 430127170
+      "loot_current": 442763380
     },
     {
       "oid": "332746",
       "name": "-LUCEK-",
       "honor": 1883,
       "might": null,
-      "loot_current": 884775658
+      "loot_current": 969385955
     },
     {
       "oid": "888925",
@@ -1273,9 +1273,9 @@
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 939,
+      "honor": 885,
       "might": null,
-      "loot_current": 3824073216
+      "loot_current": 3917324986
     },
     {
       "oid": "1679328",
