@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-20T08:27:29.039046+00:00",
+  "fetched_at": "2026-10-20T09:08:04.305295+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -184,7 +184,7 @@
     },
     "1813227": {
       "name": "Sirkk",
-      "honor": 1670,
+      "honor": 1540,
       "might": null,
       "loot_current": 500809668
     },
@@ -252,7 +252,7 @@
       "name": "Pomidorek",
       "honor": 1492,
       "might": null,
-      "loot_current": 1575582591
+      "loot_current": 1575637955
     },
     "1920035": {
       "name": "eDuke",
@@ -287,7 +287,7 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 516392487
+      "loot_current": 555888837
     },
     "1681311": {
       "oid": "1681311",
@@ -476,7 +476,7 @@
       "name": "Sirkk",
       "honor": 1540,
       "might": null,
-      "loot_current": 500809668
+      "loot_current": 501046882
     },
     "1891821": {
       "oid": "1891821",
@@ -551,9 +551,9 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1492,
+      "honor": 1771,
       "might": null,
-      "loot_current": 1575637955
+      "loot_current": 1575930145
     },
     "1920035": {
       "oid": "1920035",
@@ -567,7 +567,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 221161785
+      "loot_current": 233664131
     }
   },
   "players": [
@@ -590,7 +590,7 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 516392487
+      "loot_current": 555888837
     },
     {
       "oid": "1681311",
@@ -779,7 +779,7 @@
       "name": "Sirkk",
       "honor": 1540,
       "might": null,
-      "loot_current": 500809668
+      "loot_current": 501046882
     },
     {
       "oid": "1891821",
@@ -854,9 +854,9 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1492,
+      "honor": 1771,
       "might": null,
-      "loot_current": 1575637955
+      "loot_current": 1575930145
     },
     {
       "oid": "1920035",
@@ -870,7 +870,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 221161785
+      "loot_current": 233664131
     }
   ]
 }
