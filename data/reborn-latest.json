@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T03:15:05.482953+00:00",
+  "fetched_at": "2026-10-20T03:53:50.788574+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -360,7 +360,7 @@
       "name": "oj Pawel",
       "honor": 1294,
       "might": null,
-      "loot_current": 177150811
+      "loot_current": 159435730
     },
     "1295460": {
       "name": "VanKord 2.0",
@@ -447,7 +447,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 2285970
+      "loot_current": 2240251
     },
     "30359": {
       "oid": "30359",
@@ -482,7 +482,7 @@
       "name": "Vortex",
       "honor": 1549,
       "might": null,
-      "loot_current": 130955605
+      "loot_current": 117860044
     },
     "145184": {
       "oid": "145184",
@@ -531,7 +531,7 @@
       "name": "Wojtas2137",
       "honor": 2015,
       "might": null,
-      "loot_current": 49641102
+      "loot_current": 44676992
     },
     "1834928": {
       "oid": "1834928",
@@ -904,7 +904,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 2285970
+      "loot_current": 2240251
     },
     {
       "oid": "30359",
@@ -939,7 +939,7 @@
       "name": "Vortex",
       "honor": 1549,
       "might": null,
-      "loot_current": 130955605
+      "loot_current": 117860044
     },
     {
       "oid": "145184",
@@ -988,7 +988,7 @@
       "name": "Wojtas2137",
       "honor": 2015,
       "might": null,
-      "loot_current": 49641102
+      "loot_current": 44676992
     },
     {
       "oid": "1834928",
