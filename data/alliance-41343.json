@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-20T04:25:10.405558+00:00",
+  "fetched_at": "2026-10-20T05:00:29.764432+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -12,7 +12,7 @@
       "name": "-Sławek-",
       "honor": 2218,
       "might": null,
-      "loot_current": 5913271
+      "loot_current": 5676740
     },
     "1524565": {
       "name": "Tazgov",
@@ -168,7 +168,7 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 159763248
+      "loot_current": 143786923
     },
     "1866802": {
       "name": "Mnich1",
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1902,
       "might": null,
-      "loot_current": 500527636
+      "loot_current": 500629418
     },
     "1891821": {
       "name": "Aber",
@@ -216,7 +216,7 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 98195498
+      "loot_current": 88375948
     },
     "1002425": {
       "name": "Tomek76",
@@ -474,9 +474,9 @@
     "1813227": {
       "oid": "1813227",
       "name": "Sirkk",
-      "honor": 1902,
+      "honor": 1670,
       "might": null,
-      "loot_current": 500629418
+      "loot_current": 500809668
     },
     "1891821": {
       "oid": "1891821",
@@ -553,7 +553,7 @@
       "name": "Pomidorek",
       "honor": 1956,
       "might": null,
-      "loot_current": 1575404775
+      "loot_current": 1575460457
     },
     "1920035": {
       "oid": "1920035",
@@ -777,9 +777,9 @@
     {
       "oid": "1813227",
       "name": "Sirkk",
-      "honor": 1902,
+      "honor": 1670,
       "might": null,
-      "loot_current": 500629418
+      "loot_current": 500809668
     },
     {
       "oid": "1891821",
@@ -856,7 +856,7 @@
       "name": "Pomidorek",
       "honor": 1956,
       "might": null,
-      "loot_current": 1575404775
+      "loot_current": 1575460457
     },
     {
       "oid": "1920035",

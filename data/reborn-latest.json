@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T04:25:10.117214+00:00",
+  "fetched_at": "2026-10-20T05:00:29.510395+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -12,7 +12,7 @@
       "name": "jarek 31",
       "honor": 2114,
       "might": null,
-      "loot_current": 387609657
+      "loot_current": 348848691
     },
     "1806100": {
       "name": "kiler171",
@@ -78,7 +78,7 @@
       "name": "Vortex",
       "honor": 1549,
       "might": null,
-      "loot_current": 117860044
+      "loot_current": 117964504
     },
     "145184": {
       "name": "Aldo Raine",
@@ -108,7 +108,7 @@
       "name": "Napoleon",
       "honor": 1436,
       "might": null,
-      "loot_current": 160570625
+      "loot_current": 144513562
     },
     "638767": {
       "name": "Wykidajło",
@@ -144,7 +144,7 @@
       "name": "PremierPL",
       "honor": 1622,
       "might": null,
-      "loot_current": 164311163
+      "loot_current": 147880047
     },
     "983615": {
       "name": "Raven333",
@@ -192,7 +192,7 @@
       "name": "PREZES785",
       "honor": 931,
       "might": null,
-      "loot_current": 331496
+      "loot_current": 328181
     },
     "535240": {
       "name": "Placek78",
@@ -202,9 +202,9 @@
     },
     "1345366": {
       "name": "Andrzejklimek83",
-      "honor": 1740,
+      "honor": 1368,
       "might": null,
-      "loot_current": 43279018
+      "loot_current": 43561237
     },
     "146502": {
       "name": "dumiti3",
@@ -276,7 +276,7 @@
       "name": "FIGA",
       "honor": 1068,
       "might": null,
-      "loot_current": 1481782
+      "loot_current": 1452146
     },
     "1153991": {
       "name": "N0R",
@@ -288,7 +288,7 @@
       "name": "IllegalBlonde",
       "honor": 957,
       "might": null,
-      "loot_current": 43319698
+      "loot_current": 38987728
     },
     "235098": {
       "name": "HEVE",
@@ -312,7 +312,7 @@
       "name": "Slapen1",
       "honor": 740,
       "might": null,
-      "loot_current": 2972375
+      "loot_current": 2883204
     },
     "854121": {
       "name": "Grzegorz1247",
@@ -419,7 +419,7 @@
       "name": "grzes83",
       "honor": 1845,
       "might": null,
-      "loot_current": 734644829
+      "loot_current": 661180346
     },
     "1255555": {
       "oid": "1255555",
@@ -454,14 +454,14 @@
       "name": "kamil H",
       "honor": 2251,
       "might": null,
-      "loot_current": 181064124
+      "loot_current": 162957712
     },
     "1957380": {
       "oid": "1957380",
       "name": "kacpex",
       "honor": 1028,
       "might": null,
-      "loot_current": 578876494
+      "loot_current": 526777609
     },
     "1718275": {
       "oid": "1718275",
@@ -480,9 +480,9 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1549,
+      "honor": 1781,
       "might": null,
-      "loot_current": 117964504
+      "loot_current": 118093816
     },
     "145184": {
       "oid": "145184",
@@ -594,7 +594,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 126216691
+      "loot_current": 113595022
     },
     "1197230": {
       "oid": "1197230",
@@ -783,7 +783,7 @@
       "name": "Monik...",
       "honor": 1624,
       "might": null,
-      "loot_current": 77771644
+      "loot_current": 69994480
     },
     "1836535": {
       "oid": "1836535",
@@ -876,7 +876,7 @@
       "name": "grzes83",
       "honor": 1845,
       "might": null,
-      "loot_current": 734644829
+      "loot_current": 661180346
     },
     {
       "oid": "1255555",
@@ -911,14 +911,14 @@
       "name": "kamil H",
       "honor": 2251,
       "might": null,
-      "loot_current": 181064124
+      "loot_current": 162957712
     },
     {
       "oid": "1957380",
       "name": "kacpex",
       "honor": 1028,
       "might": null,
-      "loot_current": 578876494
+      "loot_current": 526777609
     },
     {
       "oid": "1718275",
@@ -937,9 +937,9 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1549,
+      "honor": 1781,
       "might": null,
-      "loot_current": 117964504
+      "loot_current": 118093816
     },
     {
       "oid": "145184",
@@ -1051,7 +1051,7 @@
       "name": "EwaKropka",
       "honor": 1229,
       "might": null,
-      "loot_current": 126216691
+      "loot_current": 113595022
     },
     {
       "oid": "1197230",
@@ -1240,7 +1240,7 @@
       "name": "Monik...",
       "honor": 1624,
       "might": null,
-      "loot_current": 77771644
+      "loot_current": 69994480
     },
     {
       "oid": "1836535",
