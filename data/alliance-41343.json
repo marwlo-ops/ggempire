@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-20T06:13:41.373914+00:00",
+  "fetched_at": "2026-10-20T07:04:13.960443+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -162,7 +162,7 @@
       "name": "greatseal",
       "honor": 1875,
       "might": null,
-      "loot_current": 4735440
+      "loot_current": 4546022
     },
     "1866228": {
       "name": "DZC",
@@ -174,7 +174,7 @@
       "name": "Mnich1",
       "honor": 3105,
       "might": null,
-      "loot_current": 350487219
+      "loot_current": 315438497
     },
     "1189628": {
       "name": "Janas",
@@ -371,7 +371,7 @@
       "name": "baltyk",
       "honor": 644,
       "might": null,
-      "loot_current": 962234
+      "loot_current": 942989
     },
     "1888134": {
       "oid": "1888134",
@@ -434,7 +434,7 @@
       "name": "Lasu",
       "honor": 1177,
       "might": null,
-      "loot_current": 3781060
+      "loot_current": 3667628
     },
     "1671423": {
       "oid": "1671423",
@@ -546,7 +546,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 86754314
+      "loot_current": 78078883
     },
     "1708518": {
       "oid": "1708518",
@@ -674,7 +674,7 @@
       "name": "baltyk",
       "honor": 644,
       "might": null,
-      "loot_current": 962234
+      "loot_current": 942989
     },
     {
       "oid": "1888134",
@@ -737,7 +737,7 @@
       "name": "Lasu",
       "honor": 1177,
       "might": null,
-      "loot_current": 3781060
+      "loot_current": 3667628
     },
     {
       "oid": "1671423",
@@ -849,7 +849,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 86754314
+      "loot_current": 78078883
     },
     {
       "oid": "1708518",
