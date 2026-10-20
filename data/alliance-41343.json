@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-20T02:44:43.097011+00:00",
+  "fetched_at": "2026-10-20T03:15:05.682643+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 375743335
+      "loot_current": 338169001
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -180,7 +180,7 @@
       "name": "Janas",
       "honor": 1934,
       "might": null,
-      "loot_current": 123583596
+      "loot_current": 111225236
     },
     "1813227": {
       "name": "Sirkk",
@@ -343,7 +343,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 19484542
+      "loot_current": 17925779
     },
     "1814411": {
       "oid": "1814411",
@@ -413,7 +413,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 170033428
+      "loot_current": 153030085
     },
     "1808763": {
       "oid": "1808763",
@@ -427,7 +427,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 802173985
+      "loot_current": 721956586
     },
     "1933752": {
       "oid": "1933752",
@@ -567,7 +567,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 245735317
+      "loot_current": 221161785
     }
   },
   "players": [
@@ -646,7 +646,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 19484542
+      "loot_current": 17925779
     },
     {
       "oid": "1814411",
@@ -716,7 +716,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 170033428
+      "loot_current": 153030085
     },
     {
       "oid": "1808763",
@@ -730,7 +730,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 802173985
+      "loot_current": 721956586
     },
     {
       "oid": "1933752",
@@ -870,7 +870,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 245735317
+      "loot_current": 221161785
     }
   ]
 }
