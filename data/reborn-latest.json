@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-20T07:50:39.179984+00:00",
+  "fetched_at": "2026-10-20T08:27:28.687652+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -96,7 +96,7 @@
       "name": "maksik",
       "honor": 749,
       "might": null,
-      "loot_current": 62803415
+      "loot_current": 56523073
     },
     "340001": {
       "name": "zzimny",
@@ -262,7 +262,7 @@
     },
     "1818825": {
       "name": "Toruń główny",
-      "honor": 1070,
+      "honor": 1073,
       "might": null,
       "loot_current": 65343088
     },
@@ -480,9 +480,9 @@
     "26911": {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1781,
+      "honor": 1911,
       "might": null,
-      "loot_current": 118093816
+      "loot_current": 118163087
     },
     "145184": {
       "oid": "145184",
@@ -697,9 +697,9 @@
     "1818825": {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 1073,
+      "honor": 1224,
       "might": null,
-      "loot_current": 65343088
+      "loot_current": 65503662
     },
     "1878344": {
       "oid": "1878344",
@@ -818,7 +818,7 @@
       "name": "VanKord 2.0",
       "honor": 980,
       "might": null,
-      "loot_current": 3455952884
+      "loot_current": 3471800480
     },
     "1679328": {
       "oid": "1679328",
@@ -937,9 +937,9 @@
     {
       "oid": "26911",
       "name": "Vortex",
-      "honor": 1781,
+      "honor": 1911,
       "might": null,
-      "loot_current": 118093816
+      "loot_current": 118163087
     },
     {
       "oid": "145184",
@@ -1154,9 +1154,9 @@
     {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 1073,
+      "honor": 1224,
       "might": null,
-      "loot_current": 65343088
+      "loot_current": 65503662
     },
     {
       "oid": "1878344",
@@ -1275,7 +1275,7 @@
       "name": "VanKord 2.0",
       "honor": 980,
       "might": null,
-      "loot_current": 3455952884
+      "loot_current": 3471800480
     },
     {
       "oid": "1679328",
