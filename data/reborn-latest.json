@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T08:28:50.249847+00:00",
+  "fetched_at": "2026-10-21T09:10:01.785163+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -352,21 +352,21 @@
     },
     "273782": {
       "name": "Dark_Imperator",
-      "honor": 1834,
+      "honor": 1977,
       "might": null,
-      "loot_current": 2093989918
+      "loot_current": 2094113663
     },
     "1950953": {
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 304985412
+      "loot_current": 311515366
     },
     "1295460": {
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3785130489
+      "loot_current": 3877607850
     },
     "1679328": {
       "name": "Sopelo",
@@ -384,7 +384,7 @@
       "name": "Bolesław chrobr",
       "honor": 1575,
       "might": null,
-      "loot_current": 59179336
+      "loot_current": 65770042
     },
     "1847009": {
       "name": "Włóczykij",
@@ -699,7 +699,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 192342557
+      "loot_current": 173108301
     },
     "1878344": {
       "oid": "1878344",
@@ -811,7 +811,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 311515366
+      "loot_current": 316172620
     },
     "1295460": {
       "oid": "1295460",
@@ -837,9 +837,9 @@
     "1417454": {
       "oid": "1417454",
       "name": "Bolesław chrobr",
-      "honor": 1575,
+      "honor": 1653,
       "might": null,
-      "loot_current": 65770042
+      "loot_current": 88896773
     },
     "1847009": {
       "oid": "1847009",
@@ -1156,7 +1156,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 192342557
+      "loot_current": 173108301
     },
     {
       "oid": "1878344",
@@ -1268,7 +1268,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 311515366
+      "loot_current": 316172620
     },
     {
       "oid": "1295460",
@@ -1294,9 +1294,9 @@
     {
       "oid": "1417454",
       "name": "Bolesław chrobr",
-      "honor": 1575,
+      "honor": 1653,
       "might": null,
-      "loot_current": 65770042
+      "loot_current": 88896773
     },
     {
       "oid": "1847009",
