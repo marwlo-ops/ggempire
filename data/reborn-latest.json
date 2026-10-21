@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T22:23:48.683760+00:00",
+  "fetched_at": "2026-10-21T22:57:23.048497+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -18,7 +18,7 @@
       "name": "kiler171",
       "honor": 1196,
       "might": null,
-      "loot_current": 4127407
+      "loot_current": 4003585
     },
     "1848844": {
       "name": "grzes83",
@@ -36,7 +36,7 @@
       "name": "hrabia Piotr",
       "honor": 1346,
       "might": null,
-      "loot_current": 848477433
+      "loot_current": 763629690
     },
     "1813640": {
       "name": "Yendra",
@@ -48,7 +48,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 91962104
+      "loot_current": 97186319
     },
     "30359": {
       "name": "kamil H",
@@ -130,9 +130,9 @@
     },
     "315695": {
       "name": "SzakoPL",
-      "honor": 1785,
+      "honor": 1579,
       "might": null,
-      "loot_current": 312004265
+      "loot_current": 312069560
     },
     "1940528": {
       "name": "Cesarz Julisz1",
@@ -150,7 +150,7 @@
       "name": "Raven333",
       "honor": 2444,
       "might": null,
-      "loot_current": 489061208
+      "loot_current": 440155087
     },
     "140466": {
       "name": "DZIERZAN",
@@ -162,7 +162,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 42887195
+      "loot_current": 72774996
     },
     "222651": {
       "name": "botrop",
@@ -222,7 +222,7 @@
       "name": "radziollo",
       "honor": 1592,
       "might": null,
-      "loot_current": 544134893
+      "loot_current": 489721404
     },
     "298959": {
       "name": "CZARA",
@@ -246,7 +246,7 @@
       "name": "-LUCEK-",
       "honor": 1862,
       "might": null,
-      "loot_current": 872533933
+      "loot_current": 785280540
     },
     "888925": {
       "name": "gwid",
@@ -264,13 +264,13 @@
       "name": "Toruń główny",
       "honor": 1560,
       "might": null,
-      "loot_current": 177908546
+      "loot_current": 160329177
     },
     "1878344": {
       "name": "-BLACK REAPER-",
       "honor": 1282,
       "might": null,
-      "loot_current": 214482340
+      "loot_current": 193034106
     },
     "1783375": {
       "name": "FIGA",
@@ -298,9 +298,9 @@
     },
     "53340": {
       "name": "szaft",
-      "honor": 2029,
+      "honor": 1814,
       "might": null,
-      "loot_current": 365129504
+      "loot_current": 351575224
     },
     "642004": {
       "name": "Sajmon W",
@@ -348,13 +348,13 @@
       "name": "Tottenham 1882",
       "honor": 1194,
       "might": null,
-      "loot_current": 27530309
+      "loot_current": 25052581
     },
     "273782": {
       "name": "Dark_Imperator",
-      "honor": 2043,
+      "honor": 1873,
       "might": null,
-      "loot_current": 2094510198
+      "loot_current": 2094510236
     },
     "1950953": {
       "name": "oj Pawel",
@@ -366,7 +366,7 @@
       "name": "VanKord 2.0",
       "honor": 882,
       "might": null,
-      "loot_current": 5196877775
+      "loot_current": 4803385325
     },
     "1679328": {
       "name": "Sopelo",
@@ -552,7 +552,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1207,
       "might": null,
-      "loot_current": 793867160
+      "loot_current": 714480444
     },
     "1598120": {
       "oid": "1598120",
@@ -650,7 +650,7 @@
       "name": "radziollo",
       "honor": 1592,
       "might": null,
-      "loot_current": 489721404
+      "loot_current": 495216221
     },
     "298959": {
       "oid": "298959",
@@ -804,7 +804,7 @@
       "name": "Dark_Imperator",
       "honor": 1873,
       "might": null,
-      "loot_current": 2094510236
+      "loot_current": 1906004314
     },
     "1950953": {
       "oid": "1950953",
@@ -839,7 +839,7 @@
       "name": "Bolesław chrobr",
       "honor": 1653,
       "might": null,
-      "loot_current": 88896773
+      "loot_current": 80007096
     },
     "1847009": {
       "oid": "1847009",
@@ -1009,7 +1009,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1207,
       "might": null,
-      "loot_current": 793867160
+      "loot_current": 714480444
     },
     {
       "oid": "1598120",
@@ -1107,7 +1107,7 @@
       "name": "radziollo",
       "honor": 1592,
       "might": null,
-      "loot_current": 489721404
+      "loot_current": 495216221
     },
     {
       "oid": "298959",
@@ -1261,7 +1261,7 @@
       "name": "Dark_Imperator",
       "honor": 1873,
       "might": null,
-      "loot_current": 2094510236
+      "loot_current": 1906004314
     },
     {
       "oid": "1950953",
@@ -1296,7 +1296,7 @@
       "name": "Bolesław chrobr",
       "honor": 1653,
       "might": null,
-      "loot_current": 88896773
+      "loot_current": 80007096
     },
     {
       "oid": "1847009",
