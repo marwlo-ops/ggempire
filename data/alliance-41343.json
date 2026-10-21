@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T02:24:45.901936+00:00",
+  "fetched_at": "2026-10-21T03:01:31.229172+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 577490270
+      "loot_current": 519741243
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -357,7 +357,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 519741243
+      "loot_current": 547702454
     },
     "1906821": {
       "oid": "1906821",
@@ -427,7 +427,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 1394161190
+      "loot_current": 1254745071
     },
     "1933752": {
       "oid": "1933752",
@@ -567,7 +567,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 560684449
+      "loot_current": 504616004
     }
   },
   "players": [
@@ -660,7 +660,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 519741243
+      "loot_current": 547702454
     },
     {
       "oid": "1906821",
@@ -730,7 +730,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 1394161190
+      "loot_current": 1254745071
     },
     {
       "oid": "1933752",
@@ -870,7 +870,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 560684449
+      "loot_current": 504616004
     }
   ]
 }
