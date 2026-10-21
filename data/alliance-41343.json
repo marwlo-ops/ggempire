@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T18:34:01.302483+00:00",
+  "fetched_at": "2026-10-21T19:19:12.094853+00:00",
   "player_count": 42,
   "total_might": null,
   "prev_players": {
@@ -30,7 +30,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 722907898
+      "loot_current": 751015282
     },
     "941700": {
       "name": "NOXAM",
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 802933041
+      "loot_current": 824483784
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 457880192
+      "loot_current": 458140461
     },
     "1891821": {
       "name": "Aber",
@@ -210,7 +210,7 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 79538353
+      "loot_current": 99365309
     },
     "1002425": {
       "name": "Tomek76",
@@ -281,14 +281,14 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 1086934759
+      "loot_current": 1129645983
     },
     "1681311": {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 751015282
+      "loot_current": 793864115
     },
     "941700": {
       "oid": "941700",
@@ -337,7 +337,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 16670974
+      "loot_current": 23826105
     },
     "1814411": {
       "oid": "1814411",
@@ -393,7 +393,7 @@
       "name": "Theo",
       "honor": 1641,
       "might": null,
-      "loot_current": 517329335
+      "loot_current": 465596401
     },
     "1940547": {
       "oid": "1940547",
@@ -470,7 +470,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 458140461
+      "loot_current": 458379339
     },
     "1891821": {
       "oid": "1891821",
@@ -503,7 +503,7 @@
     "1002425": {
       "oid": "1002425",
       "name": "Tomek76",
-      "honor": 1339,
+      "honor": 1138,
       "might": null,
       "loot_current": 200153443
     },
@@ -547,7 +547,7 @@
       "name": "eDuke",
       "honor": 2036,
       "might": null,
-      "loot_current": 2206560
+      "loot_current": 2162429
     },
     "1858019": {
       "oid": "1858019",
@@ -577,14 +577,14 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 1086934759
+      "loot_current": 1129645983
     },
     {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 751015282
+      "loot_current": 793864115
     },
     {
       "oid": "941700",
@@ -633,7 +633,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 16670974
+      "loot_current": 23826105
     },
     {
       "oid": "1814411",
@@ -689,7 +689,7 @@
       "name": "Theo",
       "honor": 1641,
       "might": null,
-      "loot_current": 517329335
+      "loot_current": 465596401
     },
     {
       "oid": "1940547",
@@ -766,7 +766,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 458140461
+      "loot_current": 458379339
     },
     {
       "oid": "1891821",
@@ -799,7 +799,7 @@
     {
       "oid": "1002425",
       "name": "Tomek76",
-      "honor": 1339,
+      "honor": 1138,
       "might": null,
       "loot_current": 200153443
     },
@@ -843,7 +843,7 @@
       "name": "eDuke",
       "honor": 2036,
       "might": null,
-      "loot_current": 2206560
+      "loot_current": 2162429
     },
     {
       "oid": "1858019",
