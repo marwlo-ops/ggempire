@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T07:52:52.882672+00:00",
+  "fetched_at": "2026-10-21T08:28:50.249847+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -66,7 +66,7 @@
       "name": ".Wini7.",
       "honor": 1736,
       "might": null,
-      "loot_current": 1423032418
+      "loot_current": 1423032468
     },
     "1331978": {
       "name": "crynio",
@@ -360,7 +360,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 299503854
+      "loot_current": 304985412
     },
     "1295460": {
       "name": "VanKord 2.0",
@@ -372,7 +372,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 357825185
+      "loot_current": 322042666
     },
     "644336": {
       "name": "FRYDKA",
@@ -802,23 +802,23 @@
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1834,
+      "honor": 1977,
       "might": null,
-      "loot_current": 2093989918
+      "loot_current": 2094113663
     },
     "1950953": {
       "oid": "1950953",
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 304985412
+      "loot_current": 311515366
     },
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3785130489
+      "loot_current": 3877607850
     },
     "1679328": {
       "oid": "1679328",
@@ -839,7 +839,7 @@
       "name": "Bolesław chrobr",
       "honor": 1575,
       "might": null,
-      "loot_current": 59179336
+      "loot_current": 65770042
     },
     "1847009": {
       "oid": "1847009",
@@ -1259,23 +1259,23 @@
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1834,
+      "honor": 1977,
       "might": null,
-      "loot_current": 2093989918
+      "loot_current": 2094113663
     },
     {
       "oid": "1950953",
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 304985412
+      "loot_current": 311515366
     },
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3785130489
+      "loot_current": 3877607850
     },
     {
       "oid": "1679328",
@@ -1296,7 +1296,7 @@
       "name": "Bolesław chrobr",
       "honor": 1575,
       "might": null,
-      "loot_current": 59179336
+      "loot_current": 65770042
     },
     {
       "oid": "1847009",

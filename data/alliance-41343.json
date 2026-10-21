@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T07:52:53.134829+00:00",
+  "fetched_at": "2026-10-21T08:28:50.469351+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -24,7 +24,7 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 856837515
+      "loot_current": 898064317
     },
     "1681311": {
       "name": "Nadia",
@@ -42,7 +42,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 69737393
+      "loot_current": 120716883
     },
     "8653": {
       "name": "wizir",
@@ -60,7 +60,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 681466235
+      "loot_current": 720075827
     },
     "1827540": {
       "name": "Dadźbóg",
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 650408488
+      "loot_current": 679988034
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -210,7 +210,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 6999767
+      "loot_current": 9677928
     },
     "1873065": {
       "name": "Uhtred",
@@ -264,7 +264,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 568550768
+      "loot_current": 581316212
     }
   },
   "players_by_oid": {
@@ -287,7 +287,7 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 898064317
+      "loot_current": 940784767
     },
     "1681311": {
       "oid": "1681311",
@@ -308,7 +308,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 120716883
+      "loot_current": 135766147
     },
     "8653": {
       "oid": "8653",
@@ -329,7 +329,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 720075827
+      "loot_current": 763672095
     },
     "1827540": {
       "oid": "1827540",
@@ -357,7 +357,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 679988034
+      "loot_current": 708935339
     },
     "1906821": {
       "oid": "1906821",
@@ -504,7 +504,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 9677928
+      "loot_current": 15356105
     },
     "1873065": {
       "oid": "1873065",
@@ -551,9 +551,9 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1793,
+      "honor": 1650,
       "might": null,
-      "loot_current": 3151927592
+      "loot_current": 3151955322
     },
     "1920035": {
       "oid": "1920035",
@@ -590,7 +590,7 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 898064317
+      "loot_current": 940784767
     },
     {
       "oid": "1681311",
@@ -611,7 +611,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 120716883
+      "loot_current": 135766147
     },
     {
       "oid": "8653",
@@ -632,7 +632,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 720075827
+      "loot_current": 763672095
     },
     {
       "oid": "1827540",
@@ -660,7 +660,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 679988034
+      "loot_current": 708935339
     },
     {
       "oid": "1906821",
@@ -807,7 +807,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 9677928
+      "loot_current": 15356105
     },
     {
       "oid": "1873065",
@@ -854,9 +854,9 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1793,
+      "honor": 1650,
       "might": null,
-      "loot_current": 3151927592
+      "loot_current": 3151955322
     },
     {
       "oid": "1920035",
