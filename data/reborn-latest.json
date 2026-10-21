@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T13:16:04.307333+00:00",
+  "fetched_at": "2026-10-21T14:07:20.023041+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -72,7 +72,7 @@
       "name": "crynio",
       "honor": 1215,
       "might": null,
-      "loot_current": 122901580
+      "loot_current": 110611422
     },
     "26911": {
       "name": "Vortex",
@@ -240,7 +240,7 @@
       "name": "Ciuciek1984",
       "honor": 848,
       "might": null,
-      "loot_current": 402400405
+      "loot_current": 428314790
     },
     "332746": {
       "name": "-LUCEK-",
@@ -330,7 +330,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 764302695
+      "loot_current": 773515204
     },
     "511724": {
       "name": "Monik...",
@@ -352,9 +352,9 @@
     },
     "273782": {
       "name": "Dark_Imperator",
-      "honor": 1977,
+      "honor": 2093,
       "might": null,
-      "loot_current": 2094113663
+      "loot_current": 2094277451
     },
     "1950953": {
       "name": "oj Pawel",
@@ -671,7 +671,7 @@
       "name": "Ciuciek1984",
       "honor": 848,
       "might": null,
-      "loot_current": 428314790
+      "loot_current": 452632181
     },
     "332746": {
       "oid": "332746",
@@ -816,7 +816,7 @@
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 885,
+      "honor": 882,
       "might": null,
       "loot_current": 4150285220
     },
@@ -1128,7 +1128,7 @@
       "name": "Ciuciek1984",
       "honor": 848,
       "might": null,
-      "loot_current": 428314790
+      "loot_current": 452632181
     },
     {
       "oid": "332746",
@@ -1273,7 +1273,7 @@
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 885,
+      "honor": 882,
       "might": null,
       "loot_current": 4150285220
     },
