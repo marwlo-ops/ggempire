@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T14:07:20.409883+00:00",
+  "fetched_at": "2026-10-21T14:46:23.527025+00:00",
   "player_count": 42,
   "total_might": null,
   "prev_players": {
@@ -30,7 +30,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 539487358
+      "loot_current": 589110065
     },
     "941700": {
       "name": "NOXAM",
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 456145897
+      "loot_current": 456406366
     },
     "1891821": {
       "name": "Aber",
@@ -204,7 +204,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 42157502
+      "loot_current": 44524467
     },
     "1873065": {
       "name": "Uhtred",
@@ -216,7 +216,7 @@
       "name": "Tomek76",
       "honor": 1339,
       "might": null,
-      "loot_current": 222392714
+      "loot_current": 200153443
     },
     "1868650": {
       "name": "MaTT",
@@ -244,7 +244,7 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1569,
+      "honor": 1572,
       "might": null,
       "loot_current": 3152006114
     },
@@ -258,7 +258,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 682378276
+      "loot_current": 702645992
     }
   },
   "players_by_oid": {
@@ -288,7 +288,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 589110065
+      "loot_current": 614249586
     },
     "941700": {
       "oid": "941700",
@@ -351,7 +351,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 739225125
+      "loot_current": 762053007
     },
     "1906821": {
       "oid": "1906821",
@@ -554,7 +554,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 702645992
+      "loot_current": 711796761
     }
   },
   "players": [
@@ -584,7 +584,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 589110065
+      "loot_current": 614249586
     },
     {
       "oid": "941700",
@@ -647,7 +647,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 739225125
+      "loot_current": 762053007
     },
     {
       "oid": "1906821",
@@ -850,7 +850,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 702645992
+      "loot_current": 711796761
     }
   ]
 }
