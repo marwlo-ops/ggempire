@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T10:27:07.732634+00:00",
+  "fetched_at": "2026-10-21T11:03:34.346924+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -60,13 +60,13 @@
       "name": "kacpex",
       "honor": 1023,
       "might": null,
-      "loot_current": 479367624
+      "loot_current": 512654505
     },
     "1718275": {
       "name": ".Wini7.",
       "honor": 1736,
       "might": null,
-      "loot_current": 1423171997
+      "loot_current": 1423315938
     },
     "1331978": {
       "name": "crynio",
@@ -264,7 +264,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 173108301
+      "loot_current": 177077711
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -346,9 +346,9 @@
     },
     "1751146": {
       "name": "Tottenham 1882",
-      "honor": 1248,
+      "honor": 1412,
       "might": null,
-      "loot_current": 26377546
+      "loot_current": 26397556
     },
     "273782": {
       "name": "Dark_Imperator",
@@ -366,7 +366,7 @@
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3966284838
+      "loot_current": 4059632602
     },
     "1679328": {
       "name": "Sopelo",
@@ -795,7 +795,7 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1412,
+      "honor": 1194,
       "might": null,
       "loot_current": 26397556
     },
@@ -832,7 +832,7 @@
       "name": "FRYDKA",
       "honor": 1665,
       "might": null,
-      "loot_current": 2604388
+      "loot_current": 2552300
     },
     "1417454": {
       "oid": "1417454",
@@ -1252,7 +1252,7 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1412,
+      "honor": 1194,
       "might": null,
       "loot_current": 26397556
     },
@@ -1289,7 +1289,7 @@
       "name": "FRYDKA",
       "honor": 1665,
       "might": null,
-      "loot_current": 2604388
+      "loot_current": 2552300
     },
     {
       "oid": "1417454",
