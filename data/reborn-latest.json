@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T11:45:07.851150+00:00",
+  "fetched_at": "2026-10-21T12:16:33.826842+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -64,7 +64,7 @@
     },
     "1718275": {
       "name": ".Wini7.",
-      "honor": 1736,
+      "honor": 1752,
       "might": null,
       "loot_current": 1423315938
     },
@@ -348,7 +348,7 @@
       "name": "Tottenham 1882",
       "honor": 1194,
       "might": null,
-      "loot_current": 26397556
+      "loot_current": 27340000
     },
     "273782": {
       "name": "Dark_Imperator",
@@ -366,7 +366,7 @@
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 4059632602
+      "loot_current": 4150285220
     },
     "1679328": {
       "name": "Sopelo",
@@ -388,7 +388,7 @@
     },
     "1847009": {
       "name": "Włóczykij",
-      "honor": 1091,
+      "honor": 1229,
       "might": null,
       "loot_current": 528892524
     },
@@ -776,7 +776,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 744776643
+      "loot_current": 764302695
     },
     "511724": {
       "oid": "511724",
@@ -797,7 +797,7 @@
       "name": "Tottenham 1882",
       "honor": 1194,
       "might": null,
-      "loot_current": 27340000
+      "loot_current": 27530309
     },
     "273782": {
       "oid": "273782",
@@ -1233,7 +1233,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 744776643
+      "loot_current": 764302695
     },
     {
       "oid": "511724",
@@ -1254,7 +1254,7 @@
       "name": "Tottenham 1882",
       "honor": 1194,
       "might": null,
-      "loot_current": 27340000
+      "loot_current": 27530309
     },
     {
       "oid": "273782",
