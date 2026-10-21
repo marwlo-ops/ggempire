@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T17:58:50.904333+00:00",
+  "fetched_at": "2026-10-21T18:34:01.082171+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -36,7 +36,7 @@
       "name": "hrabia Piotr",
       "honor": 1347,
       "might": null,
-      "loot_current": 764988661
+      "loot_current": 848477433
     },
     "1813640": {
       "name": "Yendra",
@@ -130,9 +130,9 @@
     },
     "315695": {
       "name": "SzakoPL",
-      "honor": 1540,
+      "honor": 1764,
       "might": null,
-      "loot_current": 95548820
+      "loot_current": 112478322
     },
     "1940528": {
       "name": "Cesarz Julisz1",
@@ -222,7 +222,7 @@
       "name": "radziollo",
       "honor": 1555,
       "might": null,
-      "loot_current": 444632718
+      "loot_current": 459465344
     },
     "298959": {
       "name": "CZARA",
@@ -240,11 +240,11 @@
       "name": "Ciuciek1984",
       "honor": 731,
       "might": null,
-      "loot_current": 613395557
+      "loot_current": 635450977
     },
     "332746": {
       "name": "-LUCEK-",
-      "honor": 1883,
+      "honor": 1916,
       "might": null,
       "loot_current": 872447359
     },
@@ -330,7 +330,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 888211791
+      "loot_current": 925375935
     },
     "511724": {
       "name": "Monik...",
@@ -447,7 +447,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 62601783
+      "loot_current": 69931333
     },
     "30359": {
       "oid": "30359",
@@ -545,7 +545,7 @@
       "name": "SzakoPL",
       "honor": 1764,
       "might": null,
-      "loot_current": 112478322
+      "loot_current": 185001836
     },
     "1940528": {
       "oid": "1940528",
@@ -648,9 +648,9 @@
     "1772369": {
       "oid": "1772369",
       "name": "radziollo",
-      "honor": 1555,
+      "honor": 1577,
       "might": null,
-      "loot_current": 459465344
+      "loot_current": 479133786
     },
     "298959": {
       "oid": "298959",
@@ -676,7 +676,7 @@
     "332746": {
       "oid": "332746",
       "name": "-LUCEK-",
-      "honor": 1916,
+      "honor": 1922,
       "might": null,
       "loot_current": 872447359
     },
@@ -776,7 +776,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 925375935
+      "loot_current": 934742607
     },
     "511724": {
       "oid": "511724",
@@ -904,7 +904,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 62601783
+      "loot_current": 69931333
     },
     {
       "oid": "30359",
@@ -1002,7 +1002,7 @@
       "name": "SzakoPL",
       "honor": 1764,
       "might": null,
-      "loot_current": 112478322
+      "loot_current": 185001836
     },
     {
       "oid": "1940528",
@@ -1105,9 +1105,9 @@
     {
       "oid": "1772369",
       "name": "radziollo",
-      "honor": 1555,
+      "honor": 1577,
       "might": null,
-      "loot_current": 459465344
+      "loot_current": 479133786
     },
     {
       "oid": "298959",
@@ -1133,7 +1133,7 @@
     {
       "oid": "332746",
       "name": "-LUCEK-",
-      "honor": 1916,
+      "honor": 1922,
       "might": null,
       "loot_current": 872447359
     },
@@ -1233,7 +1233,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 925375935
+      "loot_current": 934742607
     },
     {
       "oid": "511724",
