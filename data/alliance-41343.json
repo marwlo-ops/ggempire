@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T05:01:28.995382+00:00",
+  "fetched_at": "2026-10-21T05:43:30.884102+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -12,7 +12,7 @@
       "name": "-Sławek-",
       "honor": 2218,
       "might": null,
-      "loot_current": 5676740
+      "loot_current": 5449670
     },
     "1524565": {
       "name": "Tazgov",
@@ -40,9 +40,9 @@
     },
     "1762193": {
       "name": "Tomovsky",
-      "honor": 1328,
+      "honor": 1519,
       "might": null,
-      "loot_current": 4053712
+      "loot_current": 4065949
     },
     "8653": {
       "name": "wizir",
@@ -66,7 +66,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 504011907
+      "loot_current": 453610716
     },
     "1934546": {
       "name": "P-A-T-O-L-0-0-7",
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 547702454
+      "loot_current": 570148789
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -132,7 +132,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 195615785
+      "loot_current": 176054206
     },
     "1808763": {
       "name": "RoB",
@@ -174,7 +174,7 @@
       "name": "Mnich1",
       "honor": 3105,
       "might": null,
-      "loot_current": 599804157
+      "loot_current": 539823741
     },
     "1189628": {
       "name": "Janas",
@@ -192,7 +192,7 @@
       "name": "Aber",
       "honor": 1048,
       "might": null,
-      "loot_current": 31926091
+      "loot_current": 29052743
     },
     "1196131": {
       "name": "pablo dux",
@@ -306,9 +306,9 @@
     "1762193": {
       "oid": "1762193",
       "name": "Tomovsky",
-      "honor": 1519,
+      "honor": 1687,
       "might": null,
-      "loot_current": 4065949
+      "loot_current": 4441971
     },
     "8653": {
       "oid": "8653",
@@ -336,7 +336,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 453610716
+      "loot_current": 489757148
     },
     "1934546": {
       "oid": "1934546",
@@ -357,7 +357,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 570148789
+      "loot_current": 592684386
     },
     "1906821": {
       "oid": "1906821",
@@ -392,7 +392,7 @@
       "name": "SG-1",
       "honor": 1434,
       "might": null,
-      "loot_current": 626286472
+      "loot_current": 626511375
     },
     "1013972": {
       "oid": "1013972",
@@ -546,7 +546,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 109708940
+      "loot_current": 98738046
     },
     "1708518": {
       "oid": "1708518",
@@ -609,9 +609,9 @@
     {
       "oid": "1762193",
       "name": "Tomovsky",
-      "honor": 1519,
+      "honor": 1687,
       "might": null,
-      "loot_current": 4065949
+      "loot_current": 4441971
     },
     {
       "oid": "8653",
@@ -639,7 +639,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 453610716
+      "loot_current": 489757148
     },
     {
       "oid": "1934546",
@@ -660,7 +660,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 570148789
+      "loot_current": 592684386
     },
     {
       "oid": "1906821",
@@ -695,7 +695,7 @@
       "name": "SG-1",
       "honor": 1434,
       "might": null,
-      "loot_current": 626286472
+      "loot_current": 626511375
     },
     {
       "oid": "1013972",
@@ -849,7 +849,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 109708940
+      "loot_current": 98738046
     },
     {
       "oid": "1708518",
