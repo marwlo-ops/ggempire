@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T05:43:30.884102+00:00",
+  "fetched_at": "2026-10-21T06:14:40.944723+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -40,9 +40,9 @@
     },
     "1762193": {
       "name": "Tomovsky",
-      "honor": 1519,
+      "honor": 1687,
       "might": null,
-      "loot_current": 4065949
+      "loot_current": 4441971
     },
     "8653": {
       "name": "wizir",
@@ -66,7 +66,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 453610716
+      "loot_current": 489757148
     },
     "1934546": {
       "name": "P-A-T-O-L-0-0-7",
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 570148789
+      "loot_current": 592684386
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -114,7 +114,7 @@
       "name": "SG-1",
       "honor": 1434,
       "might": null,
-      "loot_current": 626286472
+      "loot_current": 626511375
     },
     "1013972": {
       "name": "Theo",
@@ -246,7 +246,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 109708940
+      "loot_current": 98738046
     },
     "1708518": {
       "name": "Pomidorek",
@@ -308,7 +308,7 @@
       "name": "Tomovsky",
       "honor": 1687,
       "might": null,
-      "loot_current": 4441971
+      "loot_current": 21079640
     },
     "8653": {
       "oid": "8653",
@@ -329,7 +329,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 757184706
+      "loot_current": 681466235
     },
     "1827540": {
       "oid": "1827540",
@@ -357,7 +357,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 592684386
+      "loot_current": 614460000
     },
     "1906821": {
       "oid": "1906821",
@@ -390,9 +390,9 @@
     "1299720": {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1434,
+      "honor": 1115,
       "might": null,
-      "loot_current": 626511375
+      "loot_current": 626580317
     },
     "1013972": {
       "oid": "1013972",
@@ -567,7 +567,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 504616004
+      "loot_current": 535281608
     }
   },
   "players": [
@@ -611,7 +611,7 @@
       "name": "Tomovsky",
       "honor": 1687,
       "might": null,
-      "loot_current": 4441971
+      "loot_current": 21079640
     },
     {
       "oid": "8653",
@@ -632,7 +632,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 757184706
+      "loot_current": 681466235
     },
     {
       "oid": "1827540",
@@ -660,7 +660,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 592684386
+      "loot_current": 614460000
     },
     {
       "oid": "1906821",
@@ -693,9 +693,9 @@
     {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1434,
+      "honor": 1115,
       "might": null,
-      "loot_current": 626511375
+      "loot_current": 626580317
     },
     {
       "oid": "1013972",
@@ -870,7 +870,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 504616004
+      "loot_current": 535281608
     }
   ]
 }
