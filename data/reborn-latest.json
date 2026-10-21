@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T06:14:40.608236+00:00",
+  "fetched_at": "2026-10-21T07:08:22.364057+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -144,7 +144,7 @@
       "name": "PremierPL",
       "honor": 1622,
       "might": null,
-      "loot_current": 147880047
+      "loot_current": 133092042
     },
     "983615": {
       "name": "Raven333",
@@ -198,7 +198,7 @@
       "name": "Placek78",
       "honor": 1580,
       "might": null,
-      "loot_current": 153534702
+      "loot_current": 138181232
     },
     "1345366": {
       "name": "Andrzejklimek83",
@@ -234,7 +234,7 @@
       "name": "Gerg",
       "honor": 1701,
       "might": null,
-      "loot_current": 577079775
+      "loot_current": 519371797
     },
     "1915987": {
       "name": "Ciuciek1984",
@@ -316,9 +316,9 @@
     },
     "854121": {
       "name": "Grzegorz1247",
-      "honor": 1371,
+      "honor": 1690,
       "might": null,
-      "loot_current": 77029627
+      "loot_current": 77030838
     },
     "230756": {
       "name": "Piotus",
@@ -330,13 +330,13 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 817273634
+      "loot_current": 735546271
     },
     "511724": {
       "name": "Monik...",
       "honor": 1667,
       "might": null,
-      "loot_current": 70324871
+      "loot_current": 63292384
     },
     "1836535": {
       "name": "Bawid",
@@ -360,7 +360,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 278555401
+      "loot_current": 285475987
     },
     "1295460": {
       "name": "VanKord 2.0",
@@ -615,7 +615,7 @@
       "name": "PREZES785",
       "honor": 931,
       "might": null,
-      "loot_current": 328181
+      "loot_current": 324899
     },
     "535240": {
       "oid": "535240",
@@ -718,7 +718,7 @@
     "1153991": {
       "oid": "1153991",
       "name": "N0R",
-      "honor": 1802,
+      "honor": 1623,
       "might": null,
       "loot_current": 90052160
     },
@@ -739,9 +739,9 @@
     "53340": {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1791,
+      "honor": 2029,
       "might": null,
-      "loot_current": 341225457
+      "loot_current": 341236710
     },
     "642004": {
       "oid": "642004",
@@ -762,7 +762,7 @@
       "name": "Grzegorz1247",
       "honor": 1690,
       "might": null,
-      "loot_current": 77030838
+      "loot_current": 77034430
     },
     "230756": {
       "oid": "230756",
@@ -781,9 +781,9 @@
     "511724": {
       "oid": "511724",
       "name": "Monik...",
-      "honor": 1667,
+      "honor": 1691,
       "might": null,
-      "loot_current": 63292384
+      "loot_current": 63307618
     },
     "1836535": {
       "oid": "1836535",
@@ -802,7 +802,7 @@
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1670,
+      "honor": 1834,
       "might": null,
       "loot_current": 2093989918
     },
@@ -811,7 +811,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 285475987
+      "loot_current": 299503854
     },
     "1295460": {
       "oid": "1295460",
@@ -1072,7 +1072,7 @@
       "name": "PREZES785",
       "honor": 931,
       "might": null,
-      "loot_current": 328181
+      "loot_current": 324899
     },
     {
       "oid": "535240",
@@ -1175,7 +1175,7 @@
     {
       "oid": "1153991",
       "name": "N0R",
-      "honor": 1802,
+      "honor": 1623,
       "might": null,
       "loot_current": 90052160
     },
@@ -1196,9 +1196,9 @@
     {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1791,
+      "honor": 2029,
       "might": null,
-      "loot_current": 341225457
+      "loot_current": 341236710
     },
     {
       "oid": "642004",
@@ -1219,7 +1219,7 @@
       "name": "Grzegorz1247",
       "honor": 1690,
       "might": null,
-      "loot_current": 77030838
+      "loot_current": 77034430
     },
     {
       "oid": "230756",
@@ -1238,9 +1238,9 @@
     {
       "oid": "511724",
       "name": "Monik...",
-      "honor": 1667,
+      "honor": 1691,
       "might": null,
-      "loot_current": 63292384
+      "loot_current": 63307618
     },
     {
       "oid": "1836535",
@@ -1259,7 +1259,7 @@
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1670,
+      "honor": 1834,
       "might": null,
       "loot_current": 2093989918
     },
@@ -1268,7 +1268,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 285475987
+      "loot_current": 299503854
     },
     {
       "oid": "1295460",
