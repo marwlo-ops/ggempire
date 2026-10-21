@@ -4,8 +4,8 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T19:19:12.094853+00:00",
-  "player_count": 42,
+  "fetched_at": "2026-10-21T19:59:20.714867+00:00",
+  "player_count": 43,
   "total_might": null,
   "prev_players": {
     "1942173": {
@@ -24,13 +24,13 @@
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 1086934759
+      "loot_current": 1129645983
     },
     "1681311": {
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 751015282
+      "loot_current": 793864115
     },
     "941700": {
       "name": "NOXAM",
@@ -72,7 +72,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 16670974
+      "loot_current": 23826105
     },
     "1814411": {
       "name": "GUGU",
@@ -120,7 +120,7 @@
       "name": "Theo",
       "honor": 1641,
       "might": null,
-      "loot_current": 517329335
+      "loot_current": 465596401
     },
     "1940547": {
       "name": "ESPRESSO",
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 458140461
+      "loot_current": 458379339
     },
     "1891821": {
       "name": "Aber",
@@ -214,7 +214,7 @@
     },
     "1002425": {
       "name": "Tomek76",
-      "honor": 1339,
+      "honor": 1138,
       "might": null,
       "loot_current": 200153443
     },
@@ -252,7 +252,7 @@
       "name": "eDuke",
       "honor": 2036,
       "might": null,
-      "loot_current": 2206560
+      "loot_current": 2162429
     },
     "1858019": {
       "name": "z404",
@@ -276,19 +276,26 @@
       "might": null,
       "loot_current": 235543919
     },
+    "1963999": {
+      "oid": "1963999",
+      "name": "Atleti",
+      "honor": 0,
+      "might": null,
+      "loot_current": 0
+    },
     "1141204": {
       "oid": "1141204",
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 1129645983
+      "loot_current": 1213246109
     },
     "1681311": {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 793864115
+      "loot_current": 807970462
     },
     "941700": {
       "oid": "941700",
@@ -337,7 +344,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 23826105
+      "loot_current": 31391352
     },
     "1814411": {
       "oid": "1814411",
@@ -386,7 +393,7 @@
       "name": "SG-1",
       "honor": 980,
       "might": null,
-      "loot_current": 661253683
+      "loot_current": 702614663
     },
     "1013972": {
       "oid": "1013972",
@@ -470,7 +477,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 458379339
+      "loot_current": 458632943
     },
     "1891821": {
       "oid": "1891821",
@@ -573,18 +580,25 @@
       "loot_current": 235543919
     },
     {
+      "oid": "1963999",
+      "name": "Atleti",
+      "honor": 0,
+      "might": null,
+      "loot_current": 0
+    },
+    {
       "oid": "1141204",
       "name": "Burza87",
       "honor": 2517,
       "might": null,
-      "loot_current": 1129645983
+      "loot_current": 1213246109
     },
     {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 793864115
+      "loot_current": 807970462
     },
     {
       "oid": "941700",
@@ -633,7 +647,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 23826105
+      "loot_current": 31391352
     },
     {
       "oid": "1814411",
@@ -682,7 +696,7 @@
       "name": "SG-1",
       "honor": 980,
       "might": null,
-      "loot_current": 661253683
+      "loot_current": 702614663
     },
     {
       "oid": "1013972",
@@ -766,7 +780,7 @@
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 458379339
+      "loot_current": 458632943
     },
     {
       "oid": "1891821",
