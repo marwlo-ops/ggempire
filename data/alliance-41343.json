@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T15:27:33.176721+00:00",
+  "fetched_at": "2026-10-21T16:07:55.238546+00:00",
   "player_count": 42,
   "total_might": null,
   "prev_players": {
@@ -30,11 +30,11 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 614249586
+      "loot_current": 639798357
     },
     "941700": {
       "name": "NOXAM",
-      "honor": 1052,
+      "honor": 1039,
       "might": null,
       "loot_current": 470762006
     },
@@ -186,7 +186,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 456406366
+      "loot_current": 457023345
     },
     "1891821": {
       "name": "Aber",
@@ -258,7 +258,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 711796761
+      "loot_current": 711798595
     }
   },
   "players_by_oid": {
@@ -288,7 +288,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 639798357
+      "loot_current": 654638280
     },
     "941700": {
       "oid": "941700",
@@ -351,7 +351,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 762053007
+      "loot_current": 768475063
     },
     "1906821": {
       "oid": "1906821",
@@ -384,7 +384,7 @@
     "1299720": {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 863,
+      "honor": 980,
       "might": null,
       "loot_current": 661253683
     },
@@ -470,7 +470,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 457023345
+      "loot_current": 457151881
     },
     "1891821": {
       "oid": "1891821",
@@ -584,7 +584,7 @@
       "name": "Nadia",
       "honor": 1827,
       "might": null,
-      "loot_current": 639798357
+      "loot_current": 654638280
     },
     {
       "oid": "941700",
@@ -647,7 +647,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 762053007
+      "loot_current": 768475063
     },
     {
       "oid": "1906821",
@@ -680,7 +680,7 @@
     {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 863,
+      "honor": 980,
       "might": null,
       "loot_current": 661253683
     },
@@ -766,7 +766,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 457023345
+      "loot_current": 457151881
     },
     {
       "oid": "1891821",
