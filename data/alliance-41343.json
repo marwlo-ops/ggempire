@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T09:10:02.192894+00:00",
+  "fetched_at": "2026-10-21T09:45:28.704303+00:00",
   "player_count": 42,
   "total_might": null,
   "prev_players": {
@@ -42,7 +42,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 135766147
+      "loot_current": 169475526
     },
     "8653": {
       "name": "wizir",
@@ -84,7 +84,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 708935339
+      "loot_current": 715784855
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -200,17 +200,11 @@
       "might": null,
       "loot_current": 113471084
     },
-    "1956780": {
-      "name": "قطط المحاربين",
-      "honor": 904,
-      "might": null,
-      "loot_current": 1029777
-    },
     "1667373": {
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 15356105
+      "loot_current": 23582357
     },
     "1873065": {
       "name": "Uhtred",
@@ -308,7 +302,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 169475526
+      "loot_current": 186731680
     },
     "8653": {
       "oid": "8653",
@@ -390,9 +384,9 @@
     "1299720": {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1115,
+      "honor": 863,
       "might": null,
-      "loot_current": 626666933
+      "loot_current": 661253683
     },
     "1013972": {
       "oid": "1013972",
@@ -476,7 +470,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 454859314
+      "loot_current": 455191050
     },
     "1891821": {
       "oid": "1891821",
@@ -497,7 +491,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 23582357
+      "loot_current": 25494443
     },
     "1873065": {
       "oid": "1873065",
@@ -560,7 +554,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 581316212
+      "loot_current": 614731933
     }
   },
   "players": [
@@ -604,7 +598,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 169475526
+      "loot_current": 186731680
     },
     {
       "oid": "8653",
@@ -686,9 +680,9 @@
     {
       "oid": "1299720",
       "name": "SG-1",
-      "honor": 1115,
+      "honor": 863,
       "might": null,
-      "loot_current": 626666933
+      "loot_current": 661253683
     },
     {
       "oid": "1013972",
@@ -772,7 +766,7 @@
       "name": "Sirkk",
       "honor": 1931,
       "might": null,
-      "loot_current": 454859314
+      "loot_current": 455191050
     },
     {
       "oid": "1891821",
@@ -793,7 +787,7 @@
       "name": "Vanula",
       "honor": 1345,
       "might": null,
-      "loot_current": 23582357
+      "loot_current": 25494443
     },
     {
       "oid": "1873065",
@@ -856,7 +850,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 581316212
+      "loot_current": 614731933
     }
   ]
 }

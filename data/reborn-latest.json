@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-21T09:10:01.785163+00:00",
+  "fetched_at": "2026-10-21T09:45:28.540387+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -264,7 +264,7 @@
       "name": "Toruń główny",
       "honor": 1250,
       "might": null,
-      "loot_current": 192342557
+      "loot_current": 173108301
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -360,7 +360,7 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 311515366
+      "loot_current": 316172620
     },
     "1295460": {
       "name": "VanKord 2.0",
@@ -382,9 +382,9 @@
     },
     "1417454": {
       "name": "Bolesław chrobr",
-      "honor": 1575,
+      "honor": 1653,
       "might": null,
-      "loot_current": 65770042
+      "loot_current": 88896773
     },
     "1847009": {
       "name": "Włóczykij",
@@ -468,7 +468,7 @@
       "name": ".Wini7.",
       "honor": 1736,
       "might": null,
-      "loot_current": 1423032468
+      "loot_current": 1423171997
     },
     "1331978": {
       "oid": "1331978",
@@ -496,7 +496,7 @@
       "name": "MTA",
       "honor": 1911,
       "might": null,
-      "loot_current": 356845
+      "loot_current": 349744
     },
     "1270327": {
       "oid": "1270327",
@@ -510,7 +510,7 @@
       "name": "zzimny",
       "honor": 954,
       "might": null,
-      "loot_current": 299389
+      "loot_current": 293431
     },
     "1727679": {
       "oid": "1727679",
@@ -552,7 +552,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1207,
       "might": null,
-      "loot_current": 835669604
+      "loot_current": 752102644
     },
     "1598120": {
       "oid": "1598120",
@@ -669,9 +669,9 @@
     "1915987": {
       "oid": "1915987",
       "name": "Ciuciek1984",
-      "honor": 596,
+      "honor": 848,
       "might": null,
-      "loot_current": 398487042
+      "loot_current": 402400405
     },
     "332746": {
       "oid": "332746",
@@ -776,7 +776,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 735546271
+      "loot_current": 744776643
     },
     "511724": {
       "oid": "511724",
@@ -811,14 +811,14 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 316172620
+      "loot_current": 320719621
     },
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3877607850
+      "loot_current": 3966284838
     },
     "1679328": {
       "oid": "1679328",
@@ -925,7 +925,7 @@
       "name": ".Wini7.",
       "honor": 1736,
       "might": null,
-      "loot_current": 1423032468
+      "loot_current": 1423171997
     },
     {
       "oid": "1331978",
@@ -953,7 +953,7 @@
       "name": "MTA",
       "honor": 1911,
       "might": null,
-      "loot_current": 356845
+      "loot_current": 349744
     },
     {
       "oid": "1270327",
@@ -967,7 +967,7 @@
       "name": "zzimny",
       "honor": 954,
       "might": null,
-      "loot_current": 299389
+      "loot_current": 293431
     },
     {
       "oid": "1727679",
@@ -1009,7 +1009,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1207,
       "might": null,
-      "loot_current": 835669604
+      "loot_current": 752102644
     },
     {
       "oid": "1598120",
@@ -1126,9 +1126,9 @@
     {
       "oid": "1915987",
       "name": "Ciuciek1984",
-      "honor": 596,
+      "honor": 848,
       "might": null,
-      "loot_current": 398487042
+      "loot_current": 402400405
     },
     {
       "oid": "332746",
@@ -1233,7 +1233,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 735546271
+      "loot_current": 744776643
     },
     {
       "oid": "511724",
@@ -1268,14 +1268,14 @@
       "name": "oj Pawel",
       "honor": 1365,
       "might": null,
-      "loot_current": 316172620
+      "loot_current": 320719621
     },
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
       "honor": 885,
       "might": null,
-      "loot_current": 3877607850
+      "loot_current": 3966284838
     },
     {
       "oid": "1679328",
