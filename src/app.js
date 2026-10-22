@@ -30,7 +30,8 @@ function formatNumber(value) {
   return Number.isFinite(number) ? number.toLocaleString("pl-PL") : null;
 }
 async function fetchAlliance(aid) {
-  const url = `${E4K_API_BASE}/${E4K_SERVER}/ain/%22A10%22:${encodeURIComponent(aid)}`;
+  const payload = encodeURIComponent(JSON.stringify({ A10: Number(aid) }));
+  const url = `${E4K_API_BASE}/${E4K_SERVER}/ain/${payload}`;
   const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
   if (!response.ok) throw new Error("API HTTP " + response.status);
   const data = await response.json();
