@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T09:29:11.548822+00:00",
+  "fetched_at": "2026-10-22T10:10:04.888087+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -84,7 +84,7 @@
       "name": "Aldo Raine",
       "honor": 1082,
       "might": null,
-      "loot_current": 59136924
+      "loot_current": 53223232
     },
     "1936831": {
       "name": "MTA",
@@ -138,7 +138,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1208,
       "might": null,
-      "loot_current": 714480688
+      "loot_current": 714480978
     },
     "1598120": {
       "name": "PremierPL",
@@ -220,9 +220,9 @@
     },
     "1772369": {
       "name": "radziollo",
-      "honor": 1592,
+      "honor": 1296,
       "might": null,
-      "loot_current": 582855350
+      "loot_current": 582858895
     },
     "298959": {
       "name": "CZARA",
@@ -288,7 +288,7 @@
       "name": "IllegalBlonde",
       "honor": 551,
       "might": null,
-      "loot_current": 56174300
+      "loot_current": 51727809
     },
     "235098": {
       "name": "HEVE",
@@ -364,7 +364,7 @@
     },
     "1295460": {
       "name": "VanKord 2.0",
-      "honor": 1137,
+      "honor": 970,
       "might": null,
       "loot_current": 5684866531
     },
@@ -372,7 +372,7 @@
       "name": "Sopelo",
       "honor": 2078,
       "might": null,
-      "loot_current": 289838433
+      "loot_current": 300260536
     },
     "644336": {
       "name": "FRYDKA",
@@ -475,14 +475,14 @@
       "name": "crynio",
       "honor": 1215,
       "might": null,
-      "loot_current": 110611422
+      "loot_current": 99550280
     },
     "26911": {
       "oid": "26911",
       "name": "Vortex",
       "honor": 1829,
       "might": null,
-      "loot_current": 309461030
+      "loot_current": 311476496
     },
     "145184": {
       "oid": "145184",
@@ -932,14 +932,14 @@
       "name": "crynio",
       "honor": 1215,
       "might": null,
-      "loot_current": 110611422
+      "loot_current": 99550280
     },
     {
       "oid": "26911",
       "name": "Vortex",
       "honor": 1829,
       "might": null,
-      "loot_current": 309461030
+      "loot_current": 311476496
     },
     {
       "oid": "145184",
