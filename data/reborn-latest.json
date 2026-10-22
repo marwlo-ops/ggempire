@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T20:43:30.870903+00:00",
+  "fetched_at": "2026-10-22T21:15:48.922354+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -12,7 +12,7 @@
       "name": "jarek 31",
       "honor": 2114,
       "might": null,
-      "loot_current": 1253982756
+      "loot_current": 1374678458
     },
     "1806100": {
       "name": "kiler171",
@@ -48,7 +48,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 149205901
+      "loot_current": 157338960
     },
     "30359": {
       "name": "kamil H",
@@ -64,9 +64,9 @@
     },
     "1718275": {
       "name": ".Wini7.",
-      "honor": 1844,
+      "honor": 1923,
       "might": null,
-      "loot_current": 1292776406
+      "loot_current": 1292776428
     },
     "1331978": {
       "name": "crynio",
@@ -144,7 +144,7 @@
       "name": "PremierPL",
       "honor": 1622,
       "might": null,
-      "loot_current": 334058641
+      "loot_current": 423257693
     },
     "983615": {
       "name": "Raven333",
@@ -198,7 +198,7 @@
       "name": "Placek78",
       "honor": 1832,
       "might": null,
-      "loot_current": 134406238
+      "loot_current": 156489516
     },
     "1345366": {
       "name": "Andrzejklimek83",
@@ -252,7 +252,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 345810284
+      "loot_current": 390403952
     },
     "1774409": {
       "name": "Nathalie93",
@@ -264,7 +264,7 @@
       "name": "Toruń główny",
       "honor": 1370,
       "might": null,
-      "loot_current": 161921839
+      "loot_current": 162686963
     },
     "1878344": {
       "name": "-BLACK REAPER-",
@@ -286,9 +286,9 @@
     },
     "173914": {
       "name": "IllegalBlonde",
-      "honor": 599,
+      "honor": 518,
       "might": null,
-      "loot_current": 51732590
+      "loot_current": 51747034
     },
     "235098": {
       "name": "HEVE",
@@ -298,7 +298,7 @@
     },
     "53340": {
       "name": "szaft",
-      "honor": 1635,
+      "honor": 1523,
       "might": null,
       "loot_current": 444605565
     },
@@ -622,7 +622,7 @@
       "name": "Placek78",
       "honor": 1832,
       "might": null,
-      "loot_current": 156489516
+      "loot_current": 180761071
     },
     "1345366": {
       "oid": "1345366",
@@ -804,7 +804,7 @@
       "name": "Dark_Imperator",
       "honor": 1770,
       "might": null,
-      "loot_current": 1906840876
+      "loot_current": 1988407478
     },
     "1950953": {
       "oid": "1950953",
@@ -816,7 +816,7 @@
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 996,
+      "honor": 877,
       "might": null,
       "loot_current": 5885363070
     },
@@ -1079,7 +1079,7 @@
       "name": "Placek78",
       "honor": 1832,
       "might": null,
-      "loot_current": 156489516
+      "loot_current": 180761071
     },
     {
       "oid": "1345366",
@@ -1261,7 +1261,7 @@
       "name": "Dark_Imperator",
       "honor": 1770,
       "might": null,
-      "loot_current": 1906840876
+      "loot_current": 1988407478
     },
     {
       "oid": "1950953",
@@ -1273,7 +1273,7 @@
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 996,
+      "honor": 877,
       "might": null,
       "loot_current": 5885363070
     },
