@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T17:06:29.599521+00:00",
+  "fetched_at": "2026-10-22T17:41:21.478017+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -48,7 +48,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 413799185
+      "loot_current": 429787806
     },
     "8653": {
       "name": "wizir",
@@ -90,7 +90,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 815264280
+      "loot_current": 830496938
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -118,7 +118,7 @@
     },
     "1299720": {
       "name": "SG-1",
-      "honor": 980,
+      "honor": 973,
       "might": null,
       "loot_current": 1607454833
     },
@@ -246,7 +246,7 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 443658595
+      "loot_current": 509887612
     },
     "369918": {
       "name": "LESZEK CZAARNY",
@@ -349,7 +349,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 1079503701
+      "loot_current": 1079529343
     },
     "1934546": {
       "oid": "1934546",
@@ -370,7 +370,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 830496938
+      "loot_current": 913006478
     },
     "1906821": {
       "oid": "1906821",
@@ -382,7 +382,7 @@
     "1046871": {
       "oid": "1046871",
       "name": "baltyk",
-      "honor": 817,
+      "honor": 1002,
       "might": null,
       "loot_current": 1710792
     },
@@ -426,7 +426,7 @@
       "name": "-JarlMatt-",
       "honor": 1813,
       "might": null,
-      "loot_current": 158862492
+      "loot_current": 158901333
     },
     "1808763": {
       "oid": "1808763",
@@ -494,9 +494,9 @@
     "1813227": {
       "oid": "1813227",
       "name": "Sirkk",
-      "honor": 1919,
+      "honor": 2189,
       "might": null,
-      "loot_current": 414362120
+      "loot_current": 414364929
     },
     "1891821": {
       "oid": "1891821",
@@ -524,7 +524,7 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 89428778
+      "loot_current": 142692090
     },
     "1002425": {
       "oid": "1002425",
@@ -545,7 +545,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 330030521
+      "loot_current": 380678620
     },
     "259322": {
       "oid": "259322",
@@ -564,7 +564,7 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1220,
+      "honor": 1185,
       "might": null,
       "loot_current": 4276890792
     },
@@ -659,7 +659,7 @@
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 1079503701
+      "loot_current": 1079529343
     },
     {
       "oid": "1934546",
@@ -680,7 +680,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 830496938
+      "loot_current": 913006478
     },
     {
       "oid": "1906821",
@@ -692,7 +692,7 @@
     {
       "oid": "1046871",
       "name": "baltyk",
-      "honor": 817,
+      "honor": 1002,
       "might": null,
       "loot_current": 1710792
     },
@@ -736,7 +736,7 @@
       "name": "-JarlMatt-",
       "honor": 1813,
       "might": null,
-      "loot_current": 158862492
+      "loot_current": 158901333
     },
     {
       "oid": "1808763",
@@ -804,9 +804,9 @@
     {
       "oid": "1813227",
       "name": "Sirkk",
-      "honor": 1919,
+      "honor": 2189,
       "might": null,
-      "loot_current": 414362120
+      "loot_current": 414364929
     },
     {
       "oid": "1891821",
@@ -834,7 +834,7 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 89428778
+      "loot_current": 142692090
     },
     {
       "oid": "1002425",
@@ -855,7 +855,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 330030521
+      "loot_current": 380678620
     },
     {
       "oid": "259322",
@@ -874,7 +874,7 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1220,
+      "honor": 1185,
       "might": null,
       "loot_current": 4276890792
     },
