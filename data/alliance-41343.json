@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T07:19:27.912997+00:00",
+  "fetched_at": "2026-10-22T08:08:58.746557+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -66,7 +66,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 687304885
+      "loot_current": 706128049
     },
     "1827540": {
       "name": "Dadźbóg",
@@ -162,7 +162,7 @@
       "name": "Lasu",
       "honor": 1177,
       "might": null,
-      "loot_current": 3557599
+      "loot_current": 3450871
     },
     "1671423": {
       "name": "BloodLine",
@@ -256,7 +256,7 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1547,
+      "honor": 1079,
       "might": null,
       "loot_current": 4276766782
     },
@@ -489,14 +489,14 @@
       "name": "Janas",
       "honor": 1934,
       "might": null,
-      "loot_current": 141820521
+      "loot_current": 127638469
     },
     "1813227": {
       "oid": "1813227",
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 413709355
+      "loot_current": 413968406
     },
     "1891821": {
       "oid": "1891821",
@@ -545,7 +545,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 364464515
+      "loot_current": 328018063
     },
     "259322": {
       "oid": "259322",
@@ -580,7 +580,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 654908976
+      "loot_current": 672878450
     }
   },
   "players": [
@@ -799,14 +799,14 @@
       "name": "Janas",
       "honor": 1934,
       "might": null,
-      "loot_current": 141820521
+      "loot_current": 127638469
     },
     {
       "oid": "1813227",
       "name": "Sirkk",
       "honor": 1919,
       "might": null,
-      "loot_current": 413709355
+      "loot_current": 413968406
     },
     {
       "oid": "1891821",
@@ -855,7 +855,7 @@
       "name": "greg29",
       "honor": 1099,
       "might": null,
-      "loot_current": 364464515
+      "loot_current": 328018063
     },
     {
       "oid": "259322",
@@ -890,7 +890,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 654908976
+      "loot_current": 672878450
     }
   ]
 }
