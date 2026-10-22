@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T05:06:21.669886+00:00",
+  "fetched_at": "2026-10-22T05:43:14.173235+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -12,7 +12,7 @@
       "name": "-Sławek-",
       "honor": 2218,
       "might": null,
-      "loot_current": 5449670
+      "loot_current": 5231683
     },
     "1524565": {
       "name": "Tazgov",
@@ -146,6 +146,12 @@
       "might": null,
       "loot_current": 236131603
     },
+    "1722042": {
+      "name": "Montii",
+      "honor": 1922,
+      "might": null,
+      "loot_current": 5526725
+    },
     "1668728": {
       "name": "METEOR",
       "honor": 879,
@@ -168,7 +174,7 @@
       "name": "greatseal",
       "honor": 1875,
       "might": null,
-      "loot_current": 4364181
+      "loot_current": 4189614
     },
     "1866228": {
       "name": "DZC",
@@ -250,7 +256,7 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1863,
+      "honor": 1707,
       "might": null,
       "loot_current": 4276766782
     },
@@ -553,12 +559,12 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 107017579
+      "loot_current": 96315821
     },
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1707,
+      "honor": 1547,
       "might": null,
       "loot_current": 4276766782
     },
@@ -863,12 +869,12 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 107017579
+      "loot_current": 96315821
     },
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1707,
+      "honor": 1547,
       "might": null,
       "loot_current": 4276766782
     },
