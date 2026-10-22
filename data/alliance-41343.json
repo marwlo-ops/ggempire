@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T03:01:49.986296+00:00",
+  "fetched_at": "2026-10-22T03:45:22.835586+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -90,7 +90,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 763467594
+      "loot_current": 785322368
     },
     "1906821": {
       "name": "Lord Szakal",
@@ -264,7 +264,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 711798595
+      "loot_current": 640618735
     }
   },
   "players_by_oid": {
@@ -280,7 +280,7 @@
       "name": "Tazgov",
       "honor": 1239,
       "might": null,
-      "loot_current": 235543919
+      "loot_current": 211989527
     },
     "1963999": {
       "oid": "1963999",
@@ -350,7 +350,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 31391352
+      "loot_current": 28566130
     },
     "1814411": {
       "oid": "1814411",
@@ -378,7 +378,7 @@
       "name": "baltyk",
       "honor": 1050,
       "might": null,
-      "loot_current": 1523196
+      "loot_current": 1492732
     },
     "1888134": {
       "oid": "1888134",
@@ -420,7 +420,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 176054206
+      "loot_current": 158448785
     },
     "1808763": {
       "oid": "1808763",
@@ -434,7 +434,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 1317406359
+      "loot_current": 1185665723
     },
     "1933752": {
       "oid": "1933752",
@@ -583,7 +583,7 @@
       "name": "Tazgov",
       "honor": 1239,
       "might": null,
-      "loot_current": 235543919
+      "loot_current": 211989527
     },
     {
       "oid": "1963999",
@@ -653,7 +653,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 31391352
+      "loot_current": 28566130
     },
     {
       "oid": "1814411",
@@ -681,7 +681,7 @@
       "name": "baltyk",
       "honor": 1050,
       "might": null,
-      "loot_current": 1523196
+      "loot_current": 1492732
     },
     {
       "oid": "1888134",
@@ -723,7 +723,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 176054206
+      "loot_current": 158448785
     },
     {
       "oid": "1808763",
@@ -737,7 +737,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 1317406359
+      "loot_current": 1185665723
     },
     {
       "oid": "1933752",
