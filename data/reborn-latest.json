@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T10:10:04.888087+00:00",
+  "fetched_at": "2026-10-22T10:44:33.567250+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -72,13 +72,13 @@
       "name": "crynio",
       "honor": 1215,
       "might": null,
-      "loot_current": 110611422
+      "loot_current": 99550280
     },
     "26911": {
       "name": "Vortex",
       "honor": 1829,
       "might": null,
-      "loot_current": 309461030
+      "loot_current": 311476496
     },
     "145184": {
       "name": "Aldo Raine",
@@ -482,7 +482,7 @@
       "name": "Vortex",
       "honor": 1829,
       "might": null,
-      "loot_current": 311476496
+      "loot_current": 312812529
     },
     "145184": {
       "oid": "145184",
@@ -538,7 +538,7 @@
       "name": "-Izud-Jacek-",
       "honor": 1386,
       "might": null,
-      "loot_current": 1924222
+      "loot_current": 1885738
     },
     "315695": {
       "oid": "315695",
@@ -552,7 +552,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1208,
       "might": null,
-      "loot_current": 714480978
+      "loot_current": 714481023
     },
     "1598120": {
       "oid": "1598120",
@@ -685,7 +685,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 44973202
+      "loot_current": 94452616
     },
     "1774409": {
       "oid": "1774409",
@@ -697,9 +697,9 @@
     "1818825": {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 1560,
+      "honor": 1370,
       "might": null,
-      "loot_current": 160329177
+      "loot_current": 161078124
     },
     "1878344": {
       "oid": "1878344",
@@ -776,7 +776,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 849192398
+      "loot_current": 885787264
     },
     "511724": {
       "oid": "511724",
@@ -816,9 +816,9 @@
     "1295460": {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 970,
+      "honor": 1185,
       "might": null,
-      "loot_current": 5684866531
+      "loot_current": 5748644402
     },
     "1679328": {
       "oid": "1679328",
@@ -939,7 +939,7 @@
       "name": "Vortex",
       "honor": 1829,
       "might": null,
-      "loot_current": 311476496
+      "loot_current": 312812529
     },
     {
       "oid": "145184",
@@ -995,7 +995,7 @@
       "name": "-Izud-Jacek-",
       "honor": 1386,
       "might": null,
-      "loot_current": 1924222
+      "loot_current": 1885738
     },
     {
       "oid": "315695",
@@ -1009,7 +1009,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1208,
       "might": null,
-      "loot_current": 714480978
+      "loot_current": 714481023
     },
     {
       "oid": "1598120",
@@ -1142,7 +1142,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 44973202
+      "loot_current": 94452616
     },
     {
       "oid": "1774409",
@@ -1154,9 +1154,9 @@
     {
       "oid": "1818825",
       "name": "Toruń główny",
-      "honor": 1560,
+      "honor": 1370,
       "might": null,
-      "loot_current": 160329177
+      "loot_current": 161078124
     },
     {
       "oid": "1878344",
@@ -1233,7 +1233,7 @@
       "name": "Tango",
       "honor": 1083,
       "might": null,
-      "loot_current": 849192398
+      "loot_current": 885787264
     },
     {
       "oid": "511724",
@@ -1273,9 +1273,9 @@
     {
       "oid": "1295460",
       "name": "VanKord 2.0",
-      "honor": 970,
+      "honor": 1185,
       "might": null,
-      "loot_current": 5684866531
+      "loot_current": 5748644402
     },
     {
       "oid": "1679328",
