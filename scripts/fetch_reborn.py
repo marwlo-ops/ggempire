@@ -84,8 +84,7 @@ def fetch_server_alliance_ranking(server, base):
     print(f"hgh: saved {len(normalized)} raw alliance ranking rows to data/alliance-ranking.json")
 
 def fetch(aid, filename, fallback_name, server, base):
-    payload = quote(json.dumps({"A10": aid}, separators=(",", ":")), safe="")
-    url = f"{base}/{server}/ain/{payload}"
+    url = f'{base}/{server}/ain/%22AID%22:{aid}'
     req = urllib.request.Request(url, headers={"Accept":"application/json","User-Agent":"GGEmpire-ReadOnly-Tracker/1.0"})
     with urllib.request.urlopen(req, timeout=25) as response:
         payload = json.loads(response.read().decode("utf-8"))
@@ -103,7 +102,7 @@ def fetch(aid, filename, fallback_name, server, base):
         if oid is None or name is None: continue
         players.append({"oid":str(oid),"name":str(name),
           "honor":member.get("H",member.get("honor",member.get("HONOR"))),
-          "might":member.get("PP",member.get("P",member.get("PO",member.get("PW",member.get("might",member.get("power")))))),
+          "might":member.get("MP",member.get("PP",member.get("P",member.get("PO",member.get("PW",member.get("might",member.get("power"))))))),
           "loot_current":member.get("CF",member.get("loot_current",member.get("loot")))})
     if not players: raise RuntimeError(f"AID {aid}: member schema was not recognized")
     players.sort(key=lambda p:(p["might"] is None, -(float(p["might"]) if str(p["might"]).replace(".","",1).isdigit() else 0)))
