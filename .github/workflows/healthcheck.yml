@@ -43,7 +43,8 @@ jobs:
         run: |
           set -euo pipefail
           for aid in 115 41343; do
-            url="https://empire-api.fly.dev/EmpirefourkingdomsExGG2_3/ain/%22A10%22:${aid}"
+            payload="$(python -c 'import json,urllib.parse,sys; print(urllib.parse.quote(json.dumps({"A10":int(sys.argv[1])},separators=(",",":")),safe=""))' "$aid")"
+            url="https://empire-api.fly.dev/EmpirefourkingdomsExGG2_3/ain/${payload}"
             code="$(curl --silent --show-error --location --output /tmp/api.json --write-out '%{http_code}' --max-time 20 "$url" || true)"
             if [ "$code" != "200" ]; then
               echo "::warning::E4K API probe for AID $aid returned HTTP ${code:-network-error}; live data is not confirmed."
