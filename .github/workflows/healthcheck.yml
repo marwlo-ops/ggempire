@@ -47,7 +47,14 @@ jobs:
             url="https://empire-api.fly.dev/EmpirefourkingdomsExGG2_3/ain/${payload}"
             code="$(curl --silent --show-error --location --output /tmp/api.json --write-out '%{http_code}' --max-time 20 "$url" || true)"
             if [ "$code" != "200" ]; then
-              echo "::warning::E4K API probe for AID $aid returned HTTP ${code:-network-error}; live data is not confirmed."
+              echo "::warning::E4K API probe for A10 payload AID $aid returned HTTP ${code:-network-error}; response follows."
+              head -c 1200 /tmp/api.json || true
+              echo
+              legacy_url="https://empire-api.fly.dev/EmpirefourkingdomsExGG2_3/ain/%22AID%22:${aid}"
+              legacy_code="$(curl --silent --show-error --location --output /tmp/api-legacy.json --write-out '%{http_code}' --max-time 20 "$legacy_url" || true)"
+              echo "Legacy AID route status for $aid: ${legacy_code:-network-error}"
+              head -c 1200 /tmp/api-legacy.json || true
+              echo
               continue
             fi
             if ! grep -q '"return_code":"0"' /tmp/api.json && ! grep -q '"return_code":0' /tmp/api.json; then
