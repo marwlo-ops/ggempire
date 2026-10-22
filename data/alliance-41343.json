@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T14:18:34.901122+00:00",
+  "fetched_at": "2026-10-22T15:04:08.203119+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -48,7 +48,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 287937123
+      "loot_current": 319537254
     },
     "8653": {
       "name": "wizir",
@@ -120,7 +120,7 @@
       "name": "SG-1",
       "honor": 980,
       "might": null,
-      "loot_current": 1501793771
+      "loot_current": 1555015901
     },
     "1013972": {
       "name": "Theo",
@@ -150,7 +150,7 @@
       "name": "Montii",
       "honor": 1922,
       "might": null,
-      "loot_current": 70598957
+      "loot_current": 70735855
     },
     "1668728": {
       "name": "METEOR",
@@ -321,7 +321,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 319537254
+      "loot_current": 351210274
     },
     "8653": {
       "oid": "8653",
@@ -405,7 +405,7 @@
       "name": "SG-1",
       "honor": 980,
       "might": null,
-      "loot_current": 1555015901
+      "loot_current": 1607454833
     },
     "1013972": {
       "oid": "1013972",
@@ -438,7 +438,7 @@
     "1722042": {
       "oid": "1722042",
       "name": "Montii",
-      "honor": 1922,
+      "honor": 1747,
       "might": null,
       "loot_current": 70735855
     },
@@ -559,7 +559,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 96315821
+      "loot_current": 104655965
     },
     "1708518": {
       "oid": "1708518",
@@ -631,7 +631,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 319537254
+      "loot_current": 351210274
     },
     {
       "oid": "8653",
@@ -715,7 +715,7 @@
       "name": "SG-1",
       "honor": 980,
       "might": null,
-      "loot_current": 1555015901
+      "loot_current": 1607454833
     },
     {
       "oid": "1013972",
@@ -748,7 +748,7 @@
     {
       "oid": "1722042",
       "name": "Montii",
-      "honor": 1922,
+      "honor": 1747,
       "might": null,
       "loot_current": 70735855
     },
@@ -869,7 +869,7 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 96315821
+      "loot_current": 104655965
     },
     {
       "oid": "1708518",
