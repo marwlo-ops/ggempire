@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read-only collector for the two configured E4K alliance snapshots."""
 import json, os, sys, urllib.request
+from urllib.parse import quote
 from datetime import datetime, timezone
 from pathlib import Path
 
