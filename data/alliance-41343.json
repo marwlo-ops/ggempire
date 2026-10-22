@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T15:46:10.670367+00:00",
+  "fetched_at": "2026-10-22T16:28:57.330673+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -48,7 +48,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 351210274
+      "loot_current": 383157924
     },
     "8653": {
       "name": "wizir",
@@ -100,9 +100,9 @@
     },
     "1046871": {
       "name": "baltyk",
-      "honor": 1050,
+      "honor": 817,
       "might": null,
-      "loot_current": 1707872
+      "loot_current": 1710792
     },
     "1888134": {
       "name": "ZiDoQ98",
@@ -246,19 +246,19 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 310878416
+      "loot_current": 376442073
     },
     "369918": {
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 104655965
+      "loot_current": 114424962
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1031,
+      "honor": 1220,
       "might": null,
-      "loot_current": 4276890223
+      "loot_current": 4276890792
     },
     "1920035": {
       "name": "eDuke",
@@ -321,7 +321,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 383157924
+      "loot_current": 413799185
     },
     "8653": {
       "oid": "8653",
@@ -412,7 +412,7 @@
       "name": "Theo",
       "honor": 1641,
       "might": null,
-      "loot_current": 465596401
+      "loot_current": 419036761
     },
     "1940547": {
       "oid": "1940547",
@@ -426,7 +426,7 @@
       "name": "-JarlMatt-",
       "honor": 1813,
       "might": null,
-      "loot_current": 158826945
+      "loot_current": 158862492
     },
     "1808763": {
       "oid": "1808763",
@@ -552,7 +552,7 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 376442073
+      "loot_current": 443658595
     },
     "369918": {
       "oid": "369918",
@@ -631,7 +631,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 383157924
+      "loot_current": 413799185
     },
     {
       "oid": "8653",
@@ -722,7 +722,7 @@
       "name": "Theo",
       "honor": 1641,
       "might": null,
-      "loot_current": 465596401
+      "loot_current": 419036761
     },
     {
       "oid": "1940547",
@@ -736,7 +736,7 @@
       "name": "-JarlMatt-",
       "honor": 1813,
       "might": null,
-      "loot_current": 158826945
+      "loot_current": 158862492
     },
     {
       "oid": "1808763",
@@ -862,7 +862,7 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 376442073
+      "loot_current": 443658595
     },
     {
       "oid": "369918",
