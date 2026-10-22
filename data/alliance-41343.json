@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T06:15:32.274699+00:00",
+  "fetched_at": "2026-10-22T07:19:27.912997+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -66,13 +66,13 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 763672095
+      "loot_current": 687304885
     },
     "1827540": {
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 508112312
+      "loot_current": 457301081
     },
     "1934546": {
       "name": "P-A-T-O-L-0-0-7",
@@ -270,7 +270,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 640618735
+      "loot_current": 654908976
     }
   },
   "players_by_oid": {
@@ -342,7 +342,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 687304885
+      "loot_current": 706128049
     },
     "1827540": {
       "oid": "1827540",
@@ -454,7 +454,7 @@
       "name": "Lasu",
       "honor": 1177,
       "might": null,
-      "loot_current": 3557599
+      "loot_current": 3450871
     },
     "1671423": {
       "oid": "1671423",
@@ -564,7 +564,7 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1547,
+      "honor": 1079,
       "might": null,
       "loot_current": 4276766782
     },
@@ -652,7 +652,7 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 687304885
+      "loot_current": 706128049
     },
     {
       "oid": "1827540",
@@ -764,7 +764,7 @@
       "name": "Lasu",
       "honor": 1177,
       "might": null,
-      "loot_current": 3557599
+      "loot_current": 3450871
     },
     {
       "oid": "1671423",
@@ -874,7 +874,7 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 1547,
+      "honor": 1079,
       "might": null,
       "loot_current": 4276766782
     },
