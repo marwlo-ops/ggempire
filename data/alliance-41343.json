@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T20:03:51.114720+00:00",
+  "fetched_at": "2026-10-22T20:43:31.395371+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -48,7 +48,7 @@
       "name": "Tomovsky",
       "honor": 1866,
       "might": null,
-      "loot_current": 429787806
+      "loot_current": 429815763
     },
     "8653": {
       "name": "wizir",
@@ -120,7 +120,7 @@
       "name": "SG-1",
       "honor": 1337,
       "might": null,
-      "loot_current": 1804730410
+      "loot_current": 1915951548
     },
     "1013972": {
       "name": "Theo",
@@ -180,7 +180,7 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 415488010
+      "loot_current": 493451446
     },
     "1866802": {
       "name": "Mnich1",
@@ -256,9 +256,9 @@
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1170,
+      "honor": 1159,
       "might": null,
-      "loot_current": 4276948465
+      "loot_current": 4277003294
     },
     "1920035": {
       "name": "eDuke",
@@ -370,7 +370,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 1071556716
+      "loot_current": 1071556720
     },
     "1906821": {
       "oid": "1906821",
@@ -382,9 +382,9 @@
     "1046871": {
       "oid": "1046871",
       "name": "baltyk",
-      "honor": 1002,
+      "honor": 1083,
       "might": null,
-      "loot_current": 1710792
+      "loot_current": 1721511
     },
     "1888134": {
       "oid": "1888134",
@@ -475,7 +475,7 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 493451446
+      "loot_current": 529666450
     },
     "1866802": {
       "oid": "1866802",
@@ -496,7 +496,7 @@
       "name": "Sirkk",
       "honor": 2189,
       "might": null,
-      "loot_current": 415415587
+      "loot_current": 415445356
     },
     "1891821": {
       "oid": "1891821",
@@ -552,7 +552,7 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 644738365
+      "loot_current": 673211528
     },
     "369918": {
       "oid": "369918",
@@ -680,7 +680,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 1071556716
+      "loot_current": 1071556720
     },
     {
       "oid": "1906821",
@@ -692,9 +692,9 @@
     {
       "oid": "1046871",
       "name": "baltyk",
-      "honor": 1002,
+      "honor": 1083,
       "might": null,
-      "loot_current": 1710792
+      "loot_current": 1721511
     },
     {
       "oid": "1888134",
@@ -785,7 +785,7 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 493451446
+      "loot_current": 529666450
     },
     {
       "oid": "1866802",
@@ -806,7 +806,7 @@
       "name": "Sirkk",
       "honor": 2189,
       "might": null,
-      "loot_current": 415415587
+      "loot_current": 415445356
     },
     {
       "oid": "1891821",
@@ -862,7 +862,7 @@
       "name": "ΓΞQUIΞM",
       "honor": 1463,
       "might": null,
-      "loot_current": 644738365
+      "loot_current": 673211528
     },
     {
       "oid": "369918",
