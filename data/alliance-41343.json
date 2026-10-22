@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T03:45:22.835586+00:00",
+  "fetched_at": "2026-10-22T04:27:15.430251+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -18,7 +18,7 @@
       "name": "Tazgov",
       "honor": 1239,
       "might": null,
-      "loot_current": 235543919
+      "loot_current": 211989527
     },
     "1963999": {
       "name": "Atleti",
@@ -78,7 +78,7 @@
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1619,
       "might": null,
-      "loot_current": 31391352
+      "loot_current": 28566130
     },
     "1814411": {
       "name": "GUGU",
@@ -102,7 +102,7 @@
       "name": "baltyk",
       "honor": 1050,
       "might": null,
-      "loot_current": 1523196
+      "loot_current": 1492732
     },
     "1888134": {
       "name": "ZiDoQ98",
@@ -138,7 +138,7 @@
       "name": "-JarlMatt-",
       "honor": 2136,
       "might": null,
-      "loot_current": 176054206
+      "loot_current": 158448785
     },
     "1808763": {
       "name": "RoB",
@@ -150,7 +150,7 @@
       "name": "METEOR",
       "honor": 879,
       "might": null,
-      "loot_current": 1317406359
+      "loot_current": 1185665723
     },
     "1933752": {
       "name": "Lasu",
@@ -462,14 +462,14 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 215077204
+      "loot_current": 193569484
     },
     "1866802": {
       "oid": "1866802",
       "name": "Mnich1",
       "honor": 3105,
       "might": null,
-      "loot_current": 539823741
+      "loot_current": 485841367
     },
     "1189628": {
       "oid": "1189628",
@@ -511,14 +511,14 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 99365309
+      "loot_current": 89428778
     },
     "1002425": {
       "oid": "1002425",
       "name": "Tomek76",
       "honor": 1138,
       "might": null,
-      "loot_current": 200153443
+      "loot_current": 180138099
     },
     "1868650": {
       "oid": "1868650",
@@ -551,7 +551,7 @@
     "1708518": {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 2143,
+      "honor": 1863,
       "might": null,
       "loot_current": 4276766782
     },
@@ -765,14 +765,14 @@
       "name": "DZC",
       "honor": 1903,
       "might": null,
-      "loot_current": 215077204
+      "loot_current": 193569484
     },
     {
       "oid": "1866802",
       "name": "Mnich1",
       "honor": 3105,
       "might": null,
-      "loot_current": 539823741
+      "loot_current": 485841367
     },
     {
       "oid": "1189628",
@@ -814,14 +814,14 @@
       "name": "Uhtred",
       "honor": 2549,
       "might": null,
-      "loot_current": 99365309
+      "loot_current": 89428778
     },
     {
       "oid": "1002425",
       "name": "Tomek76",
       "honor": 1138,
       "might": null,
-      "loot_current": 200153443
+      "loot_current": 180138099
     },
     {
       "oid": "1868650",
@@ -854,7 +854,7 @@
     {
       "oid": "1708518",
       "name": "Pomidorek",
-      "honor": 2143,
+      "honor": 1863,
       "might": null,
       "loot_current": 4276766782
     },
