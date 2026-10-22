@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T05:43:14.173235+00:00",
+  "fetched_at": "2026-10-22T06:15:32.274699+00:00",
   "player_count": 44,
   "total_might": null,
   "prev_players": {
@@ -252,11 +252,11 @@
       "name": "LESZEK CZAARNY",
       "honor": 1706,
       "might": null,
-      "loot_current": 107017579
+      "loot_current": 96315821
     },
     "1708518": {
       "name": "Pomidorek",
-      "honor": 1707,
+      "honor": 1547,
       "might": null,
       "loot_current": 4276766782
     },
@@ -342,14 +342,14 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 763672095
+      "loot_current": 687304885
     },
     "1827540": {
       "oid": "1827540",
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 508112312
+      "loot_current": 457301081
     },
     "1934546": {
       "oid": "1934546",
@@ -580,7 +580,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 640618735
+      "loot_current": 654908976
     }
   },
   "players": [
@@ -652,14 +652,14 @@
       "name": "Mrs Kinia",
       "honor": 1970,
       "might": null,
-      "loot_current": 763672095
+      "loot_current": 687304885
     },
     {
       "oid": "1827540",
       "name": "Dadźbóg",
       "honor": 1210,
       "might": null,
-      "loot_current": 508112312
+      "loot_current": 457301081
     },
     {
       "oid": "1934546",
@@ -890,7 +890,7 @@
       "name": "z404",
       "honor": 1606,
       "might": null,
-      "loot_current": 640618735
+      "loot_current": 654908976
     }
   ]
 }
