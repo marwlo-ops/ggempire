@@ -83,7 +83,7 @@ def fetch_server_alliance_ranking(server, base):
     print(f"hgh: saved {len(normalized)} raw alliance ranking rows to data/alliance-ranking.json")
 
 def fetch(aid, filename, fallback_name, server, base):
-    url = f'{base}/{server}/ain/%22A10%22:{aid}'
+    url = f'{base}/{server}/ain/{quote(json.dumps({'A10': aid}, separators=(',', ':')), safe='')}'
     req = urllib.request.Request(url, headers={"Accept":"application/json","User-Agent":"GGEmpire-ReadOnly-Tracker/1.0"})
     with urllib.request.urlopen(req, timeout=25) as response:
         payload = json.loads(response.read().decode("utf-8"))
