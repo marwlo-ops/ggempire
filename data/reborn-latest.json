@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T16:28:57.027778+00:00",
+  "fetched_at": "2026-10-22T17:06:29.333435+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -48,7 +48,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 97186319
+      "loot_current": 104338291
     },
     "30359": {
       "name": "kamil H",
@@ -138,7 +138,7 @@
       "name": "Cesarz Julisz1",
       "honor": 1273,
       "might": null,
-      "loot_current": 755680642
+      "loot_current": 792240338
     },
     "1598120": {
       "name": "PremierPL",
@@ -198,7 +198,7 @@
       "name": "Placek78",
       "honor": 1661,
       "might": null,
-      "loot_current": 124514965
+      "loot_current": 124644165
     },
     "1345366": {
       "name": "Andrzejklimek83",
@@ -252,7 +252,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 200861506
+      "loot_current": 224934686
     },
     "1774409": {
       "name": "Nathalie93",
@@ -447,7 +447,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 104338291
+      "loot_current": 119710445
     },
     "30359": {
       "oid": "30359",
@@ -550,9 +550,9 @@
     "1940528": {
       "oid": "1940528",
       "name": "Cesarz Julisz1",
-      "honor": 1273,
+      "honor": 1293,
       "might": null,
-      "loot_current": 792240338
+      "loot_current": 792242366
     },
     "1598120": {
       "oid": "1598120",
@@ -620,7 +620,7 @@
     "535240": {
       "oid": "535240",
       "name": "Placek78",
-      "honor": 1661,
+      "honor": 1668,
       "might": null,
       "loot_current": 124644165
     },
@@ -648,9 +648,9 @@
     "1772369": {
       "oid": "1772369",
       "name": "radziollo",
-      "honor": 1296,
+      "honor": 1390,
       "might": null,
-      "loot_current": 582858895
+      "loot_current": 583532775
     },
     "298959": {
       "oid": "298959",
@@ -685,7 +685,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 224934686
+      "loot_current": 273847560
     },
     "1774409": {
       "oid": "1774409",
@@ -904,7 +904,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 104338291
+      "loot_current": 119710445
     },
     {
       "oid": "30359",
@@ -1007,9 +1007,9 @@
     {
       "oid": "1940528",
       "name": "Cesarz Julisz1",
-      "honor": 1273,
+      "honor": 1293,
       "might": null,
-      "loot_current": 792240338
+      "loot_current": 792242366
     },
     {
       "oid": "1598120",
@@ -1077,7 +1077,7 @@
     {
       "oid": "535240",
       "name": "Placek78",
-      "honor": 1661,
+      "honor": 1668,
       "might": null,
       "loot_current": 124644165
     },
@@ -1105,9 +1105,9 @@
     {
       "oid": "1772369",
       "name": "radziollo",
-      "honor": 1296,
+      "honor": 1390,
       "might": null,
-      "loot_current": 582858895
+      "loot_current": 583532775
     },
     {
       "oid": "298959",
@@ -1142,7 +1142,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 224934686
+      "loot_current": 273847560
     },
     {
       "oid": "1774409",
