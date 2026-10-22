@@ -30,8 +30,7 @@ function formatNumber(value) {
   return Number.isFinite(number) ? number.toLocaleString("pl-PL") : null;
 }
 async function fetchAlliance(aid) {
-  const payload = encodeURIComponent(JSON.stringify({ A10: Number(aid) }));
-  const url = `${E4K_API_BASE}/${E4K_SERVER}/ain/${payload}`;
+  const url = `${E4K_API_BASE}/${E4K_SERVER}/ain/%22AID%22:${encodeURIComponent(aid)}`;
   const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
   if (!response.ok) throw new Error("API HTTP " + response.status);
   const data = await response.json();
@@ -47,7 +46,7 @@ function renderAlliance(key, alliance, fallbackName) {
   const status = document.getElementById(key + "-status");
   const name = firstValue(alliance, ["N", "name", "NAME"]) || fallbackName;
   const members = Array.isArray(alliance.M) ? alliance.M : Array.isArray(alliance.members) ? alliance.members : [];
-  const power = firstValue(alliance, ["PP", "P", "PO", "PW", "power", "Power", "STR", "S"]);
+  const power = firstValue(alliance, ["MP", "PP", "P", "PO", "PW", "power", "Power", "STR", "S"]) ?? (members.length ? members.reduce((sum, member) => sum + (Number(firstValue(member, ["MP", "PP", "P", "PO", "PW", "might", "power"])) || 0), 0) || null : null);
   const count = firstValue(alliance, ["MC", "MEM", "memberCount", "membersCount"]) ?? (members.length || null);
   if (card) {
     const rows = [
