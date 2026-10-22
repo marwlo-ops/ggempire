@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T22:29:29.623610+00:00",
+  "fetched_at": "2026-10-22T22:40:26.780250+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -18,7 +18,7 @@
       "name": "kiler171",
       "honor": 1196,
       "might": null,
-      "loot_current": 4003585
+      "loot_current": 3883477
     },
     "1848844": {
       "name": "grzes83",
@@ -48,7 +48,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 164797355
+      "loot_current": 148317619
     },
     "30359": {
       "name": "kamil H",
@@ -66,7 +66,7 @@
       "name": ".Wini7.",
       "honor": 1923,
       "might": null,
-      "loot_current": 1292776428
+      "loot_current": 1163498785
     },
     "1331978": {
       "name": "crynio",
@@ -84,7 +84,7 @@
       "name": "Aldo Raine",
       "honor": 1082,
       "might": null,
-      "loot_current": 53223232
+      "loot_current": 47900909
     },
     "1936831": {
       "name": "MTA",
@@ -126,19 +126,19 @@
       "name": "-Izud-Jacek-",
       "honor": 1386,
       "might": null,
-      "loot_current": 1885738
+      "loot_current": 1848023
     },
     "315695": {
       "name": "SzakoPL",
-      "honor": 2060,
+      "honor": 1817,
       "might": null,
-      "loot_current": 290190410
+      "loot_current": 290283659
     },
     "1940528": {
       "name": "Cesarz Julisz1",
       "honor": 1311,
       "might": null,
-      "loot_current": 792246208
+      "loot_current": 713021587
     },
     "1598120": {
       "name": "PremierPL",
@@ -150,7 +150,7 @@
       "name": "Raven333",
       "honor": 2444,
       "might": null,
-      "loot_current": 440155087
+      "loot_current": 396139578
     },
     "140466": {
       "name": "DZIERZAN",
@@ -162,7 +162,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 138228382
+      "loot_current": 124405544
     },
     "222651": {
       "name": "botrop",
@@ -216,7 +216,7 @@
       "name": "Baobab",
       "honor": 1368,
       "might": null,
-      "loot_current": 197451475
+      "loot_current": 230029060
     },
     "1772369": {
       "name": "radziollo",
@@ -264,13 +264,13 @@
       "name": "Toruń główny",
       "honor": 1370,
       "might": null,
-      "loot_current": 167413330
+      "loot_current": 150671997
     },
     "1878344": {
       "name": "-BLACK REAPER-",
       "honor": 1282,
       "might": null,
-      "loot_current": 193034106
+      "loot_current": 173730695
     },
     "1783375": {
       "name": "FIGA",
@@ -288,7 +288,7 @@
       "name": "IllegalBlonde",
       "honor": 518,
       "might": null,
-      "loot_current": 51747034
+      "loot_current": 46572331
     },
     "235098": {
       "name": "HEVE",
@@ -298,9 +298,9 @@
     },
     "53340": {
       "name": "szaft",
-      "honor": 1364,
+      "honor": 1449,
       "might": null,
-      "loot_current": 469066338
+      "loot_current": 469421382
     },
     "642004": {
       "name": "Sajmon W",
@@ -334,7 +334,7 @@
     },
     "511724": {
       "name": "Monik...",
-      "honor": 1480,
+      "honor": 1273,
       "might": null,
       "loot_current": 56976915
     },
@@ -354,7 +354,7 @@
       "name": "Dark_Imperator",
       "honor": 1545,
       "might": null,
-      "loot_current": 1988408743
+      "loot_current": 1809451956
     },
     "1950953": {
       "name": "oj Pawel",
@@ -366,7 +366,7 @@
       "name": "VanKord 2.0",
       "honor": 877,
       "might": null,
-      "loot_current": 5947937728
+      "loot_current": 5353143955
     },
     "1679328": {
       "name": "Sopelo",
@@ -608,7 +608,7 @@
       "name": "Holmes",
       "honor": 1783,
       "might": null,
-      "loot_current": 95562904
+      "loot_current": 86006614
     },
     "1109550": {
       "oid": "1109550",
@@ -643,7 +643,7 @@
       "name": "Baobab",
       "honor": 1368,
       "might": null,
-      "loot_current": 230029060
+      "loot_current": 241953716
     },
     "1772369": {
       "oid": "1772369",
@@ -1065,7 +1065,7 @@
       "name": "Holmes",
       "honor": 1783,
       "might": null,
-      "loot_current": 95562904
+      "loot_current": 86006614
     },
     {
       "oid": "1109550",
@@ -1100,7 +1100,7 @@
       "name": "Baobab",
       "honor": 1368,
       "might": null,
-      "loot_current": 230029060
+      "loot_current": 241953716
     },
     {
       "oid": "1772369",
