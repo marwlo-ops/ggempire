@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-22T01:12:27.430629+00:00",
+  "fetched_at": "2026-10-22T01:48:43.648003+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -198,7 +198,7 @@
       "name": "Aber",
       "honor": 1048,
       "might": null,
-      "loot_current": 29052743
+      "loot_current": 26437996
     },
     "1196131": {
       "name": "pablo dux",
@@ -364,7 +364,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 824483784
+      "loot_current": 742035406
     },
     "1906821": {
       "oid": "1906821",
@@ -385,7 +385,7 @@
       "name": "ZiDoQ98",
       "honor": 1080,
       "might": null,
-      "loot_current": 179054156
+      "loot_current": 161148740
     },
     "1755905": {
       "oid": "1755905",
@@ -667,7 +667,7 @@
       "name": "oliwka o",
       "honor": 1729,
       "might": null,
-      "loot_current": 824483784
+      "loot_current": 742035406
     },
     {
       "oid": "1906821",
@@ -688,7 +688,7 @@
       "name": "ZiDoQ98",
       "honor": 1080,
       "might": null,
-      "loot_current": 179054156
+      "loot_current": 161148740
     },
     {
       "oid": "1755905",
