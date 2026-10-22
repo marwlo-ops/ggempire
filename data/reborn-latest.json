@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-10-22T21:15:48.922354+00:00",
+  "fetched_at": "2026-10-22T21:59:12.402826+00:00",
   "player_count": 65,
   "total_might": null,
   "prev_players": {
@@ -198,7 +198,7 @@
       "name": "Placek78",
       "honor": 1832,
       "might": null,
-      "loot_current": 156489516
+      "loot_current": 180761071
     },
     "1345366": {
       "name": "Andrzejklimek83",
@@ -354,7 +354,7 @@
       "name": "Dark_Imperator",
       "honor": 1770,
       "might": null,
-      "loot_current": 1906840876
+      "loot_current": 1988407478
     },
     "1950953": {
       "name": "oj Pawel",
@@ -364,7 +364,7 @@
     },
     "1295460": {
       "name": "VanKord 2.0",
-      "honor": 996,
+      "honor": 877,
       "might": null,
       "loot_current": 5885363070
     },
@@ -447,7 +447,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 157338960
+      "loot_current": 164797355
     },
     "30359": {
       "oid": "30359",
@@ -580,7 +580,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 72774996
+      "loot_current": 138228382
     },
     "222651": {
       "oid": "222651",
@@ -643,7 +643,7 @@
       "name": "Baobab",
       "honor": 1368,
       "might": null,
-      "loot_current": 166919577
+      "loot_current": 197451475
     },
     "1772369": {
       "oid": "1772369",
@@ -685,7 +685,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 390403952
+      "loot_current": 406673666
     },
     "1774409": {
       "oid": "1774409",
@@ -699,7 +699,7 @@
       "name": "Toruń główny",
       "honor": 1370,
       "might": null,
-      "loot_current": 162686963
+      "loot_current": 167413330
     },
     "1878344": {
       "oid": "1878344",
@@ -739,9 +739,9 @@
     "53340": {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1523,
+      "honor": 1364,
       "might": null,
-      "loot_current": 444605565
+      "loot_current": 469066338
     },
     "642004": {
       "oid": "642004",
@@ -795,16 +795,16 @@
     "1751146": {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1072,
+      "honor": 1138,
       "might": null,
-      "loot_current": 26123081
+      "loot_current": 26964279
     },
     "273782": {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1770,
+      "honor": 1545,
       "might": null,
-      "loot_current": 1988407478
+      "loot_current": 1988408743
     },
     "1950953": {
       "oid": "1950953",
@@ -818,7 +818,7 @@
       "name": "VanKord 2.0",
       "honor": 877,
       "might": null,
-      "loot_current": 5885363070
+      "loot_current": 5947937728
     },
     "1679328": {
       "oid": "1679328",
@@ -904,7 +904,7 @@
       "name": "VERIKAS",
       "honor": 1175,
       "might": null,
-      "loot_current": 157338960
+      "loot_current": 164797355
     },
     {
       "oid": "30359",
@@ -1037,7 +1037,7 @@
       "name": "qvinek",
       "honor": 1050,
       "might": null,
-      "loot_current": 72774996
+      "loot_current": 138228382
     },
     {
       "oid": "222651",
@@ -1100,7 +1100,7 @@
       "name": "Baobab",
       "honor": 1368,
       "might": null,
-      "loot_current": 166919577
+      "loot_current": 197451475
     },
     {
       "oid": "1772369",
@@ -1142,7 +1142,7 @@
       "name": "gwid",
       "honor": 1790,
       "might": null,
-      "loot_current": 390403952
+      "loot_current": 406673666
     },
     {
       "oid": "1774409",
@@ -1156,7 +1156,7 @@
       "name": "Toruń główny",
       "honor": 1370,
       "might": null,
-      "loot_current": 162686963
+      "loot_current": 167413330
     },
     {
       "oid": "1878344",
@@ -1196,9 +1196,9 @@
     {
       "oid": "53340",
       "name": "szaft",
-      "honor": 1523,
+      "honor": 1364,
       "might": null,
-      "loot_current": 444605565
+      "loot_current": 469066338
     },
     {
       "oid": "642004",
@@ -1252,16 +1252,16 @@
     {
       "oid": "1751146",
       "name": "Tottenham 1882",
-      "honor": 1072,
+      "honor": 1138,
       "might": null,
-      "loot_current": 26123081
+      "loot_current": 26964279
     },
     {
       "oid": "273782",
       "name": "Dark_Imperator",
-      "honor": 1770,
+      "honor": 1545,
       "might": null,
-      "loot_current": 1988407478
+      "loot_current": 1988408743
     },
     {
       "oid": "1950953",
@@ -1275,7 +1275,7 @@
       "name": "VanKord 2.0",
       "honor": 877,
       "might": null,
-      "loot_current": 5885363070
+      "loot_current": 5947937728
     },
     {
       "oid": "1679328",
