@@ -4,7 +4,7 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-10-21T23:54:23.072614+00:00",
+  "fetched_at": "2026-10-22T00:28:16.154344+00:00",
   "player_count": 43,
   "total_might": null,
   "prev_players": {
@@ -132,7 +132,7 @@
       "name": "ESPRESSO",
       "honor": 1178,
       "might": null,
-      "loot_current": 927235
+      "loot_current": 890516
     },
     "1817531": {
       "name": "-JarlMatt-",
@@ -252,7 +252,7 @@
       "name": "Pomidorek",
       "honor": 2143,
       "might": null,
-      "loot_current": 3570773636
+      "loot_current": 3963376084
     },
     "1920035": {
       "name": "eDuke",
@@ -308,7 +308,7 @@
       "name": "NOXAM",
       "honor": 1039,
       "might": null,
-      "loot_current": 423685805
+      "loot_current": 423689665
     },
     "1762193": {
       "oid": "1762193",
@@ -357,7 +357,7 @@
       "name": "GUGU",
       "honor": 1158,
       "might": null,
-      "loot_current": 585436
+      "loot_current": 573727
     },
     "1931787": {
       "oid": "1931787",
@@ -525,7 +525,7 @@
       "name": "MaTT",
       "honor": 859,
       "might": null,
-      "loot_current": 1728731
+      "loot_current": 1694156
     },
     "514929": {
       "oid": "514929",
@@ -553,7 +553,7 @@
       "name": "Pomidorek",
       "honor": 2143,
       "might": null,
-      "loot_current": 3963376084
+      "loot_current": 4276766782
     },
     "1920035": {
       "oid": "1920035",
@@ -611,7 +611,7 @@
       "name": "NOXAM",
       "honor": 1039,
       "might": null,
-      "loot_current": 423685805
+      "loot_current": 423689665
     },
     {
       "oid": "1762193",
@@ -660,7 +660,7 @@
       "name": "GUGU",
       "honor": 1158,
       "might": null,
-      "loot_current": 585436
+      "loot_current": 573727
     },
     {
       "oid": "1931787",
@@ -828,7 +828,7 @@
       "name": "MaTT",
       "honor": 859,
       "might": null,
-      "loot_current": 1728731
+      "loot_current": 1694156
     },
     {
       "oid": "514929",
@@ -856,7 +856,7 @@
       "name": "Pomidorek",
       "honor": 2143,
       "might": null,
-      "loot_current": 3963376084
+      "loot_current": 4276766782
     },
     {
       "oid": "1920035",
