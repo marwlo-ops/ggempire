@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#10121b"><meta name="description" content="GGEmpire — portal serwera PL1. Sojusze Reborn i MadDevil, rankingi, wydarzenia i narzędzia Goodgame Empire.">
 <title>GGEmpire — PL1 Alliance Hub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><link rel="stylesheet" href="./src/battle-simulator.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script><script src="./src/battle-simulator.js" defer></script>
+<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><link rel="stylesheet" href="./src/battle-simulator.css"><link rel="stylesheet" href="./src/pvp-attack-lab.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script><script src="./src/battle-simulator.js" defer></script><script src="./src/pvp-attack-lab.js" defer></script>
 </head>
 <body>
 <div class="backdrop-glow glow-a"></div><div class="backdrop-glow glow-b"></div>
@@ -121,7 +121,56 @@
    </div>
   </div>
  </section>
-\n <section class="section tools-section" id="tools"><div class="section-head"><div><div class="eyebrow">ARSENAŁ DOWÓDCY</div><h2>Narzędzia <span>i społeczność</span></h2><p>Najważniejsze zasoby dla graczy PL1 zebrane w jednym miejscu.</p></div></div>
+\n
+ <section class="section pvp-attack-section" id="pvp-attack-lab">
+  <div class="section-head"><div><div class="eyebrow">LABORATORIUM DOWÓDCY · PVP</div><h2>Kreator <span>ataku na gracza</span></h2><p>Porównuj warianty składu wojska, bonusów dowódcy, narzędzi i premii do łupu. Wszystkie współczynniki wpisujesz na podstawie własnego ekwipunku, zwiadu lub danych z symulatora.</p></div><span class="server-pill">TRYB TESTOWY</span></div>
+  <div class="pvp-lab">
+   <form class="pvp-panel" id="pvp-attack-form">
+    <h3>Parametry ataku i obrony</h3><p>Wprowadź dane z ekranu gry. Pola oznaczone procentami nie są automatycznie wyliczane z nazwy generała — wpisz rzeczywiste wartości.</p>
+    <div class="pvp-fields">
+     <div><label for="pvp-target">Rodzaj celu</label><select id="pvp-target"><option value="player">Zamek gracza</option><option value="event">Zamek wydarzenia</option><option value="npc">Obóz NPC</option></select></div>
+     <div><label for="pvp-priority">Główny cel</label><select id="pvp-priority"><option value="loot">Łup / surowce</option><option value="glory">Chwała</option><option value="honor">Honor</option></select></div>
+     <div class="pvp-group-title">WOJSKO ATAKUJĄCE</div>
+     <div><label for="pvp-melee">Jednostki wręcz — liczba</label><input id="pvp-melee" type="number" min="0" step="1" value="500"></div>
+     <div><label for="pvp-ranged">Jednostki dystansowe — liczba</label><input id="pvp-ranged" type="number" min="0" step="1" value="500"></div>
+     <div><label for="pvp-melee-power">Siła wręcz / jednostkę (umowna)</label><input id="pvp-melee-power" type="number" min="0" step="0.1" value="100"></div>
+     <div><label for="pvp-ranged-power">Siła dystansowa / jednostkę (umowna)</label><input id="pvp-ranged-power" type="number" min="0" step="0.1" value="100"></div>
+     <div><label for="pvp-melee-bonus">Bonus wręcz (%)</label><input id="pvp-melee-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-ranged-bonus">Bonus dystansowy (%)</label><input id="pvp-ranged-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-commander">Pozostały bonus ataku (%)</label><input id="pvp-commander" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-wave-bonus">Dodatkowe miejsca / fale (notatka)</label><input id="pvp-wave-bonus" type="number" min="0" step="1" value="0"></div>
+     <div class="pvp-group-title">UMOCNIENIA I NARZĘDZIA</div>
+     <div><label for="pvp-wall">Mur — poziom ochrony modelowej</label><input id="pvp-wall" type="number" min="0" step="1" value="50"></div>
+     <div><label for="pvp-gate">Brama — poziom ochrony modelowej</label><input id="pvp-gate" type="number" min="0" step="1" value="25"></div>
+     <div><label for="pvp-moat">Fosa — poziom ochrony modelowej</label><input id="pvp-moat" type="number" min="0" step="1" value="25"></div>
+     <div><label for="pvp-wall-reduction">Redukcja muru (%)</label><input id="pvp-wall-reduction" type="number" min="0" max="100" step="1" value="0"></div>
+     <div><label for="pvp-gate-reduction">Redukcja bramy (%)</label><input id="pvp-gate-reduction" type="number" min="0" max="100" step="1" value="0"></div>
+     <div><label for="pvp-moat-reduction">Redukcja fosy (%)</label><input id="pvp-moat-reduction" type="number" min="0" max="100" step="1" value="0"></div>
+     <div><label for="pvp-ranged-reduction">Redukcja obrony dystansowej (%)</label><input id="pvp-ranged-reduction" type="number" min="0" max="100" step="1" value="0"></div>
+     <div><label for="pvp-tools">Łączna liczba narzędzi</label><input id="pvp-tools" type="number" min="0" step="1" value="30"></div>
+     <div class="pvp-group-title">OBRONA Z RAPORTU / ZWIADU</div>
+     <div><label for="pvp-def-melee">Obrońcy wręcz (liczba)</label><input id="pvp-def-melee" type="number" min="0" step="1" value="500"></div>
+     <div><label for="pvp-def-ranged">Obrońcy dystansowi (liczba)</label><input id="pvp-def-ranged" type="number" min="0" step="1" value="500"></div>
+     <div class="pvp-group-title">ŁUP I NAGRODY — BONUSY Z EKWIPUNKU</div>
+     <div><label for="pvp-loot-bonus">Premia do łupu (%)</label><input id="pvp-loot-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-loot-capacity">Premia do pojemności łupu (%)</label><input id="pvp-loot-capacity" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-glory-bonus">Premia do chwały (%)</label><input id="pvp-glory-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-honor-bonus">Premia do honoru (%)</label><input id="pvp-honor-bonus" type="number" min="0" step="1" value="0"></div>
+    </div>
+    <div class="pvp-actions"><button class="button button-gold" type="submit">Przelicz wariant <span>→</span></button><button class="outline-button" id="pvp-reset" type="button">Resetuj</button></div>
+   </form>
+   <div class="pvp-panel"><h3>Wyniki porównania</h3><p>Używaj wyników do porównywania wariantów, nie jako gwarancji zwycięstwa.</p>
+    <div class="pvp-results"><div class="pvp-stat"><small>ATAK · WARTOŚĆ MODELOWA</small><b id="pvp-attack-value">—</b></div><div class="pvp-stat"><small>OBRONA · WARTOŚĆ MODELOWA</small><b id="pvp-defense-value">—</b></div></div>
+    <div class="pvp-bar"><span id="pvp-attack-bar"></span><span id="pvp-defense-bar"></span></div><div class="pvp-stat"><small>UDZIAŁ ATAKU W SUMIE WARTOŚCI MODELOWYCH</small><b id="pvp-attack-share">—</b></div>
+    <div class="pvp-indexes"><div class="pvp-stat"><small>WOJSKO</small><b id="pvp-army-total">—</b></div><div class="pvp-stat"><small>ŁUP · INDEKS</small><b id="pvp-loot-index">—</b></div><div class="pvp-stat"><small>POJEMNOŚĆ · INDEKS</small><b id="pvp-capacity-index">—</b></div></div>
+    <div class="pvp-stat"><small>INDEKS NAGRODY WG WYBRANEGO CELU</small><b id="pvp-reward-index">—</b><small id="pvp-tools-total">— narzędzi</small></div>
+    <div class="pvp-advice" id="pvp-advice" aria-live="polite"></div>
+    <p class="pvp-model-note" id="pvp-model-note">Model porównawczy, nie symulator serwerowy.</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="section tools-section" id="tools"><div class="section-head"><div><div class="eyebrow">ARSENAŁ DOWÓDCY</div><h2>Narzędzia <span>i społeczność</span></h2><p>Najważniejsze zasoby dla graczy PL1 zebrane w jednym miejscu.</p></div></div>
  <div class="tools-grid"><a class="tool-link" href="https://generalsforum.com/" target="_blank" rel="noreferrer"><span>⌘</span><div><b>Generals Forum</b><small>Narzędzia i społeczność GGE</small></div><i>↗</i></a><a class="tool-link" href="https://communityhub.goodgamestudios.com/" target="_blank" rel="noreferrer"><span>✦</span><div><b>Goodgame Community</b><small>Oficjalne forum i komunikaty</small></div><i>↗</i></a><a class="tool-link" href="https://gge.t8.pl/md/" target="_blank" rel="noreferrer"><span>◆</span><div><b>MadDevil Hub</b><small>Zasoby i informacje sojuszu</small></div><i>↗</i></a><a class="tool-link" href="https://github.com/danadum/empire-api" target="_blank" rel="noreferrer"><span>⌬</span><div><b>Projekt API E4K</b><small>Kod do oceny możliwości integracji</small></div><i>↗</i></a></div>
  </section>
  <section class="notice-section"><div class="notice-mark">i</div><div><b>Niezależny projekt fanowski</b><p>GGEmpire nie jest oficjalnym serwisem Goodgame Studios. Dane zależą od dostępności API i mogą być niepełne lub opóźnione. Wyświetlamy odpowiedzi API bez dodatkowego ręcznego potwierdzania; brakujące pola oznaczamy kreską.</p></div></section>
