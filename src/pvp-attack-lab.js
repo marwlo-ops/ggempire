@@ -8,7 +8,7 @@
   const fmt = (n) => Math.round(n).toLocaleString("pl-PL");
   const read = () => ({
     target: $("pvp-target")?.value || "player",
-    waves: Math.max(1,val("pvp-attack-waves")), slots: Math.max(1,val("pvp-attack-slots")), totalTroops: val("pvp-attack-total"), wdShare: Math.min(100,val("pvp-attack-wd-share"))/100,
+    waves: Math.max(1,val("pvp-attack-waves")), frontSlots: val("pvp-front-slots"), leftSlots: val("pvp-left-slots"), rightSlots: val("pvp-right-slots"), totalTroops: val("pvp-attack-total"), wdShare: Math.min(100,val("pvp-attack-wd-share"))/100,
     defTotal: val("pvp-def-total"), defWdShare: Math.min(100,val("pvp-def-wd-share"))/100, defSlots: val("pvp-def-slots"),
     priority: $("pvp-priority")?.value || "loot",
     melee: val("pvp-melee"), ranged: val("pvp-ranged"),
@@ -27,7 +27,10 @@
   });
   function calculate() {
     const d = read();
-    const capacity = d.waves * d.slots;
+    const frontCapacity = d.waves * d.frontSlots;
+    const leftCapacity = d.waves * d.leftSlots;
+    const rightCapacity = d.waves * d.rightSlots;
+    const capacity = frontCapacity + leftCapacity + rightCapacity;
     const troopsUsed = Math.min(d.totalTroops, capacity);
     d.ranged = Math.round(troopsUsed * d.wdShare);
     d.melee = troopsUsed - d.ranged;
@@ -56,6 +59,7 @@
     $("pvp-defense-bar").style.width = (100-ratio)+"%";
     $("pvp-army-total").textContent = fmt(troopCount)+" (WW "+fmt(d.melee)+" / WD "+fmt(d.ranged)+")";
     $("pvp-wave-capacity").textContent = fmt(capacity)+" · użyto "+fmt(troopsUsed);
+    $("pvp-zone-capacity").textContent = "Front "+fmt(frontCapacity)+" / L "+fmt(leftCapacity)+" / P "+fmt(rightCapacity);
     $("pvp-def-total-result").textContent = fmt(d.defTotal)+" (WW "+fmt(d.defenderMelee)+" / WD "+fmt(d.defRanged)+")";
     $("pvp-tools-total").textContent = fmt(d.tools);
     $("pvp-loot-index").textContent = "×"+lootFactor.toLocaleString("pl-PL",{maximumFractionDigits:2});
@@ -72,7 +76,7 @@
   }
   document.addEventListener("DOMContentLoaded", () => {
     const form = $("pvp-attack-form");
-    ["pvp-attack-waves","pvp-attack-slots","pvp-attack-total","pvp-attack-wd-share","pvp-def-total","pvp-def-wd-share"].forEach(id => $(id)?.addEventListener("input", calculate));
+    ["pvp-attack-waves","pvp-front-slots","pvp-left-slots","pvp-right-slots","pvp-attack-total","pvp-attack-wd-share","pvp-def-total","pvp-def-wd-share"].forEach(id => $(id)?.addEventListener("input", calculate));
     form?.addEventListener("input", calculate);
     form?.addEventListener("change", calculate);
     form?.addEventListener("submit", e => { e.preventDefault(); calculate(); });
@@ -83,7 +87,7 @@
         "pvp-loot-bonus":60, "pvp-loot-capacity":55, "pvp-glory-bonus":65, "pvp-honor-bonus":55,
         "pvp-wall":50, "pvp-gate":25, "pvp-moat":25,
         "pvp-melee":500, "pvp-ranged":500, "pvp-def-melee":0, "pvp-def-ranged":0,
-        "pvp-attack-waves":17, "pvp-attack-slots":1026, "pvp-attack-total":17442, "pvp-attack-wd-share":50,
+        "pvp-attack-waves":17, "pvp-front-slots":1026, "pvp-left-slots":329, "pvp-right-slots":329, "pvp-attack-total":28628, "pvp-attack-wd-share":50,
         "pvp-def-total":0, "pvp-def-wd-share":50, "pvp-def-slots":0, "pvp-tools":50
       };
       Object.entries(preset).forEach(([id, value]) => { if ($(id)) $(id).value = value; });
