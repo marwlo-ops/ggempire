@@ -61,6 +61,19 @@
     form?.addEventListener("input", calculate);
     form?.addEventListener("change", calculate);
     form?.addEventListener("submit", e => { e.preventDefault(); calculate(); });
+    $("pvp-load-screenshots")?.addEventListener("click", () => {
+      const preset = {
+        "pvp-melee-bonus":461, "pvp-ranged-bonus":408, "pvp-commander":40,
+        "pvp-wall-reduction":100, "pvp-gate-reduction":100, "pvp-moat-reduction":100,
+        "pvp-loot-bonus":60, "pvp-loot-capacity":55, "pvp-glory-bonus":65, "pvp-honor-bonus":55,
+        "pvp-wall":50, "pvp-gate":25, "pvp-moat":25,
+        "pvp-melee":500, "pvp-ranged":500, "pvp-def-melee":0, "pvp-def-ranged":0,
+        "pvp-tools":50
+      };
+      Object.entries(preset).forEach(([id, value]) => { if ($(id)) $(id).value = value; });
+      $("pvp-advice").textContent = "Wczytano odczyt dowódcy Pikabello #35. Zwiad pokazuje brak obrońców w jednym z ekranów, dlatego ustawiono 0 obrońców — potwierdź, że to właściwy cel i świeży raport. 50 narzędzi to przykład z fal, nie automatycznie poprawny zestaw.";
+      calculate();
+    });
     $("pvp-reset")?.addEventListener("click", () => { form?.reset(); calculate(); });
     calculate();
   });
