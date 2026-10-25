@@ -74,7 +74,7 @@
     $("pvp-advice").textContent = notes.length ? notes.join(" ") : "Parametry wpisane. Porównaj warianty, zmieniając jedną premię naraz.";
     $("pvp-model-note").textContent = "To jawny model porównawczy: używa wartości wpisanych przez użytkownika, nie odtwarza pełnych zasad rozstrzygania walki, strat, łupu ani nagród przez serwer E4K. Wartości obrony i umocnień są umowne — wpisuj je tylko wtedy, gdy masz odpowiadające im dane z raportu lub symulatora.";
   }
-  document.addEventListener("DOMContentLoaded", () => {
+  const init = () => {
     const form = $("pvp-attack-form");
     ["pvp-attack-waves","pvp-front-slots","pvp-left-slots","pvp-right-slots","pvp-attack-total","pvp-attack-wd-share","pvp-def-total","pvp-def-wd-share"].forEach(id => $(id)?.addEventListener("input", calculate));
     form?.addEventListener("input", calculate);
@@ -96,5 +96,7 @@
     });
     $("pvp-reset")?.addEventListener("click", () => { form?.reset(); calculate(); });
     calculate();
-  });
+  };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
+  else init();
 })();
