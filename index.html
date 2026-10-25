@@ -130,9 +130,13 @@
     <div class="pvp-fields">
      <div><label for="pvp-target">Rodzaj celu</label><select id="pvp-target"><option value="player">Zamek gracza</option><option value="event">Zamek wydarzenia</option><option value="npc">Obóz NPC</option></select></div>
      <div><label for="pvp-priority">Główny cel</label><select id="pvp-priority"><option value="loot">Łup / surowce</option><option value="glory">Chwała</option><option value="honor">Honor</option></select></div>
-     <div class="pvp-group-title">WOJSKO ATAKUJĄCE</div>
-     <div><label for="pvp-melee">Jednostki wręcz — liczba</label><input id="pvp-melee" type="number" min="0" step="1" value="500"></div>
-     <div><label for="pvp-ranged">Jednostki dystansowe — liczba</label><input id="pvp-ranged" type="number" min="0" step="1" value="500"></div>
+     <div class="pvp-group-title">WOJSKO ATAKUJĄCE · FALE I PODZIAŁ WD/WW</div>
+     <div><label for="pvp-attack-waves">Liczba fal ataku</label><input id="pvp-attack-waves" type="number" min="1" max="30" step="1" value="17"></div>
+     <div><label for="pvp-attack-slots">Miejsca wojska na falę</label><input id="pvp-attack-slots" type="number" min="1" max="2000" step="1" value="1026"></div>
+     <div><label for="pvp-attack-total">Wojsko atakujące — łącznie</label><input id="pvp-attack-total" type="number" min="0" step="1" value="17442"></div>
+     <div><label for="pvp-attack-wd-share">Udział WD (%)</label><input id="pvp-attack-wd-share" type="number" min="0" max="100" step="1" value="50"></div>
+     <div><label for="pvp-melee">WW — liczba wyliczana</label><input id="pvp-melee" type="number" min="0" step="1" value="8721" readonly></div>
+     <div><label for="pvp-ranged">WD — liczba wyliczana</label><input id="pvp-ranged" type="number" min="0" step="1" value="8721" readonly></div>
      <div><label for="pvp-melee-power">Siła wręcz / jednostkę (umowna)</label><input id="pvp-melee-power" type="number" min="0" step="0.1" value="100"></div>
      <div><label for="pvp-ranged-power">Siła dystansowa / jednostkę (umowna)</label><input id="pvp-ranged-power" type="number" min="0" step="0.1" value="100"></div>
      <div><label for="pvp-melee-bonus">Bonus wręcz (%)</label><input id="pvp-melee-bonus" type="number" min="0" step="1" value="461"></div>
@@ -147,9 +151,12 @@
      <div><label for="pvp-moat-reduction">Redukcja fosy (%)</label><input id="pvp-moat-reduction" type="number" min="0" max="100" step="1" value="100"></div>
      <div><label for="pvp-ranged-reduction">Redukcja obrony dystansowej (%)</label><input id="pvp-ranged-reduction" type="number" min="0" max="100" step="1" value="0"></div>
      <div><label for="pvp-tools">Łączna liczba narzędzi</label><input id="pvp-tools" type="number" min="0" step="1" value="30"></div>
-     <div class="pvp-group-title">OBRONA Z RAPORTU / ZWIADU</div>
-     <div><label for="pvp-def-melee">Obrońcy wręcz (liczba)</label><input id="pvp-def-melee" type="number" min="0" step="1" value="500"></div>
-     <div><label for="pvp-def-ranged">Obrońcy dystansowi (liczba)</label><input id="pvp-def-ranged" type="number" min="0" step="1" value="500"></div>
+     <div class="pvp-group-title">OBROŃCY · LICZEBNOŚĆ I PODZIAŁ WD/WW</div>
+     <div><label for="pvp-def-total">Obrońcy — łącznie</label><input id="pvp-def-total" type="number" min="0" step="1" value="1000"></div>
+     <div><label for="pvp-def-wd-share">Udział WD w obronie (%)</label><input id="pvp-def-wd-share" type="number" min="0" max="100" step="1" value="50"></div>
+     <div><label for="pvp-def-melee">Obrońcy WW — wyliczani</label><input id="pvp-def-melee" type="number" min="0" step="1" value="500" readonly></div>
+     <div><label for="pvp-def-ranged">Obrońcy WD — wyliczani</label><input id="pvp-def-ranged" type="number" min="0" step="1" value="500" readonly></div>
+     <div><label for="pvp-def-slots">Miejsca obrony (jeśli znane)</label><input id="pvp-def-slots" type="number" min="0" step="1" value="0"></div>
      <div class="pvp-group-title">ŁUP I NAGRODY — BONUSY Z EKWIPUNKU</div>
      <div><label for="pvp-loot-bonus">Premia do łupu (%)</label><input id="pvp-loot-bonus" type="number" min="0" step="1" value="60"></div>
      <div><label for="pvp-loot-capacity">Premia do pojemności łupu (%)</label><input id="pvp-loot-capacity" type="number" min="0" step="1" value="55"></div>
@@ -163,7 +170,7 @@
     <div class="pvp-results"><div class="pvp-stat"><small>ATAK · WARTOŚĆ MODELOWA</small><b id="pvp-attack-value">—</b></div><div class="pvp-stat"><small>OBRONA · WARTOŚĆ MODELOWA</small><b id="pvp-defense-value">—</b></div></div>
     <div class="pvp-bar"><span id="pvp-attack-bar"></span><span id="pvp-defense-bar"></span></div><div class="pvp-stat"><small>UDZIAŁ ATAKU W SUMIE WARTOŚCI MODELOWYCH</small><b id="pvp-attack-share">—</b></div>
     <div class="pvp-indexes"><div class="pvp-stat"><small>WOJSKO</small><b id="pvp-army-total">—</b></div><div class="pvp-stat"><small>ŁUP · INDEKS</small><b id="pvp-loot-index">—</b></div><div class="pvp-stat"><small>POJEMNOŚĆ · INDEKS</small><b id="pvp-capacity-index">—</b></div></div>
-    <div class="pvp-stat"><small>INDEKS NAGRODY WG WYBRANEGO CELU</small><b id="pvp-reward-index">—</b><small id="pvp-tools-total">— narzędzi</small></div>
+    <div class="pvp-stat"><small>ŁUP · INDEKS</small><b id="pvp-loot-index">—</b></div><div class="pvp-stat"><small>POJEMNOŚĆ ŁUPU</small><b id="pvp-capacity-index">—</b></div><div class="pvp-stat"><small>INDEKS NAGRODY WG CELU</small><b id="pvp-reward-index">—</b><small id="pvp-tools-total">— narzędzi</small></div>
     <div class="pvp-advice" id="pvp-advice" aria-live="polite"></div>
     <p class="pvp-model-note" id="pvp-model-note">Model porównawczy, nie symulator serwerowy.</p>
    </div>
