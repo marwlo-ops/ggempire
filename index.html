@@ -132,7 +132,9 @@
      <div><label for="pvp-priority">Główny cel</label><select id="pvp-priority"><option value="loot">Łup / surowce</option><option value="glory">Chwała</option><option value="honor">Honor</option></select></div>
      <div class="pvp-group-title">WOJSKO ATAKUJĄCE · FALE I PODZIAŁ WD/WW</div>
      <div><label for="pvp-attack-waves">Liczba fal ataku</label><input id="pvp-attack-waves" type="number" min="1" max="30" step="1" value="17"></div>
-     <div><label for="pvp-attack-slots">Miejsca wojska na falę</label><input id="pvp-attack-slots" type="number" min="1" max="2000" step="1" value="1026"></div>
+     <div><label for="pvp-front-slots">Front — miejsca na falę</label><input id="pvp-front-slots" type="number" min="0" max="2000" step="1" value="1026"></div>
+     <div><label for="pvp-left-slots">Lewe skrzydło — miejsca na falę</label><input id="pvp-left-slots" type="number" min="0" max="2000" step="1" value="329"></div>
+     <div><label for="pvp-right-slots">Prawe skrzydło — miejsca na falę</label><input id="pvp-right-slots" type="number" min="0" max="2000" step="1" value="329"></div>
      <div><label for="pvp-attack-total">Wojsko atakujące — łącznie</label><input id="pvp-attack-total" type="number" min="0" step="1" value="17442"></div>
      <div><label for="pvp-attack-wd-share">Udział WD (%)</label><input id="pvp-attack-wd-share" type="number" min="0" max="100" step="1" value="50"></div>
      <div><label for="pvp-melee">WW — liczba wyliczana</label><input id="pvp-melee" type="number" min="0" step="1" value="8721" readonly></div>
@@ -169,7 +171,7 @@
    <div class="pvp-panel"><h3>Wyniki porównania</h3><p>Używaj wyników do porównywania wariantów, nie jako gwarancji zwycięstwa.</p>
     <div class="pvp-results"><div class="pvp-stat"><small>ATAK · WARTOŚĆ MODELOWA</small><b id="pvp-attack-value">—</b></div><div class="pvp-stat"><small>OBRONA · WARTOŚĆ MODELOWA</small><b id="pvp-defense-value">—</b></div></div>
     <div class="pvp-bar"><span id="pvp-attack-bar"></span><span id="pvp-defense-bar"></span></div><div class="pvp-stat"><small>UDZIAŁ ATAKU W SUMIE WARTOŚCI MODELOWYCH</small><b id="pvp-attack-share">—</b></div>
-    <div class="pvp-indexes"><div class="pvp-stat"><small>WOJSKO ATAKUJĄCE</small><b id="pvp-army-total">—</b></div><div class="pvp-stat"><small>FALE × MIEJSCA</small><b id="pvp-wave-capacity">—</b></div><div class="pvp-stat"><small>OBROŃCY</small><b id="pvp-def-total-result">—</b></div></div>
+    <div class="pvp-indexes"><div class="pvp-stat"><small>WOJSKO ATAKUJĄCE</small><b id="pvp-army-total">—</b></div><div class="pvp-stat"><small>POJEMNOŚĆ FAL</small><b id="pvp-wave-capacity">—</b></div><div class="pvp-stat"><small>OBROŃCY</small><b id="pvp-def-total-result">—</b></div><div class="pvp-stat"><small>ATAK NA STREFĘ</small><b id="pvp-zone-capacity">—</b></div></div>
     <div class="pvp-stat"><small>ŁUP · INDEKS</small><b id="pvp-loot-index">—</b></div><div class="pvp-stat"><small>POJEMNOŚĆ ŁUPU</small><b id="pvp-capacity-index">—</b></div><div class="pvp-stat"><small>INDEKS NAGRODY WG CELU</small><b id="pvp-reward-index">—</b><small id="pvp-tools-total">— narzędzi</small></div>
     <div class="pvp-advice" id="pvp-advice" aria-live="polite"></div>
     <p class="pvp-model-note" id="pvp-model-note">Model porównawczy, nie symulator serwerowy.</p>
