@@ -5,13 +5,13 @@
 <meta name="theme-color" content="#10121b"><meta name="description" content="GGEmpire — portal serwera PL1. Sojusze Reborn i MadDevil, rankingi, wydarzenia i narzędzia Goodgame Empire.">
 <title>GGEmpire — PL1 Alliance Hub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script>
+<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><link rel="stylesheet" href="./src/battle-simulator.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script><script src="./src/battle-simulator.js" defer></script>
 </head>
 <body>
 <div class="backdrop-glow glow-a"></div><div class="backdrop-glow glow-b"></div>
 <header class="site-header">
  <a class="brand" href="#home"><span class="brand-emblem">G<span>G</span></span><span class="brand-word">GGE<span>MPIRE</span><small>PL1 COMMUNITY HUB</small></span></a>
- <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#player-account">Moje konto</a><a href="#alliances">Sojusze</a><a href="#world-monitor">Monitor świata</a><a href="#calendar">Kalendarz</a><a href="#rankings">Rankingi</a><a href="#intelligence">Wywiad</a><a href="#tools">Narzędzia</a></nav>
+ <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#player-account">Moje konto</a><a href="#alliances">Sojusze</a><a href="#world-monitor">Monitor świata</a><a href="#calendar">Kalendarz</a><a href="#rankings">Rankingi</a><a href="#intelligence">Wywiad</a><a href="#tools">Narzędzia</a><a href="#battle-simulator">Symulator bitew</a></nav>
  <div class="header-actions"><span class="server-pill"><i></i> ŚWIAT PL1</span><button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">☰</button></div>
 </header>
 <main id="home">
@@ -97,7 +97,31 @@
    </div>
   </div>
  </section>
- <section class="section tools-section" id="tools"><div class="section-head"><div><div class="eyebrow">ARSENAŁ DOWÓDCY</div><h2>Narzędzia <span>i społeczność</span></h2><p>Najważniejsze zasoby dla graczy PL1 zebrane w jednym miejscu.</p></div></div>
+
+ <section class="section" id="battle-simulator">
+  <div class="section-head"><div><div class="eyebrow">TAKTYKA · ANALIZA WALKI</div><h2>Symulator <span>bitew</span></h2><p>Otwórz narzędzie GeneralsForum i korzystaj z naszego laboratorium do porównywania parametrów. Model własny jest jawnie uproszczony, dopóki nie zweryfikujemy rzeczywistych reguł walki.</p></div></div>
+  <div class="battle-iframe-wrap"><iframe class="battle-iframe" src="https://generalsforum.com/simulators/battle_simulator/" title="GeneralsForum Battle Simulator" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" allow="clipboard-read; clipboard-write"></iframe><div class="battle-embed-note">Jeśli forum blokuje osadzanie w ramce, <a href="https://generalsforum.com/simulators/battle_simulator/" target="_blank" rel="noopener noreferrer">otwórz oryginalny symulator w nowej karcie ↗</a>. GGEmpire nie przejmuje ani nie kopiuje kodu zewnętrznego narzędzia.</div></div>
+  <div class="battle-lab" style="margin-top:18px">
+   <div class="battle-panel"><h3>Laboratorium porównawcze</h3><p>Wpisz parametry do prostego porównania nominalnego. Współczynniki bonusów są traktowane mnożnikowo wyłącznie na potrzeby tego modelu.</p>
+    <form id="battle-calc-form"><div class="battle-fields">
+     <div><label for="battle-atk-count">Liczba jednostek ataku</label><input id="battle-atk-count" type="number" min="0" step="1" value="1000"></div>
+     <div><label for="battle-atk-power">Umowna siła ataku / jednostkę</label><input id="battle-atk-power" type="number" min="0" step="0.1" value="100"></div>
+     <div><label for="battle-atk-bonus">Bonus ataku (%)</label><input id="battle-atk-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="battle-def-count">Liczba jednostek obrony</label><input id="battle-def-count" type="number" min="0" step="1" value="1000"></div>
+     <div><label for="battle-def-power">Umowna siła obrony / jednostkę</label><input id="battle-def-power" type="number" min="0" step="0.1" value="100"></div>
+     <div><label for="battle-def-bonus">Bonus obrony (%)</label><input id="battle-def-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="battle-wall">Premia murów (modelowa, %)</label><input id="battle-wall" type="number" min="0" step="1" value="0"></div>
+     <div><label for="battle-tools">Premia narzędzi (modelowa, %)</label><input id="battle-tools" type="number" min="0" step="1" value="0"></div>
+    </div><div class="battle-actions"><button class="button button-gold" type="submit">Przelicz <span>→</span></button><button class="outline-button" id="battle-reset" type="button">Resetuj</button></div></form>
+   </div>
+   <div class="battle-panel"><h3>Wynik porównania</h3><p>Potencjał liczony jako liczba jednostek × umowna siła × wpisane współczynniki.</p>
+    <div class="battle-results"><div class="battle-result"><small>ATAK · WARTOŚĆ MODELOWA</small><b id="battle-atk-result">—</b></div><div class="battle-result"><small>OBRONA · WARTOŚĆ MODELOWA</small><b id="battle-def-result">—</b></div></div>
+    <div class="battle-meter"><span id="battle-meter-atk"></span><span id="battle-meter-def"></span></div><div class="battle-result"><small>UDZIAŁ ATAKU W SUMIE OBU WARTOŚCI</small><b id="battle-ratio">—</b></div><p id="battle-verdict" aria-live="polite"></p>
+    <div class="battle-warning" id="battle-disclaimer">Wynik jest uproszczonym porównaniem, nie prognozą walki w grze.</div>
+   </div>
+  </div>
+ </section>
+\n <section class="section tools-section" id="tools"><div class="section-head"><div><div class="eyebrow">ARSENAŁ DOWÓDCY</div><h2>Narzędzia <span>i społeczność</span></h2><p>Najważniejsze zasoby dla graczy PL1 zebrane w jednym miejscu.</p></div></div>
  <div class="tools-grid"><a class="tool-link" href="https://generalsforum.com/" target="_blank" rel="noreferrer"><span>⌘</span><div><b>Generals Forum</b><small>Narzędzia i społeczność GGE</small></div><i>↗</i></a><a class="tool-link" href="https://communityhub.goodgamestudios.com/" target="_blank" rel="noreferrer"><span>✦</span><div><b>Goodgame Community</b><small>Oficjalne forum i komunikaty</small></div><i>↗</i></a><a class="tool-link" href="https://gge.t8.pl/md/" target="_blank" rel="noreferrer"><span>◆</span><div><b>MadDevil Hub</b><small>Zasoby i informacje sojuszu</small></div><i>↗</i></a><a class="tool-link" href="https://github.com/danadum/empire-api" target="_blank" rel="noreferrer"><span>⌬</span><div><b>Projekt API E4K</b><small>Kod do oceny możliwości integracji</small></div><i>↗</i></a></div>
  </section>
  <section class="notice-section"><div class="notice-mark">i</div><div><b>Niezależny projekt fanowski</b><p>GGEmpire nie jest oficjalnym serwisem Goodgame Studios. Dane zależą od dostępności API i mogą być niepełne lub opóźnione. Wyświetlamy odpowiedzi API bez dodatkowego ręcznego potwierdzania; brakujące pola oznaczamy kreską.</p></div></section>
