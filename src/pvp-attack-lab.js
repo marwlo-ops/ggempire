@@ -76,6 +76,20 @@
   }
   const init = () => {
     const form = $("pvp-attack-form");
+    // Apply a complete, visible starter preset on every page load.
+    const startupPreset = {
+      "pvp-target":"player", "pvp-priority":"loot",
+      "pvp-attack-waves":17, "pvp-front-slots":1026, "pvp-left-slots":329, "pvp-right-slots":329,
+      "pvp-attack-total":28628, "pvp-attack-wd-share":50,
+      "pvp-melee-power":100, "pvp-ranged-power":100,
+      "pvp-melee-bonus":461, "pvp-ranged-bonus":408, "pvp-commander":40,
+      "pvp-wall":50, "pvp-gate":25, "pvp-moat":25,
+      "pvp-wall-reduction":100, "pvp-gate-reduction":100, "pvp-moat-reduction":100, "pvp-ranged-reduction":0,
+      "pvp-def-total":0, "pvp-def-wd-share":50, "pvp-def-slots":0,
+      "pvp-loot-bonus":60, "pvp-loot-capacity":55, "pvp-glory-bonus":65, "pvp-honor-bonus":55,
+      "pvp-tools":50
+    };
+    Object.entries(startupPreset).forEach(([id,value]) => { const el=$(id); if(el) el.value=value; });
     ["pvp-attack-waves","pvp-front-slots","pvp-left-slots","pvp-right-slots","pvp-attack-total","pvp-attack-wd-share","pvp-def-total","pvp-def-wd-share"].forEach(id => $(id)?.addEventListener("input", calculate));
     form?.addEventListener("input", calculate);
     form?.addEventListener("change", calculate);
@@ -96,6 +110,7 @@
     });
     $("pvp-reset")?.addEventListener("click", () => { form?.reset(); calculate(); });
     calculate();
+    const status=$("pvp-advice"); if(status) status.textContent="Dane startowe załadowane automatycznie. To preset testowy z odczytu Pikabello #35; obrońców ustawiono na 0 — zmień ich liczbę po wybraniu rzeczywistego celu.";
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
   else init();
