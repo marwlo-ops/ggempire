@@ -8,6 +8,8 @@
   const fmt = (n) => Math.round(n).toLocaleString("pl-PL");
   const read = () => ({
     target: $("pvp-target")?.value || "player",
+    waves: Math.max(1,val("pvp-attack-waves")), slots: Math.max(1,val("pvp-attack-slots")), totalTroops: val("pvp-attack-total"), wdShare: Math.min(100,val("pvp-attack-wd-share"))/100,
+    defTotal: val("pvp-def-total"), defWdShare: Math.min(100,val("pvp-def-wd-share"))/100, defSlots: val("pvp-def-slots"),
     priority: $("pvp-priority")?.value || "loot",
     melee: val("pvp-melee"), ranged: val("pvp-ranged"),
     meleePower: val("pvp-melee-power"), rangedPower: val("pvp-ranged-power"),
@@ -25,11 +27,21 @@
   });
   function calculate() {
     const d = read();
+    const capacity = d.waves * d.slots;
+    const troopsUsed = Math.min(d.totalTroops, capacity);
+    d.ranged = Math.round(troopsUsed * d.wdShare);
+    d.melee = troopsUsed - d.ranged;
+    d.defRanged = Math.round(d.defTotal * d.defWdShare);
+    d.defenderMelee = d.defTotal - d.defRanged;
+    $("pvp-melee").value = d.melee;
+    $("pvp-ranged").value = d.ranged;
+    $("pvp-def-melee").value = d.defenderMelee;
+    $("pvp-def-ranged").value = d.defRanged;
     const melee = d.melee * d.meleePower * (1+d.meleeBonus+d.commander);
     const ranged = d.ranged * d.rangedPower * (1+d.rangedBonus+d.commander);
     const attack = melee + ranged;
     const defMelee = d.defenderMelee * 100;
-    const defRanged = d.defenderRanged * 100 * (1-d.rangedReduction);
+    const defRanged = d.defRanged * 100 * (1-d.rangedReduction);
     const fort = d.wall*(1-d.wallReduction) + d.gate*(1-d.gateReduction) + d.moat*(1-d.moatReduction);
     const defense = (defMelee+defRanged)*(1+fort/100);
     const ratio = attack+defense ? attack/(attack+defense)*100 : 0;
@@ -42,7 +54,9 @@
     $("pvp-attack-share").textContent = ratio.toLocaleString("pl-PL",{maximumFractionDigits:1})+"%";
     $("pvp-attack-bar").style.width = ratio+"%";
     $("pvp-defense-bar").style.width = (100-ratio)+"%";
-    $("pvp-army-total").textContent = fmt(troopCount);
+    $("pvp-army-total").textContent = fmt(troopCount)+" (WW "+fmt(d.melee)+" / WD "+fmt(d.ranged)+")";
+    $("pvp-wave-capacity").textContent = fmt(capacity)+" · użyto "+fmt(troopsUsed);
+    $("pvp-def-total-result").textContent = fmt(d.defTotal)+" (WW "+fmt(d.defenderMelee)+" / WD "+fmt(d.defRanged)+")";
     $("pvp-tools-total").textContent = fmt(d.tools);
     $("pvp-loot-index").textContent = "×"+lootFactor.toLocaleString("pl-PL",{maximumFractionDigits:2});
     $("pvp-capacity-index").textContent = "×"+capacityFactor.toLocaleString("pl-PL",{maximumFractionDigits:2});
@@ -58,6 +72,7 @@
   }
   document.addEventListener("DOMContentLoaded", () => {
     const form = $("pvp-attack-form");
+    ["pvp-attack-waves","pvp-attack-slots","pvp-attack-total","pvp-attack-wd-share","pvp-def-total","pvp-def-wd-share"].forEach(id => $(id)?.addEventListener("input", calculate));
     form?.addEventListener("input", calculate);
     form?.addEventListener("change", calculate);
     form?.addEventListener("submit", e => { e.preventDefault(); calculate(); });
@@ -68,7 +83,8 @@
         "pvp-loot-bonus":60, "pvp-loot-capacity":55, "pvp-glory-bonus":65, "pvp-honor-bonus":55,
         "pvp-wall":50, "pvp-gate":25, "pvp-moat":25,
         "pvp-melee":500, "pvp-ranged":500, "pvp-def-melee":0, "pvp-def-ranged":0,
-        "pvp-tools":50
+        "pvp-attack-waves":17, "pvp-attack-slots":1026, "pvp-attack-total":17442, "pvp-attack-wd-share":50,
+        "pvp-def-total":0, "pvp-def-wd-share":50, "pvp-def-slots":0, "pvp-tools":50
       };
       Object.entries(preset).forEach(([id, value]) => { if ($(id)) $(id).value = value; });
       $("pvp-advice").textContent = "Wczytano odczyt dowódcy Pikabello #35. Zwiad pokazuje brak obrońców w jednym z ekranów, dlatego ustawiono 0 obrońców — potwierdź, że to właściwy cel i świeży raport. 50 narzędzi to przykład z fal, nie automatycznie poprawny zestaw.";
