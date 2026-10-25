@@ -135,28 +135,29 @@
      <div><label for="pvp-ranged">Jednostki dystansowe — liczba</label><input id="pvp-ranged" type="number" min="0" step="1" value="500"></div>
      <div><label for="pvp-melee-power">Siła wręcz / jednostkę (umowna)</label><input id="pvp-melee-power" type="number" min="0" step="0.1" value="100"></div>
      <div><label for="pvp-ranged-power">Siła dystansowa / jednostkę (umowna)</label><input id="pvp-ranged-power" type="number" min="0" step="0.1" value="100"></div>
-     <div><label for="pvp-melee-bonus">Bonus wręcz (%)</label><input id="pvp-melee-bonus" type="number" min="0" step="1" value="0"></div>
-     <div><label for="pvp-ranged-bonus">Bonus dystansowy (%)</label><input id="pvp-ranged-bonus" type="number" min="0" step="1" value="0"></div>
-     <div><label for="pvp-commander">Pozostały bonus ataku (%)</label><input id="pvp-commander" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-melee-bonus">Bonus wręcz (%)</label><input id="pvp-melee-bonus" type="number" min="0" step="1" value="461"></div>
+     <div><label for="pvp-ranged-bonus">Bonus dystansowy (%)</label><input id="pvp-ranged-bonus" type="number" min="0" step="1" value="408"></div>
+     <div><label for="pvp-commander">Pozostały bonus ataku (%)</label><input id="pvp-commander" type="number" min="0" step="1" value="40"></div>
      <div class="pvp-group-title">UMOCNIENIA I NARZĘDZIA</div>
      <div><label for="pvp-wall">Mur — poziom ochrony modelowej</label><input id="pvp-wall" type="number" min="0" step="1" value="50"></div>
      <div><label for="pvp-gate">Brama — poziom ochrony modelowej</label><input id="pvp-gate" type="number" min="0" step="1" value="25"></div>
      <div><label for="pvp-moat">Fosa — poziom ochrony modelowej</label><input id="pvp-moat" type="number" min="0" step="1" value="25"></div>
-     <div><label for="pvp-wall-reduction">Redukcja muru (%)</label><input id="pvp-wall-reduction" type="number" min="0" max="100" step="1" value="0"></div>
-     <div><label for="pvp-gate-reduction">Redukcja bramy (%)</label><input id="pvp-gate-reduction" type="number" min="0" max="100" step="1" value="0"></div>
-     <div><label for="pvp-moat-reduction">Redukcja fosy (%)</label><input id="pvp-moat-reduction" type="number" min="0" max="100" step="1" value="0"></div>
+     <div><label for="pvp-wall-reduction">Redukcja muru (%)</label><input id="pvp-wall-reduction" type="number" min="0" max="100" step="1" value="100"></div>
+     <div><label for="pvp-gate-reduction">Redukcja bramy (%)</label><input id="pvp-gate-reduction" type="number" min="0" max="100" step="1" value="100"></div>
+     <div><label for="pvp-moat-reduction">Redukcja fosy (%)</label><input id="pvp-moat-reduction" type="number" min="0" max="100" step="1" value="100"></div>
      <div><label for="pvp-ranged-reduction">Redukcja obrony dystansowej (%)</label><input id="pvp-ranged-reduction" type="number" min="0" max="100" step="1" value="0"></div>
      <div><label for="pvp-tools">Łączna liczba narzędzi</label><input id="pvp-tools" type="number" min="0" step="1" value="30"></div>
      <div class="pvp-group-title">OBRONA Z RAPORTU / ZWIADU</div>
      <div><label for="pvp-def-melee">Obrońcy wręcz (liczba)</label><input id="pvp-def-melee" type="number" min="0" step="1" value="500"></div>
      <div><label for="pvp-def-ranged">Obrońcy dystansowi (liczba)</label><input id="pvp-def-ranged" type="number" min="0" step="1" value="500"></div>
      <div class="pvp-group-title">ŁUP I NAGRODY — BONUSY Z EKWIPUNKU</div>
-     <div><label for="pvp-loot-bonus">Premia do łupu (%)</label><input id="pvp-loot-bonus" type="number" min="0" step="1" value="0"></div>
-     <div><label for="pvp-loot-capacity">Premia do pojemności łupu (%)</label><input id="pvp-loot-capacity" type="number" min="0" step="1" value="0"></div>
-     <div><label for="pvp-glory-bonus">Premia do chwały (%)</label><input id="pvp-glory-bonus" type="number" min="0" step="1" value="0"></div>
-     <div><label for="pvp-honor-bonus">Premia do honoru (%)</label><input id="pvp-honor-bonus" type="number" min="0" step="1" value="0"></div>
+     <div><label for="pvp-loot-bonus">Premia do łupu (%)</label><input id="pvp-loot-bonus" type="number" min="0" step="1" value="60"></div>
+     <div><label for="pvp-loot-capacity">Premia do pojemności łupu (%)</label><input id="pvp-loot-capacity" type="number" min="0" step="1" value="55"></div>
+     <div><label for="pvp-glory-bonus">Premia do chwały (%)</label><input id="pvp-glory-bonus" type="number" min="0" step="1" value="65"></div>
+     <div><label for="pvp-honor-bonus">Premia do honoru (%)</label><input id="pvp-honor-bonus" type="number" min="0" step="1" value="55"></div>
     </div>
-    <div class="pvp-actions"><button class="button button-gold" type="submit">Przelicz wariant <span>→</span></button><button class="outline-button" id="pvp-reset" type="button">Resetuj</button></div>
+    <div class="pvp-advice"><b>Dane ze zrzutów — dowódca Pikabello #35</b><br>Wręcz +461%, dystans +408%, siła bojowa +40%, front +23%, flanki +23%, dziedziniec +378%; mur −388%, brama −396%, fosa −230%; +7 fal, łup +60%, pojemność łupu +55%, honor +55%, chwała +65%. Ochrona umocnień ma limity w grze, więc model nie traktuje tych wartości jako dokładnej symulacji serwerowej.</div>
+    <div class="pvp-actions"><button class="button button-gold" type="submit">Przelicz wariant <span>→</span></button><button class="outline-button" id="pvp-load-screenshots" type="button">Wczytaj dane ze zrzutów</button><button class="outline-button" id="pvp-reset" type="button">Resetuj</button></div>
    </form>
    <div class="pvp-panel"><h3>Wyniki porównania</h3><p>Używaj wyników do porównywania wariantów, nie jako gwarancji zwycięstwa.</p>
     <div class="pvp-results"><div class="pvp-stat"><small>ATAK · WARTOŚĆ MODELOWA</small><b id="pvp-attack-value">—</b></div><div class="pvp-stat"><small>OBRONA · WARTOŚĆ MODELOWA</small><b id="pvp-defense-value">—</b></div></div>
