@@ -91,6 +91,7 @@ async function connectAllianceData() {
   if (short) short.textContent = connected ? "E4K API" : "API offline";
   if (updated) updated.textContent = connected ? new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" }) : (Object.keys(lastGoodAllianceData).length ? "API chwilowo offline · zachowano ostatnie dane" : "Brak odczytu");
   allianceRefreshInProgress = false;
+  await loadPlayerLocations();
 }
 async function searchAlliance(query) {
   renderMessage($("#search-results"), "Sprawdzam nazwę w publicznym API E4K…");
@@ -486,9 +487,9 @@ function renderPlayerLocationRows(key){
 async function loadPlayerLocations(){
  const status=document.getElementById("player-location-status");if(!status)return;status.textContent="POBIERANIE Z API…";
  const specs=[{key:"reborn",aid:115},{key:"maddevil",aid:41343}];
- const results=await Promise.allSettled(specs.map(async s=>{const a=await fetchAlliance(s.aid),members=Array.isArray(a.M)?a.M:[],positions=[];members.forEach(m=>{const name=firstValue(m,["N","name"])||"Nieznany gracz";(Array.isArray(m.AP)?m.AP:[]).forEach(pos=>{if(!Array.isArray(pos)||pos.length<4)return;const kingdom=Number(pos[0]),x=Number(pos[2]),y=Number(pos[3]);if(!Number.isFinite(kingdom)||!Number.isFinite(x)||!Number.isFinite(y))return;positions.push({name,kingdom,x,y,kingdomName:PLAYER_LOCATION_KINGDOMS[kingdom]||("Kraina "+kingdom)});});});return {key:s.key,positions};}));
+ const results=await Promise.allSettled(specs.map(async s=>{const a=lastGoodAllianceData[s.key]?.alliance||await fetchAlliance(s.aid),members=Array.isArray(a.M)?a.M:[],positions=[];members.forEach(m=>{const name=firstValue(m,["N","name"])||"Nieznany gracz";(Array.isArray(m.AP)?m.AP:[]).forEach(pos=>{if(!Array.isArray(pos)||pos.length<4)return;const kingdom=Number(pos[0]),x=Number(pos[2]),y=Number(pos[3]);if(!Number.isFinite(kingdom)||!Number.isFinite(x)||!Number.isFinite(y))return;positions.push({name,kingdom,x,y,kingdomName:PLAYER_LOCATION_KINGDOMS[kingdom]||("Kraina "+kingdom)});});});return {key:s.key,positions};}));
  let ok=0;results.forEach((r,i)=>{const key=specs[i].key;if(r.status==="fulfilled"){playerLocationData[key]=r.value.positions;ok++;}else{const b=document.getElementById(key+"-location-rows");if(b){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=3;td.textContent="Nie udało się pobrać danych z API.";tr.appendChild(td);b.replaceChildren(tr);}}renderPlayerLocationRows(key);});
  status.textContent=ok===2?"DANE API · 2/2 SOJUSZE":ok?"CZĘŚCIOWE DANE API":"API NIEDOSTĘPNE";
  const updated=document.getElementById("player-location-updated");if(updated)updated.textContent="Ostatni odczyt: "+new Date().toLocaleString("pl-PL")+" · ain → A.M[].AP · E4K PL1.";
 }
-document.addEventListener("DOMContentLoaded",()=>{document.getElementById("player-location-search")?.addEventListener("input",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});document.getElementById("player-location-kingdom")?.addEventListener("change",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});loadPlayerLocations();window.setInterval(()=>{if(document.visibilityState==="visible")loadPlayerLocations();},5*60*1000);});
+document.addEventListener("DOMContentLoaded",()=>{document.getElementById("player-location-search")?.addEventListener("input",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});document.getElementById("player-location-kingdom")?.addEventListener("change",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});});
