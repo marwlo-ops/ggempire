@@ -474,6 +474,20 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Live player locations from alliance member AP coordinates. */
 const PLAYER_LOCATION_KINGDOMS={0:"Zielone",1:"Piaski",2:"Lód",3:"Ogień",4:"Wyspy"};
 let playerLocationData={reborn:[],maddevil:[]};
+function renderPlayerLocationMap(key, rows, selectedKingdom){
+ const host=document.getElementById(key+"-location-map");if(!host)return;
+ // Coordinates from AP are plotted directly: X increases to the right, Y increases down.
+ // Different kingdoms use separate coordinate spaces, so an all-kingdom view is not overlaid.
+ if(selectedKingdom==="all"){host.innerHTML='<div class="location-map-empty">Wybierz jedną krainę, aby zobaczyć pozycje na wspólnej siatce współrzędnych.</div>';return;}
+ if(!rows.length){host.innerHTML='<div class="location-map-empty">Brak punktów do narysowania w wybranej krainie.</div>';return;}
+ const xs=rows.map(p=>p.x),ys=rows.map(p=>p.y),xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
+ const xspan=Math.max(1,xmax-xmin),yspan=Math.max(1,ymax-ymin),left=54,right=620,top=24,bottom=300;
+ const px=x=>left+(x-xmin)/xspan*(right-left),py=y=>top+(y-ymin)/yspan*(bottom-top);
+ const grid=[];
+ for(let i=0;i<=4;i++){const gx=left+i*(right-left)/4,gy=top+i*(bottom-top)/4;const xv=xmin+i*xspan/4,yv=ymin+i*yspan/4;grid.push('<line x1="'+gx+'" y1="'+top+'" x2="'+gx+'" y2="'+bottom+'" class="location-gridline"/><text x="'+gx+'" y="319" text-anchor="middle" class="location-tick">'+xv.toFixed(0)+'</text><line x1="'+left+'" y1="'+gy+'" x2="'+right+'" y2="'+gy+'" class="location-gridline"/><text x="43" y="'+(gy+4)+'" text-anchor="end" class="location-tick">'+yv.toFixed(0)+'</text>');}
+ const points=rows.map(p=>'<circle cx="'+px(p.x)+'" cy="'+py(p.y)+'" r="5" class="location-map-dot"><title>'+escapeHtml(p.name)+' · X:'+p.x+' / Y:'+p.y+'</title></circle>').join("");
+ host.innerHTML='<svg class="location-map-svg" viewBox="0 0 660 350" role="img" aria-label="Mapa współrzędnych. Oś X rośnie w prawo, oś Y rośnie w dół.">'+grid.join("")+'<path d="M '+left+' '+top+' V '+bottom+' H '+right+'" class="location-axis"/>'+points+'<text x="337" y="344" text-anchor="middle" class="location-axis-label">X → rośnie w prawo</text><text x="12" y="13" class="location-axis-label">Y ↓ rośnie w dół</text></svg><div class="location-map-legend">'+rows.length+' punktów · '+escapeHtml(rows[0].kingdomName)+' · współrzędne API bez odwracania osi</div>';
+}
 function renderPlayerLocationRows(key){
  const body=document.getElementById(key+"-location-rows");if(!body)return;
  const query=(document.getElementById("player-location-search")?.value||"").trim().toLocaleLowerCase("pl-PL");
@@ -481,8 +495,9 @@ function renderPlayerLocationRows(key){
  const rows=playerLocationData[key].filter(p=>(!query||[p.name,p.x,p.y,p.kingdomName].join(" ").toLocaleLowerCase("pl-PL").includes(query))&&(kingdom==="all"||String(p.kingdom)===kingdom));
  body.replaceChildren();
  if(!rows.length){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=3;td.textContent=playerLocationData[key].length?"Brak pozycji pasujących do filtra.":"API nie zwróciło pozycji AP dla członków.";tr.appendChild(td);body.appendChild(tr);}
- else rows.forEach(p=>{const tr=document.createElement("tr"),n=document.createElement("td"),k=document.createElement("td"),c=document.createElement("td");n.textContent=p.name;k.textContent=p.kingdomName;c.textContent=p.x+":"+p.y;c.className="location-coords";tr.append(n,k,c);body.appendChild(tr);});
+ else rows.forEach(p=>{const tr=document.createElement("tr"),n=document.createElement("td"),k=document.createElement("td"),c=document.createElement("td");n.textContent=p.name;k.textContent=p.kingdomName;c.textContent="X: "+p.x+" / Y: "+p.y;c.className="location-coords";tr.append(n,k,c);body.appendChild(tr);});
  const count=document.getElementById(key+"-location-count");if(count)count.textContent=rows.length+" pozycji · "+new Set(rows.map(p=>p.name)).size+" graczy";
+ renderPlayerLocationMap(key,rows,kingdom);
 }
 async function loadPlayerLocations(){
  const status=document.getElementById("player-location-status");if(!status)return;status.textContent="POBIERANIE Z API…";
