@@ -38,3 +38,9 @@ This is an independent fan project and is not affiliated with Goodgame Studios. 
 
 ## ReBoRN tracker integration
 The GGEmpire alliance page includes a ReBoRN snapshot tracker panel. It intentionally remains in a waiting state until the E4K mobile PL1 world mapping and alliance AID are independently confirmed. No demo player values or fabricated rankings are shown.
+
+## Player locations and Baron map status
+- Player castle/object positions are read from the live `ain` response: member list `A.M` and each member's `AP` coordinates. Kingdom IDs: 0 Green, 1 Sands, 2 Ice, 3 Fire, 4 Storm/Islands.
+- ReBoRN is displayed in green and MADDEVILS in red; the location list refreshes every five minutes while visible.
+- The public bridge was verified for `ain` on PL1. Live tests of map scan commands `gaa` and `fnm` returned `Invalid command or headers`; Baron coordinates are not fabricated. A compatible E4K PL1 map endpoint is still required before automatic Baron discovery and cooldown display can be enabled.
+- Planned Baron queue order: available first, then waiting; use the API cooldown when present, otherwise 24 hours from the locally recorded attack time.

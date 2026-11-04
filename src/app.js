@@ -469,3 +469,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 5 * 60 * 1000);
 });
+
+/* Live player locations from alliance member AP coordinates. */
+const PLAYER_LOCATION_KINGDOMS={0:"Zielone",1:"Piaski",2:"Lód",3:"Ogień",4:"Wyspy"};
+let playerLocationData={reborn:[],maddevil:[]};
+function renderPlayerLocationRows(key){
+ const body=document.getElementById(key+"-location-rows");if(!body)return;
+ const query=(document.getElementById("player-location-search")?.value||"").trim().toLocaleLowerCase("pl-PL");
+ const kingdom=document.getElementById("player-location-kingdom")?.value||"all";
+ const rows=playerLocationData[key].filter(p=>(!query||[p.name,p.x,p.y,p.kingdomName].join(" ").toLocaleLowerCase("pl-PL").includes(query))&&(kingdom==="all"||String(p.kingdom)===kingdom));
+ body.replaceChildren();
+ if(!rows.length){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=3;td.textContent=playerLocationData[key].length?"Brak pozycji pasujących do filtra.":"API nie zwróciło pozycji AP dla członków.";tr.appendChild(td);body.appendChild(tr);}
+ else rows.forEach(p=>{const tr=document.createElement("tr"),n=document.createElement("td"),k=document.createElement("td"),c=document.createElement("td");n.textContent=p.name;k.textContent=p.kingdomName;c.textContent=p.x+":"+p.y;c.className="location-coords";tr.append(n,k,c);body.appendChild(tr);});
+ const count=document.getElementById(key+"-location-count");if(count)count.textContent=rows.length+" pozycji · "+new Set(rows.map(p=>p.name)).size+" graczy";
+}
+async function loadPlayerLocations(){
+ const status=document.getElementById("player-location-status");if(!status)return;status.textContent="POBIERANIE Z API…";
+ const specs=[{key:"reborn",aid:115},{key:"maddevil",aid:41343}];
+ const results=await Promise.allSettled(specs.map(async s=>{const a=await fetchAlliance(s.aid),members=Array.isArray(a.M)?a.M:[],positions=[];members.forEach(m=>{const name=firstValue(m,["N","name"])||"Nieznany gracz";(Array.isArray(m.AP)?m.AP:[]).forEach(pos=>{if(!Array.isArray(pos)||pos.length<4)return;const kingdom=Number(pos[0]),x=Number(pos[2]),y=Number(pos[3]);if(!Number.isFinite(kingdom)||!Number.isFinite(x)||!Number.isFinite(y))return;positions.push({name,kingdom,x,y,kingdomName:PLAYER_LOCATION_KINGDOMS[kingdom]||("Kraina "+kingdom)});});});return {key:s.key,positions};}));
+ let ok=0;results.forEach((r,i)=>{const key=specs[i].key;if(r.status==="fulfilled"){playerLocationData[key]=r.value.positions;ok++;}else{const b=document.getElementById(key+"-location-rows");if(b){const tr=document.createElement("tr"),td=document.createElement("td");td.colSpan=3;td.textContent="Nie udało się pobrać danych z API.";tr.appendChild(td);b.replaceChildren(tr);}}renderPlayerLocationRows(key);});
+ status.textContent=ok===2?"DANE API · 2/2 SOJUSZE":ok?"CZĘŚCIOWE DANE API":"API NIEDOSTĘPNE";
+ const updated=document.getElementById("player-location-updated");if(updated)updated.textContent="Ostatni odczyt: "+new Date().toLocaleString("pl-PL")+" · ain → A.M[].AP · E4K PL1.";
+}
+document.addEventListener("DOMContentLoaded",()=>{document.getElementById("player-location-search")?.addEventListener("input",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});document.getElementById("player-location-kingdom")?.addEventListener("change",()=>{renderPlayerLocationRows("reborn");renderPlayerLocationRows("maddevil");});loadPlayerLocations();window.setInterval(()=>{if(document.visibilityState==="visible")loadPlayerLocations();},5*60*1000);});
