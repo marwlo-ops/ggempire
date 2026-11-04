@@ -4,9 +4,9 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-11-04T12:07:29.002400+00:00",
+  "fetched_at": "2026-11-04T12:11:15.108447+00:00",
   "player_count": 44,
-  "total_might": 3990263705,
+  "total_might": 3989876575,
   "prev_players": {
     "1866802": {
       "name": "Mnich1",
@@ -17,13 +17,13 @@
     "1708518": {
       "name": "Pomidorek",
       "honor": 1979,
-      "might": 295338504,
+      "might": 295340336,
       "loot_current": 3616281602
     },
     "259322": {
       "name": "ΓΞQUIΞM",
       "honor": 1444,
-      "might": 227241214,
+      "might": 227249564,
       "loot_current": 603857573
     },
     "1671423": {
@@ -113,7 +113,7 @@
     "514929": {
       "name": "greg29",
       "honor": 823,
-      "might": 96780389,
+      "might": 96781049,
       "loot_current": 143868403
     },
     "138661": {
@@ -285,7 +285,7 @@
       "oid": "1708518",
       "name": "Pomidorek",
       "honor": 1979,
-      "might": 295340336,
+      "might": 295350020,
       "loot_current": 3616281602
     },
     "259322": {
@@ -348,7 +348,7 @@
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 2192,
-      "might": 155834647,
+      "might": 155836231,
       "loot_current": 692372084
     },
     "1299720": {
@@ -432,7 +432,7 @@
       "oid": "369918",
       "name": "LESZEK CZAARNY",
       "honor": 2026,
-      "might": 58836519,
+      "might": 58438121,
       "loot_current": 145052043
     },
     "1808763": {
@@ -595,7 +595,7 @@
       "oid": "1708518",
       "name": "Pomidorek",
       "honor": 1979,
-      "might": 295340336,
+      "might": 295350020,
       "loot_current": 3616281602
     },
     {
@@ -658,7 +658,7 @@
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 2192,
-      "might": 155834647,
+      "might": 155836231,
       "loot_current": 692372084
     },
     {
@@ -742,7 +742,7 @@
       "oid": "369918",
       "name": "LESZEK CZAARNY",
       "honor": 2026,
-      "might": 58836519,
+      "might": 58438121,
       "loot_current": 145052043
     },
     {

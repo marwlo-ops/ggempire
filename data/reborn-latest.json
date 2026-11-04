@@ -4,9 +4,9 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 115,
   "alliance_name": "- ReBorN -",
-  "fetched_at": "2026-11-04T12:07:28.782379+00:00",
+  "fetched_at": "2026-11-04T12:11:14.923251+00:00",
   "player_count": 65,
-  "total_might": 5081790804,
+  "total_might": 5081792630,
   "prev_players": {
     "273782": {
       "name": "Dark_Imperator",
@@ -270,7 +270,7 @@
       "name": "Tango",
       "honor": 858,
       "might": 37913284,
-      "loot_current": 2023778084
+      "loot_current": 2041742906
     },
     "1870884": {
       "name": "EwaKropka",
@@ -404,7 +404,7 @@
       "oid": "273782",
       "name": "Dark_Imperator",
       "honor": 732,
-      "might": 320553330,
+      "might": 320554290,
       "loot_current": 936609249
     },
     "271439": {
@@ -551,7 +551,7 @@
       "oid": "1197230",
       "name": "kappa123",
       "honor": 1007,
-      "might": 90514232,
+      "might": 90513232,
       "loot_current": 337872985
     },
     "1598120": {
@@ -607,7 +607,7 @@
       "oid": "1834928",
       "name": "-Izud-Jacek-",
       "honor": 1386,
-      "might": 64332230,
+      "might": 64332710,
       "loot_current": 1479771
     },
     "1109550": {
@@ -706,7 +706,7 @@
       "name": "Tango",
       "honor": 858,
       "might": 37913284,
-      "loot_current": 2041742906
+      "loot_current": 2053874402
     },
     "1870884": {
       "oid": "1870884",
@@ -719,7 +719,7 @@
       "oid": "1806100",
       "name": "kiler171",
       "honor": 1247,
-      "might": 33979591,
+      "might": 33980053,
       "loot_current": 199826295
     },
     "230756": {
@@ -838,7 +838,7 @@
       "oid": "1856395",
       "name": "VERIKAS",
       "honor": 795,
-      "might": 3176312,
+      "might": 3177236,
       "loot_current": 51518817
     },
     "1382313": {
@@ -861,7 +861,7 @@
       "oid": "273782",
       "name": "Dark_Imperator",
       "honor": 732,
-      "might": 320553330,
+      "might": 320554290,
       "loot_current": 936609249
     },
     {
@@ -1008,7 +1008,7 @@
       "oid": "1197230",
       "name": "kappa123",
       "honor": 1007,
-      "might": 90514232,
+      "might": 90513232,
       "loot_current": 337872985
     },
     {
@@ -1064,7 +1064,7 @@
       "oid": "1834928",
       "name": "-Izud-Jacek-",
       "honor": 1386,
-      "might": 64332230,
+      "might": 64332710,
       "loot_current": 1479771
     },
     {
@@ -1163,7 +1163,7 @@
       "name": "Tango",
       "honor": 858,
       "might": 37913284,
-      "loot_current": 2041742906
+      "loot_current": 2053874402
     },
     {
       "oid": "1870884",
@@ -1176,7 +1176,7 @@
       "oid": "1806100",
       "name": "kiler171",
       "honor": 1247,
-      "might": 33979591,
+      "might": 33980053,
       "loot_current": 199826295
     },
     {
@@ -1295,7 +1295,7 @@
       "oid": "1856395",
       "name": "VERIKAS",
       "honor": 795,
-      "might": 3176312,
+      "might": 3177236,
       "loot_current": 51518817
     },
     {
