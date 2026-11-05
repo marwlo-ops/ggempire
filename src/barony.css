@@ -1,0 +1,29 @@
+/* Dedicated Baron / archipelago module. Isolated from existing page features. */
+.barony-section{scroll-margin-top:90px}
+.barony-state{display:inline-flex;align-items:center;border:1px solid #e5bd7240;border-radius:30px;padding:8px 11px;color:#e6c789;background:#e5bd720b;font-size:8px;letter-spacing:.08em;white-space:nowrap}
+.barony-intro{display:flex;gap:14px;padding:17px;border:1px solid #e5bd7230;border-radius:12px;background:linear-gradient(120deg,#e5bd720d,#fff0 70%);margin:18px 0}
+.barony-intro-icon{width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;border-radius:10px;background:#e5bd7215;color:var(--gold2);font-size:23px}
+.barony-intro b{font:800 13px Manrope,sans-serif}.barony-intro p{font-size:10px;line-height:1.8;color:var(--muted);margin:6px 0 0}
+.barony-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0 12px}
+.barony-realms{display:flex;gap:7px;flex-wrap:wrap}
+.barony-realm{border:1px solid #ffffff20;background:#ffffff05;color:var(--text);border-radius:8px;padding:10px 13px;font:700 10px Manrope,sans-serif;cursor:pointer}
+.barony-realm.active{border-color:#e5bd7280;background:#e5bd7218;color:#f1d18c}
+.barony-filters{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:9px;margin-bottom:12px}
+.barony-filters input,.barony-filters select{width:100%;min-width:0;background:#0c0e14;border:1px solid #ffffff20;border-radius:7px;color:var(--text);padding:11px;font:inherit;font-size:10px}
+.barony-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:13px 0}
+.barony-summary>div{padding:13px;border:1px solid var(--line);border-radius:9px;background:linear-gradient(145deg,#191c26,#11131a);min-width:0}
+.barony-summary small{display:block;color:#8f929f;font-size:8px;letter-spacing:.09em;margin-bottom:7px}.barony-summary b{font:800 17px Manrope,sans-serif;overflow-wrap:anywhere}
+.barony-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:13px;align-items:start}
+.barony-map-panel,.barony-list-panel{border:1px solid var(--line);border-radius:11px;background:linear-gradient(145deg,#191c26,#11131a);overflow:hidden;min-width:0}
+.barony-panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 15px;border-bottom:1px solid var(--line)}
+.barony-panel-head b{display:block;font:800 12px Manrope,sans-serif}.barony-panel-head small{display:block;color:var(--muted);font-size:9px;margin-top:4px}.barony-panel-head>span{font-size:8px;color:var(--gold2);border:1px solid #e5bd7230;padding:6px 8px;border-radius:20px}
+.barony-map{min-height:300px;display:grid;place-items:center;padding:12px;background:#0a0d13}.barony-map svg{width:100%;height:auto;max-height:380px}.barony-empty{max-width:440px;text-align:center;padding:28px 18px;color:#a3a7b4;font-size:10px;line-height:1.8}
+.barony-gridline{stroke:#ffffff16;stroke-dasharray:3 5}.barony-axis{stroke:#b9a77e;stroke-width:1.2}.barony-dot{fill:#e5bd72;stroke:#fff0c5;stroke-width:1.5}
+.barony-list{display:grid;gap:8px;padding:11px;max-height:440px;overflow:auto}
+.barony-target{padding:12px;border:1px solid #ffffff14;border-radius:8px;background:#ffffff04}
+.barony-target-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.barony-target h4{margin:0;font:700 11px Manrope,sans-serif}.barony-target p{margin:6px 0 0;color:var(--muted);font-size:9px;line-height:1.6}
+.barony-target .coords{color:#f0d28c;font-weight:800;font-variant-numeric:tabular-nums}
+.barony-target-status{font-size:8px;padding:5px 7px;border-radius:20px;white-space:nowrap}.barony-target-status.available{color:#8ce0b1;background:#7cd6a812}.barony-target-status.cooldown{color:#e9bc7d;background:#e5bd7212}
+.barony-footnote{margin:12px 0 0;color:#8d919e;font-size:9px;line-height:1.8}
+@media(max-width:850px){.barony-content{grid-template-columns:1fr}}
+@media(max-width:600px){.barony-filters{grid-template-columns:1fr}.barony-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.barony-toolbar{align-items:stretch}.barony-realms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.barony-realm{padding:10px 7px}.barony-toolbar>.outline-button{width:100%}.barony-intro{padding:13px}.barony-map{min-height:230px}}
