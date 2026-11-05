@@ -78,9 +78,15 @@
         status.textContent = isAvailable(item) ? "Dostępny" : "Odnowienie";
         top.append(title,status);
         const details = document.createElement("p");
-        const level = item.level ? "Poziom " + item.level + " · " : "";
-        const island = item.island ? item.island + " · " : "";
-        details.innerHTML = '<span class="coords">X:' + Number(item.x) + ' · Y:' + Number(item.y) + '</span><br>' + level + island + (item.cooldownUntil && !isAvailable(item) ? "Dostępny: " + fmtDate(item.cooldownUntil) : "Gotowy do sprawdzenia w grze");
+        const coords = document.createElement("span"); coords.className = "coords";
+        coords.textContent = "X:" + Number(item.x) + " · Y:" + Number(item.y);
+        const meta = document.createElement("span");
+        const parts = [];
+        if (item.level !== undefined && item.level !== null) parts.push("Poziom " + String(item.level));
+        if (item.island) parts.push(String(item.island));
+        parts.push(item.cooldownUntil && !isAvailable(item) ? "Dostępny: " + fmtDate(item.cooldownUntil) : "Gotowy do sprawdzenia w grze");
+        meta.textContent = parts.join(" · ");
+        details.append(coords, document.createElement("br"), meta);
         card.append(top,details); list.append(card);
       });
     }
