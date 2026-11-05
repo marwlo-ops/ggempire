@@ -70,7 +70,7 @@ def api_request(command, headers):
         if response.status != 200:
             raise RuntimeError(f"Bridge HTTP {response.status}")
     payload = json.loads(body.decode("utf-8"))
-    if payload.get("return_code") != 0:
+    if str(payload.get("return_code")) != "0":
         raise RuntimeError(f"Game command returned code {payload.get('return_code')}")
     return payload
 
