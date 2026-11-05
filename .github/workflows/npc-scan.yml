@@ -1,0 +1,44 @@
+name: Scan E4K PL1 NPC map
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ggempire-npc-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Scan verified NPC map response
+        env:
+          E4K_SERVER: EmpirefourkingdomsExGG2_3
+          E4K_API_HOST: empire-api.fly.dev
+          E4K_MAP_COMMAND: ${{ vars.E4K_MAP_COMMAND }}
+          E4K_MAP_HEADERS_JSON: ${{ secrets.E4K_MAP_HEADERS_JSON }}
+          E4K_NPC_TYPE_VALUES: ${{ vars.E4K_NPC_TYPE_VALUES }}
+        run: python scripts/scan_npc_map.py
+      - name: Commit verified NPC data only
+        if: success()
+        run: |
+          if git diff --quiet -- data/npc-dungeons.json; then
+            echo "No verified NPC data changes; no commit required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/npc-dungeons.json
+          git commit -m "chore: refresh verified E4K NPC map data"
+          git pull --rebase origin main
+          git push
