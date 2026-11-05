@@ -27,3 +27,5 @@
 .barony-footnote{margin:12px 0 0;color:#8d919e;font-size:9px;line-height:1.8}
 @media(max-width:850px){.barony-content{grid-template-columns:1fr}}
 @media(max-width:600px){.barony-filters{grid-template-columns:1fr}.barony-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.barony-toolbar{align-items:stretch}.barony-realms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.barony-realm{padding:10px 7px}.barony-toolbar>.outline-button{width:100%}.barony-intro{padding:13px}.barony-map{min-height:230px}}
+
+.barony-target-actions{display:flex;justify-content:flex-end;margin-top:9px}.barony-attack-btn{border:1px solid #e5bd7250;background:#e5bd7210;color:#f0d28c;border-radius:7px;padding:7px 10px;font:700 9px Manrope,sans-serif;cursor:pointer}.barony-attack-btn:disabled{opacity:.5;cursor:default}
