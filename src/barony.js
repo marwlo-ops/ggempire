@@ -9,6 +9,10 @@
   };
   let dataset = { verified: false, targets: [] };
   let activeRealm = "ice";
+  const ATTACKS_KEY = "ggempire.barony.attacks.v1";
+  function readAttacks() { try { const value = JSON.parse(localStorage.getItem(ATTACKS_KEY) || "{}"); return value && typeof value === "object" ? value : {}; } catch (_) { return {}; } }
+  function attackKey(target) { return [target.realm, target.id || target.type || target.name || "npc", target.x, target.y].join(":"); }
+  function attackUntil(target) { return readAttacks()[attackKey(target)] || null; }
   const text = (selector, value) => { const node = $(selector); if (node) node.textContent = value; };
   const fmtDate = (value) => {
     if (!value) return "—";
@@ -16,9 +20,9 @@
     return Number.isNaN(date.getTime()) ? "—" : date.toLocaleString("pl-PL", { dateStyle: "short", timeStyle: "short" });
   };
   const isAvailable = (target) => {
-    if (target.status === "available") return true;
-    if (target.cooldownUntil) return new Date(target.cooldownUntil).getTime() <= Date.now();
-    return false;
+    const until = attackUntil(target) || target.cooldownUntil;
+    if (until) return new Date(until).getTime() <= Date.now();
+    return target.status === "available";
   };
   function filteredTargets() {
     const query = ($("#barony-search")?.value || "").trim().toLocaleLowerCase("pl-PL");
@@ -87,7 +91,16 @@
         parts.push(item.cooldownUntil && !isAvailable(item) ? "Dostępny: " + fmtDate(item.cooldownUntil) : "Gotowy do sprawdzenia w grze");
         meta.textContent = parts.join(" · ");
         details.append(coords, document.createElement("br"), meta);
-        card.append(top,details); list.append(card);
+        const actions = document.createElement("div"); actions.className = "barony-target-actions";
+        const attackButton = document.createElement("button"); attackButton.type = "button"; attackButton.className = "barony-attack-btn";
+        const until = attackUntil(item) || item.cooldownUntil;
+        attackButton.textContent = until && new Date(until).getTime() > Date.now() ? "Odnowienie: " + fmtDate(until) : "Zapisz atak · blokada 24 h";
+        attackButton.disabled = Boolean(until && new Date(until).getTime() > Date.now());
+        attackButton.addEventListener("click", () => {
+          const attacks = readAttacks(); attacks[attackKey(item)] = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+          try { localStorage.setItem(ATTACKS_KEY, JSON.stringify(attacks)); render(); } catch (_) { window.alert("Nie udało się zapisać lokalnej blokady ataku."); }
+        });
+        actions.append(attackButton); card.append(top,details,actions); list.append(card);
       });
     }
     renderMap(rows);
