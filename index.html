@@ -5,13 +5,13 @@
 <meta name="theme-color" content="#10121b"><meta name="description" content="GGEmpire — portal serwera PL1. Sojusze Reborn i MadDevil, rankingi, wydarzenia i narzędzia Goodgame Empire.">
 <title>GGEmpire — PL1 Alliance Hub</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><link rel="stylesheet" href="./src/battle-simulator.css"><link rel="stylesheet" href="./src/pvp-attack-lab.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script><script src="./src/battle-simulator.js" defer></script><script src="./src/pvp-attack-lab.js?v=20261025b" defer></script>
+<link rel="stylesheet" href="./src/styles.css"><link rel="stylesheet" href="./src/tracker.css"><link rel="stylesheet" href="./src/battle-simulator.css"><link rel="stylesheet" href="./src/pvp-attack-lab.css"><script src="./src/app.js" defer></script><script src="./src/tracker.js" defer></script><script src="./src/battle-simulator.js" defer></script><script src="./src/pvp-attack-lab.js?v=20261025b" defer></script><link rel="stylesheet" href="./src/barony.css"><script src="./src/barony.js" defer></script>
 </head>
 <body>
 <div class="backdrop-glow glow-a"></div><div class="backdrop-glow glow-b"></div>
 <header class="site-header">
  <a class="brand" href="#home"><span class="brand-emblem">G<span>G</span></span><span class="brand-word">GGE<span>MPIRE</span><small>PL1 COMMUNITY HUB</small></span></a>
- <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#player-account">Moje konto</a><a href="#alliances">Sojusze</a><a href="#world-monitor">Monitor świata</a><a href="#calendar">Kalendarz</a><a href="#rankings">Rankingi</a><a href="#intelligence">Wywiad</a><a href="#tools">Narzędzia</a><a href="#battle-simulator">Symulator bitew</a></nav>
+ <nav class="main-nav"><a class="active" href="#home">Przegląd</a><a href="#player-account">Moje konto</a><a href="#alliances">Sojusze</a><a href="#world-monitor">Monitor świata</a><a href="#calendar">Kalendarz</a><a href="#rankings">Rankingi</a><a href="#intelligence">Wywiad</a><a href="#barony">Barony</a><a href="#tools">Narzędzia</a><a href="#battle-simulator">Symulator bitew</a></nav>
  <div class="header-actions"><span class="server-pill"><i></i> ŚWIAT PL1</span><button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">☰</button></div>
 </header>
 <main id="home">
@@ -126,6 +126,17 @@
     <div id="intel-list" class="intel-list" aria-live="polite"><div class="intel-empty"><span>⌕</span><b>Brak raportów</b><p>Dodaj pierwszy raport, a zobaczysz go tutaj.</p></div></div>
    </div>
   </div>
+ </section>
+
+ 
+ <section class="section barony-section" id="barony">
+  <div class="section-head"><div><div class="eyebrow">SKANER ŚWIATA · CELE NPC</div><h2>Barony <span>i archipelag</span></h2><p>Osobny moduł celów NPC. Wybierz krainę, wyszukaj poziom lub współrzędne i sprawdzaj dostępność celu.</p></div><span class="barony-state" id="barony-state">ŹRÓDŁO DO WERYFIKACJI</span></div>
+  <div class="barony-intro"><div class="barony-intro-icon">♜</div><div><b>Zakres: 3 krainy + archipelag</b><p>Oddzielne widoki dla Lodu, Piasków, Ognia oraz wysp archipelagu. Moduł odczytuje wyłącznie potwierdzone rekordy z <code>data/npc-dungeons.json</code>. Nie pokazuje losowych współrzędnych ani danych przykładowych jako prawdziwych celów.</p></div></div>
+  <div class="barony-toolbar"><div class="barony-realms" role="group" aria-label="Wybierz obszar"><button class="barony-realm active" type="button" data-baron-realm="ice">❄ Lód</button><button class="barony-realm" type="button" data-baron-realm="sand">☀ Piaski</button><button class="barony-realm" type="button" data-baron-realm="fire">🔥 Ogień</button><button class="barony-realm" type="button" data-baron-realm="islands">⚓ Archipelag · wyspy</button></div><button class="outline-button" id="barony-refresh" type="button">↻ Odśwież dane</button></div>
+  <div class="barony-filters"><input id="barony-search" type="search" placeholder="Szukaj: poziom, X:Y, typ celu…" aria-label="Szukaj celu NPC"><select id="barony-status-filter" aria-label="Filtr dostępności"><option value="all">Wszystkie statusy</option><option value="available">Dostępne</option><option value="cooldown">W trakcie odnowienia</option></select><select id="barony-sort" aria-label="Sortowanie"><option value="available">Najpierw dostępne</option><option value="level">Poziom celu</option><option value="coords">Współrzędne</option></select></div>
+  <div class="barony-summary"><div><small>OBSZAR</small><b id="barony-realm-name">Lód</b></div><div><small>WYKRYTE CELE</small><b id="barony-count">0</b></div><div><small>DOSTĘPNE</small><b id="barony-available">0</b></div><div><small>OSTATNI ODCZYT</small><b id="barony-updated">—</b></div></div>
+  <div class="barony-content"><div class="barony-map-panel"><div class="barony-panel-head"><div><b>Mapa wykrytych celów</b><small>Pozycje X/Y z potwierdzonego źródła</small></div><span>PL1</span></div><div id="barony-map" class="barony-map"><div class="barony-empty">Brak zweryfikowanych współrzędnych. Skaner mapy E4K PL1 wymaga potwierdzenia komendy sektorów.</div></div></div><div class="barony-list-panel"><div class="barony-panel-head"><div><b>Lista celów NPC</b><small id="barony-list-caption">Lód · wszystkie cele</small></div><span id="barony-list-total">0</span></div><div id="barony-list" class="barony-list"><div class="barony-empty">Nie ma jeszcze zweryfikowanych rekordów dla tego obszaru.</div></div></div></div>
+  <p class="barony-footnote" id="barony-source-note">Status: brak potwierdzonego odczytu kafelków mapy E4K PL1. Zakładka jest odseparowana od Mapy, Szpiegowania i Dodatkowych; nie zmienia ich danych ani logiki.</p>
  </section>
 
  <section class="section" id="battle-simulator">
