@@ -62,7 +62,7 @@ def walk(value):
 
 
 def api_request(command, headers):
-    encoded = urllib.parse.quote(json.dumps(headers, separators=(",", ":"), ensure_ascii=False), safe="")
+    raw_headers = json.dumps(headers, separators=(",", ":"), ensure_ascii=False)[1:-1]\n    encoded = urllib.parse.quote(raw_headers, safe="")
     url = f"{HOST}/{urllib.parse.quote(SERVER, safe='')}/{urllib.parse.quote(command, safe='')}/{encoded}"
     request = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "GGEmpire-NPC-Scanner/1.0"})
     with urllib.request.urlopen(request, timeout=20) as response:
