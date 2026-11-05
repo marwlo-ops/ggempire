@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "server": "EmpirefourkingdomsExGG2_3",
+  "verified": false,
+  "updatedAt": null,
+  "scanMode": "pending-protocol-verification",
+  "realms": [
+    "ice",
+    "sand",
+    "fire",
+    "islands"
+  ],
+  "targets": [],
+  "note": "No coordinates are asserted until E4K PL1 map-sector response is verified."
+}
