@@ -4,26 +4,20 @@
   "server": "EmpirefourkingdomsExGG2_3",
   "aid": 41343,
   "alliance_name": "MADDEVILS",
-  "fetched_at": "2026-11-13T18:15:43.006535+00:00",
+  "fetched_at": "2026-11-13T19:25:34.798800+00:00",
   "player_count": 48,
-  "total_might": 4017613189,
+  "total_might": 3959582032,
   "prev_players": {
     "1866802": {
       "name": "Mnich1",
       "honor": 1212,
-      "might": 316135450,
+      "might": 316136050,
       "loot_current": 89553367
-    },
-    "1729556": {
-      "name": "Mrs Kinia",
-      "honor": 1749,
-      "might": 244671512,
-      "loot_current": 1513368715
     },
     "259322": {
       "name": "ΓΞQUIΞM",
       "honor": 1767,
-      "might": 223131290,
+      "might": 223161764,
       "loot_current": 612359800
     },
     "1671423": {
@@ -32,28 +26,34 @@
       "might": 201325624,
       "loot_current": 175686721
     },
+    "1729556": {
+      "name": "Mrs Kinia",
+      "honor": 1749,
+      "might": 190773518,
+      "loot_current": 1513368715
+    },
     "941700": {
       "name": "NOXAM",
       "honor": 1760,
-      "might": 184587341,
+      "might": 185599681,
       "loot_current": 522131728
     },
     "1681311": {
       "name": "Nadia",
       "honor": 1861,
-      "might": 178524922,
+      "might": 178557502,
       "loot_current": 997613022
     },
     "1813227": {
       "name": "Sirkk",
       "honor": 1067,
-      "might": 173138052,
+      "might": 173142954,
       "loot_current": 316820914
     },
     "1762193": {
       "name": "Tomovsky",
       "honor": 2257,
-      "might": 169445231,
+      "might": 169458995,
       "loot_current": 465373611
     },
     "1888134": {
@@ -62,16 +62,10 @@
       "might": 169015107,
       "loot_current": 439341833
     },
-    "1722042": {
-      "name": "Montii",
-      "honor": 1229,
-      "might": 168407807,
-      "loot_current": 42331019
-    },
     "1141204": {
       "name": "Burza87",
       "honor": 2026,
-      "might": 159331109,
+      "might": 159332189,
       "loot_current": 1064438089
     },
     "1299720": {
@@ -95,7 +89,7 @@
     "1866228": {
       "name": "DZC",
       "honor": 1801,
-      "might": 129466983,
+      "might": 129467463,
       "loot_current": 452576660
     },
     "1817531": {
@@ -104,22 +98,28 @@
       "might": 128349849,
       "loot_current": 622266379
     },
+    "1722042": {
+      "name": "Montii",
+      "honor": 1229,
+      "might": 126824437,
+      "loot_current": 42331019
+    },
     "514929": {
       "name": "greg29",
       "honor": 630,
-      "might": 107399518,
+      "might": 107400024,
       "loot_current": 231539408
     },
     "1524565": {
       "name": "Tazgov",
       "honor": 1142,
-      "might": 106827409,
+      "might": 106969931,
       "loot_current": 95598189
     },
     "138661": {
       "name": "greatseal",
       "honor": 1875,
-      "might": 105584210,
+      "might": 105578732,
       "loot_current": 639054535
     },
     "1866444": {
@@ -127,12 +127,6 @@
       "honor": 1309,
       "might": 88850982,
       "loot_current": 2678859
-    },
-    "1933752": {
-      "name": "Lasu",
-      "honor": 1131,
-      "might": 76751849,
-      "loot_current": 167102563
     },
     "1668728": {
       "name": "METEOR",
@@ -149,13 +143,13 @@
     "1858019": {
       "name": "z404",
       "honor": 1555,
-      "might": 59084993,
+      "might": 59085213,
       "loot_current": 330668407
     },
     "369918": {
       "name": "LESZEK CZAARNY",
       "honor": 2026,
-      "might": 57796101,
+      "might": 57802341,
       "loot_current": 102377393
     },
     "1808763": {
@@ -170,16 +164,22 @@
       "might": 54094337,
       "loot_current": 41847734
     },
+    "1933752": {
+      "name": "Lasu",
+      "honor": 1131,
+      "might": 51260724,
+      "loot_current": 167102563
+    },
     "1827540": {
       "name": "Dadźbóg",
       "honor": 1127,
-      "might": 51139481,
+      "might": 51079481,
       "loot_current": 197410643
     },
     "1002425": {
       "name": "Tomek76",
       "honor": 1023,
-      "might": 50983219,
+      "might": 50983681,
       "loot_current": 209555734
     },
     "1824519": {
@@ -191,7 +191,7 @@
     "1935354": {
       "name": "Trytyta",
       "honor": 1548,
-      "might": 38222310,
+      "might": 38222083,
       "loot_current": 351815160
     },
     "1920035": {
@@ -209,7 +209,7 @@
     "1931787": {
       "name": "oliwka o",
       "honor": 1655,
-      "might": 29900400,
+      "might": 29981492,
       "loot_current": 952670834
     },
     "1906821": {
@@ -227,7 +227,7 @@
     "1196131": {
       "name": "pablo dux",
       "honor": 1737,
-      "might": 21495084,
+      "might": 21496024,
       "loot_current": 155996691
     },
     "1841972": {
@@ -302,84 +302,84 @@
       "oid": "1866802",
       "name": "Mnich1",
       "honor": 1212,
-      "might": 316136050,
+      "might": 316136890,
       "loot_current": 89553367
     },
     "259322": {
       "oid": "259322",
       "name": "ΓΞQUIΞM",
       "honor": 1767,
-      "might": 223161764,
+      "might": 223173247,
       "loot_current": 612359800
     },
     "1671423": {
       "oid": "1671423",
       "name": "BloodLine",
       "honor": 2179,
-      "might": 201325624,
+      "might": 201325338,
       "loot_current": 175686721
     },
     "1729556": {
       "oid": "1729556",
       "name": "Mrs Kinia",
       "honor": 1749,
-      "might": 190773518,
+      "might": 190515106,
       "loot_current": 1513368715
     },
     "941700": {
       "oid": "941700",
       "name": "NOXAM",
       "honor": 1760,
-      "might": 185599681,
+      "might": 185629801,
       "loot_current": 522131728
     },
     "1681311": {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1861,
-      "might": 178557502,
+      "might": 178536649,
       "loot_current": 997613022
     },
     "1813227": {
       "oid": "1813227",
       "name": "Sirkk",
       "honor": 1067,
-      "might": 173142954,
+      "might": 172902516,
       "loot_current": 316820914
     },
     "1762193": {
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 2257,
-      "might": 169458995,
+      "might": 169346558,
       "loot_current": 465373611
     },
     "1888134": {
       "oid": "1888134",
       "name": "ZiDoQ98",
       "honor": 1461,
-      "might": 169015107,
+      "might": 168989972,
       "loot_current": 439341833
-    },
-    "1141204": {
-      "oid": "1141204",
-      "name": "Burza87",
-      "honor": 2026,
-      "might": 159332189,
-      "loot_current": 1064438089
     },
     "1299720": {
       "oid": "1299720",
       "name": "SG-1",
       "honor": 1419,
-      "might": 159236421,
+      "might": 159234261,
       "loot_current": 1039759779
+    },
+    "1141204": {
+      "oid": "1141204",
+      "name": "Burza87",
+      "honor": 2026,
+      "might": 156651861,
+      "loot_current": 1064438089
     },
     "1873065": {
       "oid": "1873065",
       "name": "Uhtred",
       "honor": 2128,
-      "might": 146191448,
+      "might": 146203271,
       "loot_current": 99944746
     },
     "1189628": {
@@ -389,47 +389,47 @@
       "might": 136058731,
       "loot_current": 190136110
     },
-    "1866228": {
-      "oid": "1866228",
-      "name": "DZC",
-      "honor": 1801,
-      "might": 129467463,
-      "loot_current": 452576660
-    },
-    "1817531": {
-      "oid": "1817531",
-      "name": "-JarlMatt-",
-      "honor": 1163,
-      "might": 128349849,
-      "loot_current": 622266379
-    },
     "1722042": {
       "oid": "1722042",
       "name": "Montii",
       "honor": 1229,
-      "might": 126824437,
+      "might": 126812997,
       "loot_current": 42331019
     },
     "514929": {
       "oid": "514929",
       "name": "greg29",
       "honor": 630,
-      "might": 107400024,
+      "might": 108790334,
       "loot_current": 231539408
+    },
+    "1817531": {
+      "oid": "1817531",
+      "name": "-JarlMatt-",
+      "honor": 1163,
+      "might": 107707735,
+      "loot_current": 622266379
     },
     "1524565": {
       "oid": "1524565",
       "name": "Tazgov",
       "honor": 1142,
-      "might": 106969931,
+      "might": 106647171,
       "loot_current": 95598189
     },
     "138661": {
       "oid": "138661",
       "name": "greatseal",
       "honor": 1875,
-      "might": 105578732,
+      "might": 105326182,
       "loot_current": 639054535
+    },
+    "1866228": {
+      "oid": "1866228",
+      "name": "DZC",
+      "honor": 1801,
+      "might": 93256459,
+      "loot_current": 452576660
     },
     "1866444": {
       "oid": "1866444",
@@ -449,7 +449,7 @@
       "oid": "1891821",
       "name": "Aber",
       "honor": 1048,
-      "might": 64617199,
+      "might": 64582032,
       "loot_current": 16603727
     },
     "1858019": {
@@ -459,19 +459,19 @@
       "might": 59085213,
       "loot_current": 330668407
     },
-    "369918": {
-      "oid": "369918",
-      "name": "LESZEK CZAARNY",
-      "honor": 2026,
-      "might": 57802341,
-      "loot_current": 102377393
-    },
     "1808763": {
       "oid": "1808763",
       "name": "RoB",
       "honor": 1482,
       "might": 57294767,
       "loot_current": 21873957
+    },
+    "369918": {
+      "oid": "369918",
+      "name": "LESZEK CZAARNY",
+      "honor": 2026,
+      "might": 57238711,
+      "loot_current": 102377393
     },
     "1013972": {
       "oid": "1013972",
@@ -484,7 +484,7 @@
       "oid": "1933752",
       "name": "Lasu",
       "honor": 1131,
-      "might": 51260724,
+      "might": 52838297,
       "loot_current": 167102563
     },
     "1827540": {
@@ -498,7 +498,7 @@
       "oid": "1002425",
       "name": "Tomek76",
       "honor": 1023,
-      "might": 50983681,
+      "might": 50960570,
       "loot_current": 209555734
     },
     "1824519": {
@@ -512,7 +512,7 @@
       "oid": "1935354",
       "name": "Trytyta",
       "honor": 1548,
-      "might": 38222083,
+      "might": 38224525,
       "loot_current": 351815160
     },
     "1920035": {
@@ -526,21 +526,21 @@
       "oid": "1934546",
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1527,
-      "might": 31763649,
+      "might": 31676440,
       "loot_current": 54171767
     },
     "1931787": {
       "oid": "1931787",
       "name": "oliwka o",
       "honor": 1655,
-      "might": 29981492,
+      "might": 29675008,
       "loot_current": 952670834
     },
     "1906821": {
       "oid": "1906821",
       "name": "Lord Szakal",
       "honor": 831,
-      "might": 27170789,
+      "might": 27215472,
       "loot_current": 111028866
     },
     "1046871": {
@@ -554,7 +554,7 @@
       "oid": "1196131",
       "name": "pablo dux",
       "honor": 1737,
-      "might": 21496024,
+      "might": 21497320,
       "loot_current": 155996691
     },
     "1841972": {
@@ -582,7 +582,7 @@
       "oid": "1824330",
       "name": "-Kinzo-",
       "honor": 758,
-      "might": 5240917,
+      "might": 5934708,
       "loot_current": 34656642
     },
     "1026395": {
@@ -640,84 +640,84 @@
       "oid": "1866802",
       "name": "Mnich1",
       "honor": 1212,
-      "might": 316136050,
+      "might": 316136890,
       "loot_current": 89553367
     },
     {
       "oid": "259322",
       "name": "ΓΞQUIΞM",
       "honor": 1767,
-      "might": 223161764,
+      "might": 223173247,
       "loot_current": 612359800
     },
     {
       "oid": "1671423",
       "name": "BloodLine",
       "honor": 2179,
-      "might": 201325624,
+      "might": 201325338,
       "loot_current": 175686721
     },
     {
       "oid": "1729556",
       "name": "Mrs Kinia",
       "honor": 1749,
-      "might": 190773518,
+      "might": 190515106,
       "loot_current": 1513368715
     },
     {
       "oid": "941700",
       "name": "NOXAM",
       "honor": 1760,
-      "might": 185599681,
+      "might": 185629801,
       "loot_current": 522131728
     },
     {
       "oid": "1681311",
       "name": "Nadia",
       "honor": 1861,
-      "might": 178557502,
+      "might": 178536649,
       "loot_current": 997613022
     },
     {
       "oid": "1813227",
       "name": "Sirkk",
       "honor": 1067,
-      "might": 173142954,
+      "might": 172902516,
       "loot_current": 316820914
     },
     {
       "oid": "1762193",
       "name": "Tomovsky",
       "honor": 2257,
-      "might": 169458995,
+      "might": 169346558,
       "loot_current": 465373611
     },
     {
       "oid": "1888134",
       "name": "ZiDoQ98",
       "honor": 1461,
-      "might": 169015107,
+      "might": 168989972,
       "loot_current": 439341833
-    },
-    {
-      "oid": "1141204",
-      "name": "Burza87",
-      "honor": 2026,
-      "might": 159332189,
-      "loot_current": 1064438089
     },
     {
       "oid": "1299720",
       "name": "SG-1",
       "honor": 1419,
-      "might": 159236421,
+      "might": 159234261,
       "loot_current": 1039759779
+    },
+    {
+      "oid": "1141204",
+      "name": "Burza87",
+      "honor": 2026,
+      "might": 156651861,
+      "loot_current": 1064438089
     },
     {
       "oid": "1873065",
       "name": "Uhtred",
       "honor": 2128,
-      "might": 146191448,
+      "might": 146203271,
       "loot_current": 99944746
     },
     {
@@ -728,46 +728,46 @@
       "loot_current": 190136110
     },
     {
-      "oid": "1866228",
-      "name": "DZC",
-      "honor": 1801,
-      "might": 129467463,
-      "loot_current": 452576660
-    },
-    {
-      "oid": "1817531",
-      "name": "-JarlMatt-",
-      "honor": 1163,
-      "might": 128349849,
-      "loot_current": 622266379
-    },
-    {
       "oid": "1722042",
       "name": "Montii",
       "honor": 1229,
-      "might": 126824437,
+      "might": 126812997,
       "loot_current": 42331019
     },
     {
       "oid": "514929",
       "name": "greg29",
       "honor": 630,
-      "might": 107400024,
+      "might": 108790334,
       "loot_current": 231539408
+    },
+    {
+      "oid": "1817531",
+      "name": "-JarlMatt-",
+      "honor": 1163,
+      "might": 107707735,
+      "loot_current": 622266379
     },
     {
       "oid": "1524565",
       "name": "Tazgov",
       "honor": 1142,
-      "might": 106969931,
+      "might": 106647171,
       "loot_current": 95598189
     },
     {
       "oid": "138661",
       "name": "greatseal",
       "honor": 1875,
-      "might": 105578732,
+      "might": 105326182,
       "loot_current": 639054535
+    },
+    {
+      "oid": "1866228",
+      "name": "DZC",
+      "honor": 1801,
+      "might": 93256459,
+      "loot_current": 452576660
     },
     {
       "oid": "1866444",
@@ -787,7 +787,7 @@
       "oid": "1891821",
       "name": "Aber",
       "honor": 1048,
-      "might": 64617199,
+      "might": 64582032,
       "loot_current": 16603727
     },
     {
@@ -798,18 +798,18 @@
       "loot_current": 330668407
     },
     {
-      "oid": "369918",
-      "name": "LESZEK CZAARNY",
-      "honor": 2026,
-      "might": 57802341,
-      "loot_current": 102377393
-    },
-    {
       "oid": "1808763",
       "name": "RoB",
       "honor": 1482,
       "might": 57294767,
       "loot_current": 21873957
+    },
+    {
+      "oid": "369918",
+      "name": "LESZEK CZAARNY",
+      "honor": 2026,
+      "might": 57238711,
+      "loot_current": 102377393
     },
     {
       "oid": "1013972",
@@ -822,7 +822,7 @@
       "oid": "1933752",
       "name": "Lasu",
       "honor": 1131,
-      "might": 51260724,
+      "might": 52838297,
       "loot_current": 167102563
     },
     {
@@ -836,7 +836,7 @@
       "oid": "1002425",
       "name": "Tomek76",
       "honor": 1023,
-      "might": 50983681,
+      "might": 50960570,
       "loot_current": 209555734
     },
     {
@@ -850,7 +850,7 @@
       "oid": "1935354",
       "name": "Trytyta",
       "honor": 1548,
-      "might": 38222083,
+      "might": 38224525,
       "loot_current": 351815160
     },
     {
@@ -864,21 +864,21 @@
       "oid": "1934546",
       "name": "P-A-T-O-L-0-0-7",
       "honor": 1527,
-      "might": 31763649,
+      "might": 31676440,
       "loot_current": 54171767
     },
     {
       "oid": "1931787",
       "name": "oliwka o",
       "honor": 1655,
-      "might": 29981492,
+      "might": 29675008,
       "loot_current": 952670834
     },
     {
       "oid": "1906821",
       "name": "Lord Szakal",
       "honor": 831,
-      "might": 27170789,
+      "might": 27215472,
       "loot_current": 111028866
     },
     {
@@ -892,7 +892,7 @@
       "oid": "1196131",
       "name": "pablo dux",
       "honor": 1737,
-      "might": 21496024,
+      "might": 21497320,
       "loot_current": 155996691
     },
     {
@@ -920,7 +920,7 @@
       "oid": "1824330",
       "name": "-Kinzo-",
       "honor": 758,
-      "might": 5240917,
+      "might": 5934708,
       "loot_current": 34656642
     },
     {
